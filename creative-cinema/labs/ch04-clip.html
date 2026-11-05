@@ -1,0 +1,128 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts th{color:var(--muted);font:500 .85em var(--display)}
+.facts td.n{text-align:right;white-space:nowrap;color:var(--amber);font-weight:600}
+.pest{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:10px 0}
+.pest .col{background:var(--panel2);border:1.5px dashed var(--line);border-radius:12px;padding:10px;min-height:120px}
+.pest h4{margin:0 0 6px;font:600 1em var(--display);color:var(--amber)}
+.chip{display:inline-block;background:var(--panel);border:1.5px solid var(--line);border-radius:999px;padding:6px 12px;margin:4px 4px 0 0;cursor:pointer;font-size:.9em}
+.chip.on{border-color:var(--teal);background:#15302e}
+.chip.ok{border-color:var(--green)} .chip.no{border-color:var(--red)}
+.tray{min-height:48px;margin:8px 0}
+.score{width:100%;border-collapse:collapse;font-size:.92em}
+.score td,.score th{padding:6px;border-bottom:1px solid var(--line)}
+.score input{width:64px;padding:6px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel2);color:var(--cream);font:600 1em var(--body);text-align:center}
+.score .tot{font:700 1.3em var(--display);color:var(--amber)}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (15 นาที)</h3>
+  <h2>ธุรกิจดาวรุ่งปี 2026 — เจาะเทรนด์ที่โลกกำลังต้องการ</h2>
+  <p class="muted">ช่อง Money Matters (พอล ภัทรพล) เล่า 6 ธุรกิจที่คนธรรมดาเริ่มได้ด้วยเงินน้อย พร้อมสถิติที่อ้างถึง · ช่วงกลางและท้ายคลิปเป็นโฆษณาหนังสือและแอปลงทุน ข้ามได้</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=heMPZsfvM-o" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=heMPZsfvM-o</small>
+  </div>
+  <p style="margin-top:12px"><b>ตัวเลขที่คลิปอ้างถึง</b> (จากบทบรรยายอัตโนมัติ — เป็นคำกล่าวในคลิป ยังไม่ได้ตรวจสอบแหล่งที่มา)</p>
+  <table class="facts">
+    <tr><th>ธุรกิจ</th><th>สิ่งที่คลิปบอก</th></tr>
+    <tr><td>1. Affiliate Marketing</td><td>คนไทยทำอาชีพนี้เพิ่ม 70% · 35 ล้านคนซื้อของจากรีวิว · ครีเอเตอร์ผู้ติดตาม 1 หมื่น หาได้ <span class="n">15,000–45,000/เดือน</span></td></tr>
+    <tr><td>2. แฟรนไชส์ยุคใหม่</td><td>ลงทุน 50,000–200,000 (เดิมเป็นล้าน) · เครื่องดื่ม Grab &amp; Go กำไรต่อแก้ว 40–60% · คาเฟ่จิ๋ว Takeaway ลงทุนถูกกว่าร้านใหญ่ 5 เท่า</td></tr>
+    <tr><td>3. บริการ AI</td><td>คนไทย 68% เคยใช้ AI · SME 34% ใช้ AI หลังบ้าน · ฟรีแลนซ์ที่ใช้ AI ได้ 3–5 ตัว หาได้ 20,000–80,000/เดือน</td></tr>
+    <tr><td>4. Digital Product</td><td>ต้นทุนเกือบศูนย์ ขายซ้ำได้ไม่จำกัด · ตลาดเอเชียโต 40% · เทมเพลต Notion, ไฟล์ Excel, พรีเซ็ตแต่งรูป, ebook</td></tr>
+    <tr><td>5. Cloud Kitchen 2.0</td><td>ตลาด Delivery โต 13–18% · อาหารสุขภาพพร้อมกิน · อาหารผู้สูงอายุ (ไทยเป็นสังคมสูงวัยเต็มขั้น) · ทำจากคอนโด/หอพักได้</td></tr>
+    <tr><td>6. บริการเฉพาะทาง (Hyperniche)</td><td>โต 7–9%/ปี · ที่ปรึกษาสุขภาพ จัดบ้าน ดูแลสัตว์เลี้ยง ช่างเรียกออนไลน์</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · โอกาสมาจากไหน</h3>
+  <h2>จัด “สาเหตุ” ที่คลิปยกมา ลงช่อง PEST</h2>
+  <p class="muted">แตะชิปเพื่อเลือก แล้วแตะช่องที่คิดว่าใช่ (P การเมือง/นโยบาย · E เศรษฐกิจ · S สังคม · T เทคโนโลยี)</p>
+  <div class="tray" id="tray"></div>
+  <div class="pest" id="pest">
+    <div class="col" data-c="P"><h4>P · การเมือง/กฎ</h4></div>
+    <div class="col" data-c="E"><h4>E · เศรษฐกิจ</h4></div>
+    <div class="col" data-c="S"><h4>S · สังคม</h4></div>
+    <div class="col" data-c="T"><h4>T · เทคโนโลยี</h4></div>
+  </div>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk1">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · ปัญหา โอกาส ไอเดีย</h3>
+  <h2>“ประเทศไทยเป็นสังคมสูงวัยเต็มขั้น” คืออะไร?</h2>
+  <div id="q2">
+    <button class="choice" type="button">ไอเดียธุรกิจ เพราะคลิปแนะนำให้ทำอาหารผู้สูงอายุ</button>
+    <button class="choice" data-ok="1" type="button">โอกาส (สภาพแวดล้อมที่เปลี่ยน) — ส่วน “ทำอาหารผู้สูงอายุส่งถึงบ้าน” คือไอเดียที่ตอบโอกาสนั้น</button>
+    <button class="choice" type="button">ปัญหาของธุรกิจเรา</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · ตารางให้คะแนนโอกาส</h3>
+  <h2>เลือก 2 ธุรกิจจากคลิปที่กลุ่มสนใจ แล้วให้คะแนน 1–5</h2>
+  <p class="muted">ใช้เกณฑ์ 5 ข้อจากสไลด์ ให้คะแนนตามความเป็นจริงของ “กลุ่มเรา” ไม่ใช่ตามคลิป</p>
+  <table class="score">
+    <tr><th>เกณฑ์</th><th><input id="n1" placeholder="ธุรกิจ A" style="width:120px"></th><th><input id="n2" placeholder="ธุรกิจ B" style="width:120px"></th></tr>
+    <tr><td>ตลาดใหญ่พอ / โตอยู่</td><td><input class="sc a" type="number" min="1" max="5" value="3"></td><td><input class="sc b" type="number" min="1" max="5" value="3"></td></tr>
+    <tr><td>เงินลงทุนที่เรามีพอ</td><td><input class="sc a" type="number" min="1" max="5" value="3"></td><td><input class="sc b" type="number" min="1" max="5" value="3"></td></tr>
+    <tr><td>ทักษะของกลุ่มตรง</td><td><input class="sc a" type="number" min="1" max="5" value="3"></td><td><input class="sc b" type="number" min="1" max="5" value="3"></td></tr>
+    <tr><td>คู่แข่งไม่หนาแน่นเกิน</td><td><input class="sc a" type="number" min="1" max="5" value="3"></td><td><input class="sc b" type="number" min="1" max="5" value="3"></td></tr>
+    <tr><td>เริ่มได้ภายในเทอมนี้</td><td><input class="sc a" type="number" min="1" max="5" value="3"></td><td><input class="sc b" type="number" min="1" max="5" value="3"></td></tr>
+    <tr><td><b>รวม</b></td><td class="tot" id="ta">15</td><td class="tot" id="tb">15</td></tr>
+  </table>
+  <p class="muted" id="pick"></p>
+  <p style="margin-top:10px"><b>ถ้าตลาดโต 40% (ข้อ 1 ได้ 5) แต่กลุ่มไม่มีทักษะเลย (ข้อ 3 ได้ 1) ควรทำอย่างไร?</b></p>
+  <div id="q3">
+    <button class="choice" type="button">ทำเลย เพราะตลาดโตเร็วกว่าทุกอย่าง</button>
+    <button class="choice" data-ok="1" type="button">ดูคะแนนรวมและเกณฑ์ที่เป็นจุดตาย — ตลาดดีแต่ทำไม่เป็น อาจเริ่มจากฝึกทักษะหรือเลือกโอกาสที่คะแนนรวมสูงกว่า</button>
+    <button class="choice" type="button">ตัดทิ้งทันที เพราะมีข้อใดข้อหนึ่งได้ 1</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · ตั้งคำถามกับตัวเลข</h3>
+  <h2>คลิปอ้างว่า “ครีเอเตอร์ผู้ติดตาม 1 หมื่น หาได้ 15,000–45,000 ต่อเดือน”</h2>
+  <p class="muted">ก่อนเชื่อตัวเลขในคลิปโฆษณาธุรกิจ ผู้ประกอบการควรถามอะไร? เขียน 2 คำถาม (เช่น แหล่งข้อมูลคือใคร เฉลี่ยหรือกรณีที่ดีที่สุด ต้องทำงานกี่ชั่วโมง)</p>
+  <textarea id="ref" placeholder="คำถามที่ 1 ...&#10;คำถามที่ 2 ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 4, no: 4, slug: 'ch04-clip', title: 'โอกาสอยู่ตรงไหน: อ่านเทรนด์ธุรกิจ 2026 จากคลิป', goal: 'แยกให้ออกว่าอะไรคือโอกาส (สภาพแวดล้อมที่เปลี่ยน) อะไรคือไอเดีย แล้วให้คะแนนโอกาสอย่างมีเหตุผล' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+const ITEMS=[['สังคมสูงวัยเต็มขั้น','S'],['คนไทย 68% เคยใช้ AI','T'],['แพลตฟอร์มแข่งกันให้ค่าคอมมิชชัน','E'],['คนเสพคอนเทนต์สั้น ต้องการเครื่องมือเร็ว','S'],['ตลาด Delivery โต 13–18%','E'],['AI ทำไฟล์คุณภาพสูงได้ง่ายกว่าเดิม 5–10 เท่า','T']];
+let sel=null;const placed={};
+function drawTray(){const tray=$('#tray');tray.innerHTML='';ITEMS.forEach((it,i)=>{if(placed[i]!=null)return;const c=Lab.h('span',{class:'chip'+(sel===i?' on':'')},it[0]);c.onclick=()=>{sel=sel===i?null:i;drawTray()};tray.append(c)});}
+$$('#pest .col').forEach(col=>col.onclick=()=>{if(sel==null)return;placed[sel]=col.dataset.c;const i=sel;sel=null;const c=Lab.h('span',{class:'chip'},ITEMS[i][0]);c.onclick=()=>{delete placed[i];c.remove();drawTray()};col.append(c);drawTray()});
+drawTray();
+$('#chk1').onclick=()=>{if(Object.keys(placed).length<ITEMS.length){Lab.feedback($('#fb1'),null,'ยังวางไม่ครบ เหลืออีก '+(ITEMS.length-Object.keys(placed).length)+' ข้อ');return}
+  let ok=0;$$('#pest .col .chip').forEach(c=>{const i=ITEMS.findIndex(x=>x[0]===c.textContent);const right=placed[i]===ITEMS[i][1];c.classList.add(right?'ok':'no');if(right)ok++});
+  Lab.score('pest',ok,ITEMS.length);Lab.feedback($('#fb1'),ok===ITEMS.length,'ถูก '+ok+'/'+ITEMS.length+' — S สังคม = คนและพฤติกรรม (สูงวัย เสพคอนเทนต์สั้น) · T เทคโนโลยี = เครื่องมือใหม่ (AI) · E เศรษฐกิจ = ตลาด/เงิน (ตลาดโต แพลตฟอร์มแข่งจ่ายค่าคอม) · P ในคลิปนี้ไม่มีตัวอย่างชัด ลองคิดดูว่านโยบายอะไรจะกระทบธุรกิจเหล่านี้');$('#chk1').classList.add('hide');show('#go1')};
+$('#go1').onclick=()=>Lab.next();
+Lab.mcq($('#q2'),{key:'opp',explain:'สภาพแวดล้อมที่เปลี่ยน (คนแก่มากขึ้น) = โอกาสที่ใครก็เห็นได้ ไอเดียคือวิธีที่เราเลือกตอบโอกาสนั้น โอกาสเดียวกันตอบได้หลายไอเดีย (อาหาร ดูแล เทคโนโลยีช่วยผู้สูงอายุ)',onDone:()=>show('#go2')});
+$('#go2').onclick=()=>Lab.next();
+const sum=()=>{const a=$$('.sc.a').reduce((s,i)=>s+(+i.value||0),0),b=$$('.sc.b').reduce((s,i)=>s+(+i.value||0),0);$('#ta').textContent=a;$('#tb').textContent=b;const na=$('#n1').value||'ธุรกิจ A',nb=$('#n2').value||'ธุรกิจ B';$('#pick').textContent=a===b?'คะแนนเท่ากัน ลองดูว่าเกณฑ์ไหนเป็นจุดตาย':(a>b?na:nb)+' นำอยู่ '+Math.abs(a-b)+' คะแนน'};
+$$('.sc, #n1, #n2').forEach(i=>i.oninput=sum);sum();
+Lab.mcq($('#q3'),{key:'scorecard',explain:'ตารางคะแนนช่วยให้เทียบอย่างยุติธรรม แต่เกณฑ์บางข้อเป็น “จุดตาย” (ทำไม่เป็นเลย) ต้องดูทั้งคะแนนรวมและข้อที่ต่ำผิดปกติ แล้วตัดสินใจว่าจะแก้จุดนั้นหรือเลือกโอกาสอื่น',onDone:()=>show('#go3')});
+$('#go3').onclick=()=>Lab.next();
+$('#fin').onclick=()=>Lab.finish({takeaway:'โอกาส = สิ่งที่เปลี่ยนรอบตัว (PEST) · ไอเดีย = วิธีที่เราตอบโอกาส<br>ให้คะแนนโอกาสด้วยเกณฑ์เดียวกัน และหาจุดตายก่อนตัดสินใจ<br>ตัวเลขในคลิปธุรกิจ ต้องถามเสมอว่า “ใครวัด วัดอย่างไร เป็นค่าเฉลี่ยหรือกรณีที่ดีที่สุด”',data:{a:$('#ta').textContent,b:$('#tb').textContent,names:[$('#n1').value,$('#n2').value],reflection:$('#ref').value.slice(0,500)}});
+window.__autoplay=()=>false;
+})();
+</script>
