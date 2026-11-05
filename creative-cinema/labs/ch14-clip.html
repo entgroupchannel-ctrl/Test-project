@@ -1,0 +1,160 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts td.k{color:var(--amber);font-weight:600;white-space:nowrap}
+.sl{margin:10px 0}
+.sl .lab{display:flex;justify-content:space-between;font-size:.9em}
+.sl .lab b{color:var(--amber)}
+.sl input{width:100%}
+.pl{width:100%;border-collapse:collapse;font-size:.95em;margin:10px 0}
+.pl td{padding:6px 8px;border-bottom:1px solid var(--line)}
+.pl td.n{text-align:right;white-space:nowrap;font-weight:600}
+.pl tr.tot td{background:var(--panel2);color:var(--amber);font-weight:700;font-size:1.1em}
+.neg{color:var(--red)!important}
+.bs{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.bs td,.bs th{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left}
+.bs td.n{text-align:right;white-space:nowrap}
+.bs tr{cursor:pointer}
+.bs tr.pick td{background:#3a2f1e}
+.bs tr.ok td{background:#1f3a22} .bs tr.no td{background:#3a1f1f}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}
+.calc label{display:block;font-size:.85em;color:var(--muted)}
+.calc input{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel2);color:var(--cream);font:600 1.05em var(--body)}
+.big{font:700 1.4em var(--display);color:var(--amber)}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (13 นาที)</h3>
+  <h2>สอนอ่านงบการเงินเบื้องต้น นักบัญชีส่งงบมาต้องดูอะไร?</h2>
+  <p class="muted">ZeroToProfit SS4 EP.10 · ประโยคแรกของคลิป: <b>“อย่าเซ็นอย่างเดียว ช่วยเปิดดูก่อน”</b> · เหมาะกับบทนี้ที่ถามว่า “ร้านมีกำไร แต่ทำไมเงินไม่เพิ่ม”</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=rY_T_imgkOE" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=rY_T_imgkOE</small>
+  </div>
+  <p style="margin-top:12px"><b>สิ่งที่ได้ยินในคลิป</b> (จากบทบรรยายอัตโนมัติ)</p>
+  <table class="facts">
+    <tr><td class="k">งบกำไรขาดทุน</td><td>เจ้าของส่วนใหญ่ดูแค่ “บรรทัดสุดท้าย” · ต้องถามว่ากำไรมาจากไหน: ตั้งราคาดีจริง หรือ “ลืมคิด” บางอย่าง เช่น เงินเดือนตัวเอง ค่าเสื่อมของที่ซื้อมา ค่าเช่าทรัพย์สินของตัวเอง</td></tr>
+    <tr><td class="k">รู้ได้อย่างไรว่าเหมาะสม</td><td>① เทียบกับธุรกิจเดียวกัน/คู่แข่ง (กำไรขั้นต้นปกติเท่าไหร่) ② เทียบกับตัวเองปีก่อน ③ เทียบกับความรู้สึก — “ปีนี้เหนื่อย ขายดี แต่ยอดขายน้อยกว่าปีก่อน = แปลก มีอะไรที่เราไม่รู้”</td></tr>
+    <tr><td class="k">ถามนักบัญชี</td><td>ขอดูไส้ใน: รายได้มาจากสินค้าอะไรหลัก ค่าใช้จ่ายก้อนใหญ่คืออะไร · ดูหมายเหตุประกอบงบ · ถ้านักบัญชีตอบไม่ได้ว่าทำไมตัวเลขเปลี่ยน “เปลี่ยนนักบัญชี”</td></tr>
+    <tr><td class="k">งบแสดงฐานะการเงิน</td><td>งบที่ “เคยเห็นแต่ไม่เคยอ่าน” · สินทรัพย์หลัก: เงินสด สินค้า ลูกหนี้ ที่ดิน/อาคาร/อุปกรณ์ — มากไม่ได้แปลว่าดี: ลูกหนี้มากอาจเก็บไม่ได้ สินค้ามากอาจขายไม่ออก อุปกรณ์มากแต่ไม่ได้ใช้</td></tr>
+    <tr><td class="k">หนี้สิน</td><td>มีหนี้ได้ถ้าจ่ายไหวและสร้างรายได้ · แต่ถ้าเปิดมาเจอ “ยืมเงินกรรมการ” เต็มไปหมด = สัญญาณว่าบริหารเงินไม่ดี ต้องถาม</td></tr>
+    <tr><td class="k">2 มุมมอง</td><td>งบกำไรขาดทุน = เราบริหารเก่งไหม · งบฐานะการเงิน = บริษัทรวยขึ้นไหม · “ทำงานเก่งแล้วต้องมีเงินเก็บด้วย”</td></tr>
+    <tr><td class="k">ใช้ตัดสินใจ</td><td>จะซื้อเครื่องจักร: ดูเงินสดพอไหม → รายได้จะเพิ่มเท่าไหร่ → คุ้มไหม · ปีถัดไปกลับมาดูว่าตัดสินใจถูกหรือผิด</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · กำไรที่ “ลืมคิด”</h3>
+  <h2>ร้านชานมของเราแสดงกำไร 15,000 บาท/เดือน — ใส่สิ่งที่ลืมคิดแล้วดูว่าเหลือเท่าไหร่</h2>
+  <p class="muted"><b>ตัวเลขสมมติ</b> ขาย 2,500 แก้ว/เดือน แก้วละ 45 บาท · ต้นทุนวัตถุดิบ+แก้ว 18 บาท/แก้ว · ค่าเช่า+น้ำไฟ 12,500 · ค่าแรงลูกจ้าง 40,000</p>
+  <div class="sl"><div class="lab"><span>เงินเดือนเจ้าของ (ที่ยังไม่เคยจ่ายให้ตัวเอง)</span><b id="v1">0</b></div><input id="r1" type="range" min="0" max="25000" step="500" value="0"></div>
+  <div class="sl"><div class="lab"><span>ค่าเสื่อมเครื่องชง/ตู้เย็น (ซื้อ 60,000 ใช้ 5 ปี ≈ 1,000/เดือน)</span><b id="v2">0</b></div><input id="r2" type="range" min="0" max="3000" step="250" value="0"></div>
+  <div class="sl"><div class="lab"><span>ค่าเช่าพื้นที่หน้าบ้านตัวเองที่ไม่เคยคิด</span><b id="v3">0</b></div><input id="r3" type="range" min="0" max="8000" step="500" value="0"></div>
+  <table class="pl">
+    <tr><td>รายได้ (2,500 × 45)</td><td class="n">112,500</td></tr>
+    <tr><td>ต้นทุนวัตถุดิบ (2,500 × 18)</td><td class="n">−45,000</td></tr>
+    <tr><td>ค่าเช่า น้ำไฟ ค่าแรงลูกจ้าง</td><td class="n">−52,500</td></tr>
+    <tr><td>สิ่งที่ลืมคิด</td><td class="n" id="forgot">0</td></tr>
+    <tr class="tot"><td>กำไรจริง</td><td class="n" id="real">15,000</td></tr>
+    <tr><td>ต้นทุนรวมต่อแก้ว (ทุกอย่าง ÷ 2,500)</td><td class="n" id="unit">39.00</td></tr>
+  </table>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · อ่านงบฐานะการเงิน</h3>
+  <h2>แตะ 3 รายการที่ควร “ถามนักบัญชี” ก่อนเซ็น</h2>
+  <p class="muted"><b>ตัวเลขสมมติ</b> ร้านเดียวกัน เทียบปีก่อน/ปีนี้ · คลิปบอกว่า “มาก” ไม่ได้แปลว่าดีเสมอ</p>
+  <table class="bs" id="bs">
+    <tr><th>รายการ</th><th class="n">ปีก่อน</th><th class="n">ปีนี้</th></tr>
+  </table>
+  <div class="fb" id="fb2"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk2">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · ความรู้สึก vs ตัวเลข และการตัดสินใจ</h3>
+  <h2>เจ้าของบอก “ปีนี้เหนื่อยมาก ลูกค้าแน่นทุกวัน” แต่งบบอกยอดขายต่ำกว่าปีก่อน 8% — ควรคิดอย่างไร?</h2>
+  <div id="q3">
+    <button class="choice" type="button">งบผิดแน่ ๆ เพราะเจ้าของอยู่หน้าร้านทุกวันย่อมรู้ดีกว่า</button>
+    <button class="choice" data-ok="1" type="button">ถือเป็นสัญญาณว่า “มีอะไรที่เราไม่รู้” — ขอไส้ในจากนักบัญชี: ขายแก้วมากขึ้นแต่ราคาเฉลี่ยลดเพราะโปร? ยอดบางช่องทางไม่ได้ลงบัญชี? แล้วค่อยสรุป</button>
+    <button class="choice" type="button">ไม่ต้องสนใจ เพราะตัวเลขปีเดียวบอกอะไรไม่ได้</button>
+  </div>
+  <p style="margin-top:14px"><b>จะซื้อเครื่องชงอัตโนมัติ 80,000 บาท</b> คาดว่าขายเพิ่ม 300 แก้ว/เดือน · กำไรต่อแก้วหลังต้นทุนผันแปร 27 บาท · เงินสดในบัญชี 95,000</p>
+  <div class="calc">
+    <div><label>ราคาเครื่อง</label><input id="m1" type="number" value="80000"></div>
+    <div><label>แก้วที่ขายเพิ่ม/เดือน</label><input id="m2" type="number" value="300"></div>
+    <div><label>กำไรต่อแก้ว</label><input id="m3" type="number" value="27"></div>
+    <div><label>เงินสดที่มี</label><input id="m4" type="number" value="95000"></div>
+  </div>
+  <div class="calc">
+    <div><label>กำไรเพิ่ม/เดือน</label><div class="big" id="o1">—</div></div>
+    <div><label>คืนทุนใน</label><div class="big" id="o2">—</div></div>
+    <div><label>เงินสดเหลือหลังซื้อ</label><div class="big" id="o3">—</div></div>
+  </div>
+  <div id="q3b">
+    <button class="choice" type="button">ซื้อเลย เงินพอ และมีกำไรเพิ่ม</button>
+    <button class="choice" data-ok="1" type="button">คำนวณแล้วคืนทุน ~10 เดือน แต่ซื้อแล้วเงินสดเหลือ 15,000 ไม่พอหมุน 1 เดือน — ควรรอเก็บเงินเพิ่ม หรือหาเครื่องถูกกว่า/ผ่อน แล้วปีหน้ากลับมาดูว่าขายเพิ่มจริงไหม</button>
+    <button class="choice" type="button">ไม่ซื้อ เพราะการลงทุนทุกอย่างเสี่ยง</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · งบกำไรขาดทุนประมาณการของกลุ่ม</h3>
+  <h2>ใส่ตัวเลขธุรกิจกลุ่ม 1 เดือน แล้วดูว่าราคาที่ตั้งไว้ “ไม่ขาดทุน” จริงไหม</h2>
+  <p class="muted">อย่าลืมใส่ค่าตอบแทนสมาชิกและค่าเสื่อมอุปกรณ์ เหมือนที่คลิปเตือน</p>
+  <div class="calc">
+    <div><label>ราคาขายต่อชิ้น</label><input id="g1" type="number" value="0"></div>
+    <div><label>จำนวนที่คาดว่าขายได้/เดือน</label><input id="g2" type="number" value="0"></div>
+    <div><label>ต้นทุนผันแปรต่อชิ้น</label><input id="g3" type="number" value="0"></div>
+    <div><label>ค่าใช้จ่ายคงที่/เดือน (รวมค่าตอบแทน+ค่าเสื่อม)</label><input id="g4" type="number" value="0"></div>
+  </div>
+  <div class="calc">
+    <div><label>กำไรประมาณการ/เดือน</label><div class="big" id="gp">—</div></div>
+    <div><label>ต้องขายกี่ชิ้นถึงคุ้มทุน</label><div class="big" id="gbe">—</div></div>
+  </div>
+  <textarea id="ref" placeholder="สิ่งที่กลุ่มเคย “ลืมคิด” ในราคาของเรา: ...&#10;ถ้าขายได้แค่ครึ่งหนึ่งของที่คาด จะทำอย่างไร: ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 14, no: 4, slug: 'ch14-clip', title: 'อย่าเซ็นอย่างเดียว: อ่านงบให้เจอสิ่งที่ลืมคิด', goal: 'หากำไรจริงหลังใส่ต้นทุนที่มักลืม อ่านงบฐานะการเงินให้เจอจุดที่ต้องถาม และใช้ตัวเลขตัดสินใจลงทุน' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+let hit1=false;
+const upd=()=>{const a=+$('#r1').value,b=+$('#r2').value,c=+$('#r3').value;$('#v1').textContent=Lab.fmt(a);$('#v2').textContent=Lab.fmt(b);$('#v3').textContent=Lab.fmt(c);const f=a+b+c,real=15000-f;$('#forgot').textContent='−'+Lab.fmt(f);$('#real').textContent=Lab.fmt(real);$('#real').classList.toggle('neg',real<0);$('#unit').textContent=((45000+52500+f)/2500).toFixed(2);
+ if(f>0&&!hit1){hit1=true;Lab.score('forgot',1,1);show('#go1')}
+ Lab.feedback($('#fb1'),f>0?(real<0?false:null):null,f===0?'ยังไม่ได้ใส่อะไรเลย — ลองใส่เงินเดือนตัวเองดูก่อน':real<0?'ขาดทุน '+Lab.fmt(-real)+' บาท/เดือน — ร้านนี้ “ดูเหมือนกำไร” เพราะเจ้าของทำงานฟรีและใช้ของตัวเองฟรี ต้นทุนจริงต่อแก้ว '+((45000+52500+f)/2500).toFixed(2)+' บาท ขายแก้วละ 45 ไม่พอ':'เหลือกำไรจริง '+Lab.fmt(real)+' — ต้นทุนต่อแก้วรวมทุกอย่าง '+((45000+52500+f)/2500).toFixed(2)+' บาท เทียบกับราคา 45 บาท')};
+$$('#r1,#r2,#r3').forEach(r=>r.oninput=upd);upd();
+$('#go1').onclick=()=>Lab.next();
+const ROWS=[['เงินสด',40000,55000,0],['ลูกหนี้การค้า',12000,48000,1],['สินค้าคงเหลือ (วัตถุดิบ)',15000,46000,1],['อุปกรณ์ (เครื่องชง ตู้เย็น)',60000,58000,0],['เจ้าหนี้การค้า',10000,12000,0],['เงินกู้ยืมจากกรรมการ',0,70000,1]];
+const bs=$('#bs');ROWS.forEach((r,i)=>{const tr=Lab.h('tr',{'data-i':i},'<td>'+r[0]+'</td><td class="n">'+Lab.fmt(r[1])+'</td><td class="n">'+Lab.fmt(r[2])+'</td>');tr.onclick=()=>tr.classList.toggle('pick');bs.append(tr)});
+$('#chk2').onclick=()=>{const picks=$$('#bs tr.pick');if(picks.length!==3)return Lab.feedback($('#fb2'),null,'เลือกให้ครบ 3 รายการ (ตอนนี้ '+picks.length+')');
+ let ok=0;$$('#bs tr[data-i]').forEach(tr=>{tr.classList.remove('ok','no');if(tr.classList.contains('pick')){const r=ROWS[+tr.dataset.i][3]===1;tr.classList.add(r?'ok':'no');if(r)ok++}});
+ Lab.score('bs',ok,3);Lab.feedback($('#fb2'),ok===3,'ถูก '+ok+'/3 — ลูกหนี้โต 4 เท่า (เก็บได้จริงไหม) · วัตถุดิบโต 3 เท่า (ขายไม่ออก? ซื้อเกิน?) · เงินกู้กรรมการ 70,000 ที่เจ้าของจำไม่ได้ว่าให้กู้ (คลิปบอกเป็นสัญญาณใหญ่) · ส่วนเงินสดเพิ่มและเจ้าหนี้ปกติไม่น่ากังวล');
+ if(ok===3){$('#chk2').classList.add('hide');show('#go2')}};
+$('#go2').onclick=()=>Lab.next();
+let a=false,b=false;const gate=()=>{if(a&&b)show('#go3')};
+Lab.mcq($('#q3'),{key:'feel',explain:'คลิปใช้ตัวอย่างนี้ตรง ๆ: ความรู้สึกกับตัวเลขไม่ตรงกัน = ต้องมีอะไรที่เราไม่รู้ ทางออกคือขอรายละเอียดจากนักบัญชี ไม่ใช่เชื่อข้างใดข้างหนึ่งทันที',onDone:()=>{a=true;gate()}});
+const mc=()=>{const p=+$('#m1').value||0,q=+$('#m2').value||0,g=+$('#m3').value||0,c=+$('#m4').value||0;const add=q*g;$('#o1').textContent=Lab.fmt(add)+' บาท';$('#o2').textContent=add>0?(p/add).toFixed(1)+' เดือน':'—';const left=c-p;$('#o3').textContent=Lab.fmt(left)+' บาท';$('#o3').style.color=left<30000?'var(--red)':'var(--amber)'};
+$$('#m1,#m2,#m3,#m4').forEach(i=>i.oninput=mc);mc();
+Lab.mcq($('#q3b'),{key:'machine',explain:'คลิปให้ดู 3 อย่าง: เงินสดพอไหม → รายได้เพิ่มเท่าไหร่ → คุ้มไหม · ตัวเลขคุ้ม (คืนทุน ~10 เดือน) แต่เงินสดหลังซื้อเหลือน้อยเกินกว่าจะหมุนร้าน จึงเป็นเรื่อง “เมื่อไหร่/อย่างไร” ไม่ใช่ “ซื้อ/ไม่ซื้อ”',onDone:()=>{b=true;gate()}});
+$('#go3').onclick=()=>Lab.next();
+const gc=()=>{const p=+$('#g1').value||0,q=+$('#g2').value||0,v=+$('#g3').value||0,f=+$('#g4').value||0;const prof=(p-v)*q-f;$('#gp').textContent=Lab.fmt(prof)+' บาท';$('#gp').style.color=prof<0?'var(--red)':'var(--amber)';$('#gbe').textContent=p>v?Math.ceil(f/(p-v))+' ชิ้น':'ราคาต่ำกว่าต้นทุนผันแปร'};
+$$('#g1,#g2,#g3,#g4').forEach(i=>i.oninput=gc);gc();
+$('#fin').onclick=()=>Lab.finish({takeaway:'กำไรบรรทัดสุดท้ายอาจเป็นภาพลวง ถ้าลืมเงินเดือนตัวเอง ค่าเสื่อม หรือค่าเช่าของตัวเอง<br>งบฐานะการเงินบอกว่า “รวยขึ้นไหม” — ลูกหนี้/สินค้า/เงินกู้กรรมการที่โตผิดปกติต้องถาม<br>ตัดสินใจลงทุนด้วย 3 คำถาม: เงินสดพอ รายได้เพิ่มเท่าไหร่ คุ้มเมื่อไหร่ แล้วกลับมาวัดผลปีหน้า',data:{real:$('#real').textContent,unit:$('#unit').textContent,projected:$('#gp').textContent,breakeven:$('#gbe').textContent,reflection:$('#ref').value.slice(0,600)}});
+window.__autoplay=()=>false;
+})();
+</script>

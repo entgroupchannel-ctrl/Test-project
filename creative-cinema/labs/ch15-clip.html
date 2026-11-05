@@ -1,0 +1,127 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts th{color:var(--muted);font:500 .85em var(--display)}
+.facts td.k{color:var(--amber);font-weight:600;white-space:nowrap}
+.case{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+.case p{margin:0 0 6px}
+.case select{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel);color:var(--cream);font:1em var(--body)}
+.case.ok{border-color:var(--green)} .case.no{border-color:var(--red)}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}
+.calc label{display:block;font-size:.85em;color:var(--muted)}
+.calc input{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel2);color:var(--cream);font:600 1.05em var(--body)}
+.big{font:700 1.4em var(--display);color:var(--amber)}
+.opt{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:10px 0}
+.opt button{text-align:left;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px;color:var(--cream);cursor:pointer;font:1em var(--body)}
+.opt button.on{border-color:var(--teal);background:#15302e}
+.opt b{display:block;color:var(--amber);font:700 1.2em var(--display);margin-top:6px}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (8 นาที)</h3>
+  <h2>ผ่าร่าง “Lemon law” กฎหมายเอาผิดสินค้าไม่ตรงปก</h2>
+  <p class="muted">THANTALK ฐานเศรษฐกิจ (17 มิ.ย. 69) สรุปร่าง พ.ร.บ.ความรับผิดเพื่อความชำรุดบกพร่องของสินค้า ที่ ครม. เห็นชอบ · คำถามของบทนี้: <b>ก่อนกฎหมายจะบังคับ เราจะทำอย่างไรกับลูกค้าที่ได้ของไม่ดี</b></p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=UHsmaDns6vU" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=UHsmaDns6vU</small>
+  </div>
+  <p style="margin-top:12px"><b>สิ่งที่ได้ยินในคลิป</b> (จากบทบรรยายอัตโนมัติ · ณ วันออกอากาศเป็น “ร่าง” ที่รอประกาศในราชกิจจานุเบกษา — ตัวเลขอาจเปลี่ยนในฉบับจริง ให้ตรวจสอบก่อนอ้างอิง)</p>
+  <table class="facts">
+    <tr><td class="k">ครอบคลุม</td><td>ผู้ซื้อ–ผู้ขายสินค้าทั่วไป ทั้ง B2C และ B2B รวมเช่าซื้อ/ไฟแนนซ์ · ไม่รวมสินค้ามือสอง สัตว์มีชีวิต และสินค้าบางประเภทตามกฎกระทรวง</td></tr>
+    <tr><td class="k">บทสันนิษฐาน</td><td>ถ้าชำรุดภายในระยะที่กำหนด ให้ถือว่า “ชำรุดตั้งแต่วันส่งมอบ” — ภาระอยู่ที่ผู้ขาย/ผู้ผลิต (สินค้าทั่วไป 6 เดือน · รถยนต์ 1 ปี · จักรยานยนต์ 6 เดือน)</td></tr>
+    <tr><td class="k">สิทธิ์เยียวยา 4 ขั้น</td><td>ซ่อม → เปลี่ยน → ลดราคา → เลิกสัญญา ตามความรุนแรง · ซ่อมต้องเสร็จใน 60 วัน (ทั่วไป/จักรยานยนต์) หรือ 90 วัน (รถยนต์) ไม่ทันผู้ซื้อขอลดราคา/เลิกสัญญา/ค่าเสียหายได้</td></tr>
+    <tr><td class="k">เปลี่ยนทันที</td><td>สินค้าทั่วไป: ข้อบกพร่องสำคัญภายใน 7 วัน (อายุความ 1 ปี) · รถยนต์ 1 ปี/10,000 กม. · จักรยานยนต์ 6 เดือน/5,000 กม. (อายุความ 2 ปี) · เครื่องใช้ไฟฟ้า/อิเล็กทรอนิกส์: ภายใน 14 วัน ดูแล 6 เดือน (อายุความ 2 ปี)</td></tr>
+    <tr><td class="k">ต่างประเทศ</td><td>สหรัฐฯ มี Lemon law เฉพาะรถยนต์ · สหภาพยุโรปใช้ “legal guarantee” ผู้ขายรับผิดชอบอย่างน้อย 2 ปี เว้นแต่พิสูจน์ได้ว่าลูกค้าทำเสียเอง</td></tr>
+    <tr><td class="k">ที่มา</td><td>ผู้ดำเนินรายการบอกว่าปัญหา “ของไม่ตรงปก” เจอเยอะมากในการซื้อขายออนไลน์ จนกลายเป็นหมวดหนึ่งของเรื่องร้องเรียน</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · ลูกค้ามีสิทธิ์อะไร (ตามร่างในคลิป)</h3>
+  <h2>เลือกการเยียวยาที่ร่างกฎหมายให้ในแต่ละกรณี</h2>
+  <div id="cases"></div>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk1">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · ถูกกฎหมาย แต่ถูกต้องหรือเปล่า</h3>
+  <h2>ร้านของเรา (ขายกระเป๋าผ้าทำมือออนไลน์) เจอ 5 สถานการณ์ — จัดแต่ละข้อเข้าช่อง</h2>
+  <p class="muted">ใช้กรอบจากสไลด์บทนี้: <b>ผิดกฎหมาย</b> / <b>ถูกกฎหมายแต่ไม่ถูกต้อง</b> (ทำลายความไว้ใจ) / <b>ถูกทั้งสองอย่าง</b></p>
+  <div id="cases2"></div>
+  <div class="fb" id="fb2"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk2">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · ความไว้ใจคิดเป็นเงินได้ไหม</h3>
+  <h2>ลูกค้าได้กระเป๋าสายขาดในวันที่ 9 (เกิน 7 วัน) — รับเปลี่ยนหรือไม่?</h2>
+  <p class="muted"><b>ตัวเลขสมมติ</b> ลองเปลี่ยนดู · ความไว้ใจไม่ใช่แค่ตัวเลข แต่ตัวเลขช่วยให้เห็นว่า “ใจดี” กับ “คุ้ม” มักเป็นเรื่องเดียวกัน</p>
+  <div class="calc">
+    <div><label>ต้นทุนเปลี่ยนใบใหม่ (บาท)</label><input id="c1" type="number" value="180"></div>
+    <div><label>กำไรต่อใบ (บาท)</label><input id="c2" type="number" value="150"></div>
+    <div><label>ลูกค้าประจำซื้อกี่ใบ/ปี</label><input id="c3" type="number" value="3"></div>
+    <div><label>บอกต่อเพื่อนที่มาซื้อ (คน)</label><input id="c4" type="number" value="2"></div>
+  </div>
+  <div class="opt" id="opts">
+    <button type="button" data-k="a">ไม่เปลี่ยน — “เกิน 7 วันตามกฎหมาย”<b>?</b></button>
+    <button type="button" data-k="b">เปลี่ยนให้ และขอโทษ<b>?</b></button>
+  </div>
+  <p class="muted" id="n3"></p>
+  <div id="q3">
+    <button class="choice" type="button">ไม่เปลี่ยน เพราะกฎหมายคุ้มครองร้านแล้ว การเปลี่ยนคือการยอมเสียเปรียบ</button>
+    <button class="choice" data-ok="1" type="button">เปลี่ยน — ต้นทุน 180 บาทแลกกับลูกค้าที่กลับมาและบอกต่อ ซึ่งมีค่ามากกว่าหลายเท่า และสายขาดใน 9 วันก็เป็นความบกพร่องของเราจริง</button>
+    <button class="choice" type="button">เปลี่ยนให้เฉพาะถ้าลูกค้าขู่ว่าจะรีวิวแย่</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · นโยบายรับประกันของกลุ่ม</h3>
+  <h2>เขียนนโยบาย 3 บรรทัดที่กลุ่มจะติดหน้าร้าน/หน้าเพจ — ให้ “ดีกว่าที่กฎหมายบังคับ” อย่างน้อย 1 ข้อ</h2>
+  <p class="muted">เช่น: เปลี่ยนได้ภายใน … วัน · ถ้าเป็นความผิดเรา รับคืนไม่จำกัดเวลา · ภาพสินค้าถ่ายจากของจริงทุกใบ · ตอบเรื่องร้องเรียนภายใน … ชั่วโมง</p>
+  <textarea id="ref" placeholder="1) ...&#10;2) ...&#10;3) ...&#10;ทางแยกที่กลุ่มเคยเจอหรือคาดว่าจะเจอ และจะตัดสินใจอย่างไร: ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 15, no: 4, slug: 'ch15-clip', title: 'ก่อนกฎหมายบังคับ: Lemon law กับความไว้ใจของลูกค้า', goal: 'รู้สิทธิ์ของลูกค้าตามร่างกฎหมาย แยก “ถูกกฎหมาย” จาก “ถูกต้อง” และออกแบบนโยบายรับประกันที่สร้างความไว้ใจ' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+const REM=['ซ่อม (เสร็จใน 60/90 วัน)','ขอเปลี่ยนสินค้าทันที','ลดราคา หรือเลิกสัญญา','ไม่อยู่ในความคุ้มครองของร่างนี้'];
+const C1=[['ซื้อหม้อทอดไร้น้ำมัน ใช้วันที่ 10 แล้วไม่ทำงาน (เครื่องใช้ไฟฟ้า ภายใน 14 วัน)',1],['ซื้อรถจักรยานยนต์ใหม่ 3 เดือน เบรกมีปัญหาเล็กน้อย ร้านนัดซ่อม',0],['ส่งซ่อมสินค้าทั่วไปแล้ว ผ่านไป 75 วันยังไม่เสร็จ',2],['ซื้อโทรศัพท์มือสองจากร้าน ใช้ 2 เดือนแบตเสื่อม',3],['ซื้อกระเป๋าผ้าทั่วไป ซิปพังวันที่ 5 (ข้อบกพร่องสำคัญ ภายใน 7 วัน)',1]];
+const box=$('#cases');C1.forEach((c,i)=>{const d=Lab.h('div',{class:'case'},'<p>'+c[0]+'</p>');const s=Lab.h('select',{},'<option value="">— เลือก —</option>'+REM.map((t,k)=>'<option value="'+k+'">'+t+'</option>').join(''));d.append(s);box.append(d)});
+$('#chk1').onclick=()=>{const sels=$$('#cases select');if(sels.some(s=>s.value===''))return Lab.feedback($('#fb1'),null,'ยังเลือกไม่ครบ');
+ let ok=0;sels.forEach((s,i)=>{const r=+s.value===C1[i][1];s.parentElement.classList.remove('ok','no');s.parentElement.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('rights',ok,C1.length);Lab.feedback($('#fb1'),ok===C1.length,'ถูก '+ok+'/'+C1.length+' — เครื่องใช้ไฟฟ้า 14 วัน/สินค้าทั่วไป 7 วัน = เปลี่ยนทันที · ปัญหาเล็กในระยะคุ้มครอง = ซ่อม · ซ่อมเกิน 60 วัน = ลดราคา/เลิกสัญญา · มือสองไม่อยู่ในร่างนี้ (แต่ร้านที่ดีก็ดูแลได้)');
+ if(ok===C1.length){$('#chk1').classList.add('hide');show('#go1')}};
+$('#go1').onclick=()=>Lab.next();
+const CAT=['ผิดกฎหมาย','ถูกกฎหมาย แต่ไม่ถูกต้อง','ถูกทั้งกฎหมายและถูกต้อง'];
+const C2=[['แต่งรูปสินค้าจนสีและขนาดต่างจากของจริงมาก เพื่อให้ขายดี',0],['ของมีตำหนิเล็กน้อย บอกลูกค้าก่อนและลดราคาให้เลือกเอง',2],['ลูกค้าได้ของสายขาดวันที่ 8 ร้านตอบว่า “เกิน 7 วัน ไม่รับผิดชอบ” ทั้งที่รู้ว่าล็อตนั้นเย็บไม่ดี',1],['จ้างคนเขียนรีวิว 5 ดาวโดยไม่เคยซื้อ',0],['รับคืนแม้เกินกำหนด เพราะตรวจแล้วเป็นความผิดพลาดของร้านเอง',2]];
+const box2=$('#cases2');C2.forEach((c,i)=>{const d=Lab.h('div',{class:'case'},'<p>'+c[0]+'</p>');const s=Lab.h('select',{},'<option value="">— เลือก —</option>'+CAT.map((t,k)=>'<option value="'+k+'">'+t+'</option>').join(''));d.append(s);box2.append(d)});
+$('#chk2').onclick=()=>{const sels=$$('#cases2 select');if(sels.some(s=>s.value===''))return Lab.feedback($('#fb2'),null,'ยังเลือกไม่ครบ');
+ let ok=0;sels.forEach((s,i)=>{const r=+s.value===C2[i][1];s.parentElement.classList.remove('ok','no');s.parentElement.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('ethics',ok,C2.length);Lab.feedback($('#fb2'),ok===C2.length,'ถูก '+ok+'/'+C2.length+' — ภาพหลอกและรีวิวปลอมผิดกฎหมายคุ้มครองผู้บริโภคอยู่แล้ว · ข้อ “เกิน 7 วัน” คือทางแยกของบทนี้: กฎหมายอาจเข้าข้างเรา แต่เรารู้ว่าของบกพร่องจริง — นี่คือที่ที่ความไว้ใจถูกสร้างหรือถูกทำลาย');
+ if(ok===C2.length){$('#chk2').classList.add('hide');show('#go2')}};
+$('#go2').onclick=()=>Lab.next();
+let seen={},q3=false;const gate=()=>{if(q3&&seen.a&&seen.b)show('#go3')};
+const vals=()=>({c:+$('#c1').value||0,p:+$('#c2').value||0,n:+$('#c3').value||0,f:+$('#c4').value||0});
+const R={a:()=>{const v=vals();return 'ประหยัด '+Lab.fmt(v.c)+' บาทวันนี้ — แต่เสี่ยงเสียลูกค้าที่จะทำกำไรให้ '+Lab.fmt(v.p*v.n)+' บาท/ปี และเพื่อนอีก '+v.f+' คน (≈ '+Lab.fmt(v.p*v.n*v.f)+' บาท/ปี) รวมถึงรีวิวที่คนอื่นจะอ่าน'},b:()=>{const v=vals();return 'จ่าย '+Lab.fmt(v.c)+' บาทวันนี้ — รักษากำไร ≈ '+Lab.fmt(v.p*v.n*(1+v.f))+' บาท/ปี จากลูกค้าคนนี้และเพื่อนที่เขาพามา'}};
+$$('#opts button').forEach(b=>b.onclick=()=>{b.classList.add('on');b.querySelector('b').textContent=R[b.dataset.k]();seen[b.dataset.k]=1;gate()});
+$$('#c1,#c2,#c3,#c4').forEach(i=>i.oninput=()=>$$('#opts button.on').forEach(b=>b.querySelector('b').textContent=R[b.dataset.k]()));
+Lab.mcq($('#q3'),{key:'trust',explain:'สไลด์บทนี้เรียกความไว้ใจว่า “ทุนที่สำคัญที่สุด” — กฎหมายกำหนดขั้นต่ำ แต่ร้านเล็กที่ไม่มีงบโฆษณา อยู่ได้ด้วยลูกค้าที่กลับมาและบอกต่อ · การเปลี่ยนให้เฉพาะเมื่อถูกขู่ คือการสอนลูกค้าให้ขู่',onDone:()=>{q3=true;gate()}});
+$('#go3').onclick=()=>Lab.next();
+$('#fin').onclick=()=>Lab.finish({takeaway:'กฎหมาย (เช่น Lemon law) คือขั้นต่ำที่ทุกร้านต้องทำ · ความไว้ใจเกิดในช่องว่างที่กฎหมายไม่บังคับ<br>ทางแยกจริง ๆ คือตอนที่ “กฎหมายเข้าข้างเรา แต่เรารู้ว่าเราผิด”<br>นโยบายที่ดีกว่ากฎหมายและทำได้จริง คือโฆษณาที่ถูกที่สุดของร้านเล็ก',data:{policy:$('#ref').value.slice(0,700)}});
+window.__autoplay=()=>false;
+})();
+</script>
