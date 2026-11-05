@@ -1,0 +1,135 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts th{color:var(--muted);font:500 .85em var(--display)}
+.chip{display:inline-block;background:var(--panel);border:1.5px solid var(--line);border-radius:999px;padding:7px 12px;margin:4px 4px 0 0;cursor:pointer;font-size:.9em}
+.chip.on{border-color:var(--teal);background:#15302e}
+.chip.ok{border-color:var(--green)} .chip.no{border-color:var(--red)}
+.tray{min-height:48px;margin:8px 0}
+.bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:10px 0}
+.bin{background:var(--panel2);border:1.5px dashed var(--line);border-radius:12px;padding:10px;min-height:110px}
+.bin h4{margin:0 0 6px;font:600 1em var(--display);color:var(--amber)}
+.journey{display:flex;flex-direction:column;gap:6px;margin:10px 0}
+.journey .st{display:flex;align-items:center;gap:10px;background:var(--panel2);border:1.5px solid var(--line);border-radius:10px;padding:8px 10px}
+.journey .st b{color:var(--amber);min-width:1.6em}
+.journey .st button{margin-left:auto;background:var(--panel);border:1.5px solid var(--line);color:var(--cream);border-radius:8px;padding:4px 8px;cursor:pointer}
+.journey .st.ok{border-color:var(--green)} .journey .st.no{border-color:var(--red)}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:10px 0}
+.calc label{display:block;font-size:.85em;color:var(--muted)}
+.calc input{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel2);color:var(--cream);font:600 1.05em var(--body)}
+.big{font:700 1.4em var(--display);color:var(--amber)}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (13 นาที)</h3>
+  <h2>ขนมไทยยายปู — ชิ้นละ 10 บาท ขายหมดใน 30 นาที</h2>
+  <p class="muted">Kong Story EP.488 สัมภาษณ์ “น้องเดีย” อายุ 22 ลูกสาวยายปู ที่ขายขนมไทยกับพี่น้อง 5 คนในตลาดนัด · ไม่ต้องจดตัวเลข ให้สังเกตว่า “ลูกค้าคือใคร และเขาซื้ออย่างไร”</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=IHnDfy2wsoo" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=IHnDfy2wsoo</small>
+  </div>
+  <p style="margin-top:12px"><b>สิ่งที่ได้ยินในคลิป</b> (จากบทบรรยายอัตโนมัติ — คำพูดของผู้ให้สัมภาษณ์ ยังไม่ได้ตรวจสอบ)</p>
+  <table class="facts">
+    <tr><th>เรื่อง</th><th>ที่คลิปบอก</th></tr>
+    <tr><td>สินค้า</td><td>ขนมไทยกว่า 40 หน้า ใส่กระทงใบตองสด ชิ้นละ 10 บาท 5 แถม 1 · ขายดีสุดคือข้าวเหนียวหน้า (สังขยา ปลา กุ้ง กระฉีก) ประมาณ 700 ชิ้น/วัน · ขนมประจำร้าน “ขนมไข่ปู” คิดเอง</td></tr>
+    <tr><td>จุดเริ่ม</td><td>แม่ขายข้าวเหนียวสังขยาเป็นห่อใหญ่ 50–70 บาท ลูกสาวเสนอให้ทำชิ้นเล็ก เพราะ “อยากกินอันนั้นด้วย อันนี้ด้วย” · เริ่มขายที่มหาวิทยาลัย พอโควิดย้ายมาตลาด</td></tr>
+    <tr><td>ปรับตามลูกค้า</td><td>ตอนแรกใช้กระทงแห้ง ลูกค้าบอกมีกลิ่นใบตองแห้ง → เปลี่ยนเป็นใบตองสด</td></tr>
+    <tr><td>ยอดขาย</td><td>หน้าร้าน 2,000–3,000 ชิ้น/วัน ขาย 4 วัน/สัปดาห์ · รวมขายส่ง ~18,000–20,000 ชิ้น/สัปดาห์ หรือ ~80,000 ชิ้น/เดือน</td></tr>
+    <tr><td>เวลา</td><td>ลูกค้าบางคนมารอตั้งแต่ตลาดเปิด 15:00 · ร้านตั้ง 17:30 เริ่มขาย 18:00 · หมดประมาณ 18:30</td></tr>
+    <tr><td>ทีม</td><td>พี่น้อง 5 คน อายุ 12–26 · พี่คนโตเตรียมของ แต่ละคนรับผิดชอบขนมคนละ ~10 อย่าง ต้องเสร็จก่อน 14:00</td></tr>
+    <tr><td>ช่องทาง</td><td>หน้าร้านตลาด (ศ–อา) · ตลาดนัดเซียร์รังสิต (จ) · เพจและ TikTok “ขนมไทยยายปู”</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · ลูกค้าตัวจริง</h3>
+  <h2>“ขายให้ทุกคน เท่ากับไม่ได้ขายให้ใคร” — ร้านนี้ขายให้ใคร?</h2>
+  <p class="muted">แตะชิปแล้วแตะช่อง: ข้อไหนเป็น <b>สิ่งที่ลูกค้าต้องการ</b> (Insight) และข้อไหนเป็น <b>สิ่งที่ร้านทำเพื่อตอบ</b> (Action)</p>
+  <div class="tray" id="tray1"></div>
+  <div class="bins" id="bins1">
+    <div class="bin" data-c="I"><h4>ลูกค้าต้องการ (Insight)</h4></div>
+    <div class="bin" data-c="A"><h4>ร้านทำเพื่อตอบ (Action)</h4></div>
+  </div>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk1">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · Customer Journey</h3>
+  <h2>เรียงลำดับการเดินทางของลูกค้า 1 คนในคลิป</h2>
+  <p class="muted">แตะปุ่ม ▲ เพื่อเลื่อนขั้นขึ้น จนได้ลำดับที่ถูกต้อง แล้วตรวจ</p>
+  <div class="journey" id="jr"></div>
+  <div class="fb" id="fb2"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk2">ตรวจลำดับ</button><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · จุดที่ลูกค้าหลุด และตัวเลขที่ต้องคิดเอง</h3>
+  <h2>ถ้าร้านไม่เปลี่ยนจากกระทงแห้งเป็นใบตองสด จะเกิดอะไรขึ้นในการเดินทางของลูกค้า?</h2>
+  <div id="q3">
+    <button class="choice" type="button">ไม่มีผล เพราะราคา 10 บาทถูกอยู่แล้ว</button>
+    <button class="choice" data-ok="1" type="button">ลูกค้าอาจหลุดตอน “ลองชิม → ซื้อซ้ำ/บอกต่อ” เพราะกลิ่นทำให้ประสบการณ์ไม่ดี แม้จะซื้อครั้งแรกไปแล้ว</button>
+    <button class="choice" type="button">ลูกค้าจะหลุดตอนเห็นโพสต์ เพราะมองเห็นกลิ่นจากรูป</button>
+  </div>
+  <p style="margin-top:14px"><b>พิธีกรคิดเร็ว ๆ ว่า 3,000 ชิ้น × 10 บาท = 30,000 บาท/วัน แต่น้องเดียบอก “ประมาณ 20,000 กว่า เพราะ 5 แถม 1”</b> ลองคำนวณเอง</p>
+  <div class="calc">
+    <div><label>ชิ้นที่ขายต่อวัน</label><input id="c1" type="number" value="3000"></div>
+    <div><label>ราคาต่อชิ้น (บาท)</label><input id="c2" type="number" value="10"></div>
+    <div><label>ซื้อกี่ชิ้นแถม 1</label><input id="c3" type="number" value="5"></div>
+    <div><label>รายรับจริงโดยประมาณ</label><div class="big" id="cout">—</div></div>
+  </div>
+  <p class="muted" id="cnote"></p>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · Persona ของธุรกิจกลุ่มเรา</h3>
+  <h2>เขียน Persona ลูกค้าตัวจริงของกลุ่ม 3 บรรทัด</h2>
+  <p class="muted">แบบเดียวกับที่ร้านยายปูรู้ว่าลูกค้า “อยากชิมหลายอย่างในงบน้อย มาตลาดช่วงเย็น” · เขียน: เขาเป็นใคร · เขาอยากได้อะไรจริง ๆ · เขาจะเจอเราที่ไหน</p>
+  <textarea id="ref" placeholder="1) ลูกค้าของเราคือ ...&#10;2) สิ่งที่เขาต้องการจริง ๆ คือ ...&#10;3) เขาจะเห็นเราครั้งแรกที่ ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 5, no: 4, slug: 'ch05-clip', title: 'ตามรอยลูกค้าร้านขนมไทยยายปู', goal: 'หาลูกค้าตัวจริงจากคลิป วาด Customer Journey และหาจุดที่ลูกค้าอาจหลุด' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+// step1
+const ITEMS=[['อยากกินอันนั้นด้วย อันนี้ด้วย ในงบน้อย','I'],['ทำชิ้นเล็ก 10 บาท 5 แถม 1','A'],['ไม่ชอบกลิ่นใบตองแห้ง','I'],['เปลี่ยนเป็นกระทงใบตองสด','A'],['ไม่อยากรอนานโดยไม่รู้เวลา','I'],['บอกเวลาเปิดชัด 17:30 และตั้งร้านให้ตรงเวลา','A']];
+let sel=null;const placed={};
+function tray(){const t=$('#tray1');t.innerHTML='';ITEMS.forEach((it,i)=>{if(placed[i]!=null)return;const c=Lab.h('span',{class:'chip'+(sel===i?' on':'')},it[0]);c.onclick=()=>{sel=sel===i?null:i;tray()};t.append(c)})}
+$$('#bins1 .bin').forEach(b=>b.onclick=()=>{if(sel==null)return;placed[sel]=b.dataset.c;const i=sel;sel=null;const c=Lab.h('span',{class:'chip'},ITEMS[i][0]);c.onclick=()=>{delete placed[i];c.remove();tray()};b.append(c);tray()});
+tray();
+$('#chk1').onclick=()=>{const left=ITEMS.length-Object.keys(placed).length;if(left){Lab.feedback($('#fb1'),null,'ยังวางไม่ครบ เหลืออีก '+left+' ข้อ');return}
+ let ok=0;$$('#bins1 .bin .chip').forEach(c=>{const i=ITEMS.findIndex(x=>x[0]===c.textContent);const r=placed[i]===ITEMS[i][1];c.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('insight',ok,ITEMS.length);Lab.feedback($('#fb1'),ok===ITEMS.length,'ถูก '+ok+'/'+ITEMS.length+' — ลูกค้าตัวจริงของร้านคือ “คนเดินตลาดช่วงเย็นที่อยากชิมขนมหลายอย่างในงบไม่กี่สิบบาท” ทุก Action ของร้านตอบ Insight นี้ ไม่ใช่ตอบ “ทุกคน”');$('#chk1').classList.add('hide');show('#go1')};
+$('#go1').onclick=()=>Lab.next();
+// step2 journey
+const STEPS=['เห็นร้านใน TikTok / เพจ หรือเพื่อนบอก','มาตลาดและรอหน้าร้านก่อนเวลาเปิด','ร้านเปิด 18:00 เลือกหลายอย่าง 10 บาท 5 แถม 1','ชิมที่บ้าน รสชาติดี ไม่มีกลิ่นใบตองแห้ง','กลับมาซื้อซ้ำสัปดาห์หน้า และบอกต่อ'];
+let order=[2,0,4,1,3];
+function draw(){const j=$('#jr');j.innerHTML='';order.forEach((k,pos)=>{const st=Lab.h('div',{class:'st'},'<b>'+(pos+1)+'</b><span>'+STEPS[k]+'</span>');const up=Lab.h('button',{type:'button'},'▲');up.disabled=pos===0;up.onclick=()=>{[order[pos-1],order[pos]]=[order[pos],order[pos-1]];draw()};st.append(up);j.append(st)})}
+draw();
+$('#chk2').onclick=()=>{let ok=0;$$('#jr .st').forEach((st,pos)=>{const r=order[pos]===pos;st.classList.add(r?'ok':'no');if(r)ok++});Lab.score('journey',ok===5?1:0,1);
+ Lab.feedback($('#fb2'),ok===5,ok===5?'ถูกต้อง — Journey: รู้จัก → มาถึง/รอ → ซื้อ → ใช้/ชิม → ซื้อซ้ำ/บอกต่อ แต่ละขั้นมีจุดที่ลูกค้าหลุดได้':'ยังไม่ครบ ถูก '+ok+'/5 ขั้น ลองคิดว่าลูกค้า “รู้จักร้านก่อน” แล้วจึง “มา” “ซื้อ” “ชิม” และสุดท้ายจึง “บอกต่อ”');
+ if(ok===5){$('#chk2').classList.add('hide');show('#go2')}};
+$('#go2').onclick=()=>Lab.next();
+// step3
+let q3done=false,calcdone=false;const gate=()=>{if(q3done&&calcdone)show('#go3')};
+Lab.mcq($('#q3'),{key:'drop',explain:'จุดหลุดไม่ได้อยู่แค่ตอน “ซื้อ” — ลูกค้าที่ซื้อแล้วแต่ประสบการณ์ไม่ดีจะไม่กลับมา และไม่บอกต่อ ซึ่งเป็นขั้นที่ทำให้ร้านนี้มีคนรอตั้งแต่ 15:00',onDone:()=>{q3done=true;gate()}});
+const calc=()=>{const n=+$('#c1').value||0,p=+$('#c2').value||0,k=+$('#c3').value||0;const per=k>0?p*k/(k+1):p;const rev=Math.round(n*per);$('#cout').textContent=Lab.fmt(rev)+' บาท';$('#cnote').textContent=k>0?'เพราะทุก '+(k+1)+' ชิ้น ลูกค้าจ่ายแค่ '+(p*k)+' บาท → ราคาจริงต่อชิ้น ≈ '+per.toFixed(2)+' บาท ไม่ใช่ '+p+' บาท · ตัวเลขนี้ยังไม่หักต้นทุนวัตถุดิบ ค่าที่ และแรงงานพี่น้อง 5 คน':'';calcdone=true;gate()};
+$$('#c1,#c2,#c3').forEach(i=>i.oninput=calc);calc();
+$('#go3').onclick=()=>Lab.next();
+$('#fin').onclick=()=>Lab.finish({takeaway:'ลูกค้าตัวจริงคือกลุ่มที่เรารู้ว่าเขาต้องการอะไร — ร้านยายปูตอบ “อยากชิมหลายอย่างในงบน้อย” ด้วยชิ้นเล็ก 10 บาท<br>Customer Journey มี 5 ขั้น และจุดหลุดอยู่ได้ทุกขั้น รวมถึงหลังซื้อ<br>ตัวเลข “รายได้” ที่ได้ยินในคลิป ต้องคิดเองก่อนเชื่อ (โปรโมชัน ต้นทุน แรงงาน)',data:{persona:$('#ref').value.slice(0,600),rev:$('#cout').textContent}});
+window.__autoplay=()=>false;
+})();
+</script>

@@ -1,0 +1,158 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts td.k{color:var(--amber);font-weight:600;white-space:nowrap}
+.chip{display:inline-block;background:var(--panel);border:1.5px solid var(--line);border-radius:999px;padding:7px 12px;margin:4px 4px 0 0;cursor:pointer;font-size:.9em}
+.chip.on{border-color:var(--teal);background:#15302e}
+.chip.ok{border-color:var(--green)} .chip.no{border-color:var(--red)}
+.tray{min-height:48px;margin:8px 0}
+.bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:10px 0}
+.bin{background:var(--panel2);border:1.5px dashed var(--line);border-radius:12px;padding:10px;min-height:110px}
+.bin h4{margin:0 0 6px;font:600 1em var(--display);color:var(--amber)}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}
+.calc label{display:block;font-size:.85em;color:var(--muted)}
+.calc input{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel2);color:var(--cream);font:600 1.05em var(--body)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:10px 0}
+.kpi div{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px}
+.kpi b{display:block;font:700 1.4em var(--display);color:var(--amber)}
+.kpi small{color:var(--muted)}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin:10px 0}
+.week .d{background:var(--panel2);border:1.5px solid var(--line);border-radius:10px;padding:6px;text-align:center;font-size:.85em}
+.week .d b{display:block;color:var(--muted);font-weight:500;margin-bottom:4px}
+.week select{width:100%;padding:4px;border-radius:6px;border:1px solid var(--line);background:var(--panel);color:var(--cream);font:.9em var(--body)}
+@media(max-width:560px){.week{grid-template-columns:repeat(4,1fr)}}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (15 นาที)</h3>
+  <h2>10 สูตรลับ สร้างยอดขายบน TikTok เดือนละล้าน</h2>
+  <p class="muted">ช่อง “การตลาดการเตลิด” (คุณแอม) เล่าจากประสบการณ์ขายหนังสือและคลาสออนไลน์ของตัวเอง · เป็นระดับ “ทำเต็มเวลา มีทีม” — ดูเพื่อเข้าใจระบบ ไม่ใช่เพื่อทำตามทุกข้อในเทอมนี้</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=ZMehPZTlHn0" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=ZMehPZTlHn0</small>
+  </div>
+  <p style="margin-top:12px"><b>10 ข้อที่ได้ยินในคลิป</b> (จากบทบรรยายอัตโนมัติ · ตัวเลขเป็นคำกล่าวของผู้พูด)</p>
+  <table class="facts">
+    <tr><td class="k">1 สินค้าดี</td><td>วิดีโอเฟกยาก ถ้าของไม่ดีสีหน้าคนรีวิวจะบอก · เลี่ยงออกของจากโรงงานแบบที่ใคร ๆ ก็ขาย</td></tr>
+    <tr><td class="k">2 คุณภาพ + แตกต่าง</td><td>คุณภาพทำให้ซื้อซ้ำ ความแตกต่างทำให้ซื้อครั้งแรก · เคสน้ำพริกปลาทูไลฟ์ทุกวันแต่ขายไม่ดี เพราะเหมือนคนอื่น</td></tr>
+    <tr><td class="k">3 จัดส่งเร็ว</td><td>ส่งทุกวัน หยุดปีใหม่/สงกรานต์แค่ 2 วัน</td></tr>
+    <tr><td class="k">4 แพ็กเกจ</td><td>วิตามิน 1,400 บาท มาในกล่องพลาสติกบางยู่ยี่ → ความรู้สึกแรกเสีย · ส่งไว+แพ็กดี = คนอยากเขียนรีวิว</td></tr>
+    <tr><td class="k">5 ทีม/แอดมิน</td><td>ตอบไว แพ็กไม่ผิด · ทรายแมวกำไร 5–10 บาท/ถุง ขาย 100 ออเดอร์ เสียหาย 5–6 ออเดอร์ = กำไรหาย</td></tr>
+    <tr><td class="k">6 ขายหลายอย่าง</td><td>“มีคนรัก 1,000 คนที่ซื้อหลายอย่าง ก็อยู่ได้ ไม่ต้องหาลูกค้าแสนคน”</td></tr>
+    <tr><td class="k">7 รายได้ 3 ทาง</td><td>คนเสิร์ชแล้วซื้อ · ไลฟ์สดแล้วซื้อ · เห็นคลิปในฟีดแล้วซื้อ — สัดส่วน 3 ทางของเธอใกล้กัน</td></tr>
+    <tr><td class="k">8 ยิงแอด</td><td>เดือนละ ~150,000–250,000 เพื่อยอด ~1 ล้าน · แอดช่วยเฉพาะเมื่อ 7 ข้อแรกพร้อม ไม่งั้น “ยิ่งยิง ยิ่งขายไม่ได้”</td></tr>
+    <tr><td class="k">9 คอนเทนต์ถี่</td><td>เดือนที่ทำยอด: ~100 คลิป/เดือน · วันละอย่างน้อย 3 (ปักตะกร้า 1 + ไม่ปักตะกร้า 2) · ไลฟ์วันเว้นวัน, แคมเปญไลฟ์ 15 วันติด</td></tr>
+    <tr><td class="k">10 CEO branding</td><td>คนซื้อเพราะรักผู้ขาย ซื้อหนังสือไปถ่ายลง IG ยังไม่ได้อ่าน</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · ฐาน หรือ ตัวเร่ง</h3>
+  <h2>ข้อไหนเป็น “ฐาน” ที่ต้องมีก่อน และข้อไหนเป็น “ตัวเร่ง” ที่ขยายผล</h2>
+  <p class="muted">ผู้พูดบอกว่าแอดช่วยเฉพาะเมื่อฐานพร้อม · แตะชิปแล้วแตะช่อง</p>
+  <div class="tray" id="tray1"></div>
+  <div class="bins" id="bins1">
+    <div class="bin" data-c="B"><h4>ฐาน — ลูกค้าได้รับโดยตรง</h4></div>
+    <div class="bin" data-c="A"><h4>ตัวเร่ง — ทำให้คนเห็นมากขึ้น</h4></div>
+  </div>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk1">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · ตัวเลขที่ใกล้เงิน</h3>
+  <h2>ยิงแอด 200,000 ได้ยอดขาย 1,000,000 — กำไรจริงเหลือเท่าไหร่?</h2>
+  <p class="muted">ตัวเลขตั้งต้นมาจากคลิป (ยอดขายและค่าแอด) ส่วนกำไรขั้นต้นเป็น<b>ตัวเลขสมมติ</b> ลองเปลี่ยนดู</p>
+  <div class="calc">
+    <div><label>ยอดขาย/เดือน (บาท)</label><input id="rev" type="number" value="1000000"></div>
+    <div><label>ค่าแอด/เดือน (บาท)</label><input id="ads" type="number" value="200000"></div>
+    <div><label>กำไรขั้นต้น % (หลังหักต้นทุนสินค้า+ส่ง)</label><input id="gm" type="number" value="40"></div>
+    <div><label>ค่าทีม/ค่าใช้จ่ายอื่น/เดือน</label><input id="fix" type="number" value="80000"></div>
+  </div>
+  <div class="kpi">
+    <div><small>ROAS (ยอดขาย ÷ ค่าแอด)</small><b id="roas">—</b></div>
+    <div><small>กำไรขั้นต้น</small><b id="gp">—</b></div>
+    <div><small>กำไรหลังแอดและค่าใช้จ่าย</small><b id="np">—</b></div>
+  </div>
+  <p class="muted" id="note2"></p>
+  <p style="margin-top:10px"><b>คลิป A ได้ 300,000 วิว 20,000 ไลก์ ขายได้ 5 ชิ้น · คลิป B ได้ 8,000 วิว 200 ไลก์ ขายได้ 40 ชิ้น — ควรยิงแอดต่อให้คลิปไหน?</b></p>
+  <div id="q2">
+    <button class="choice" type="button">คลิป A เพราะคนเห็นเยอะ แบรนด์จะเป็นที่รู้จัก</button>
+    <button class="choice" data-ok="1" type="button">คลิป B เพราะอัตราคนดู→ซื้อ สูงกว่ามาก (ตัวเลขที่ใกล้เงิน) ส่วน A เอาไว้เรียนรู้ว่าฮุกแบบไหนคนหยุดดู</button>
+    <button class="choice" type="button">ยิงทั้งคู่เท่ากัน จะได้ไม่พลาด</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · วินิจฉัยเคสในคลิป</h3>
+  <h2>ร้านน้ำพริกปลาทูไลฟ์ทุกวัน ทำคลิปบ่อย แต่ขายไม่ดี — ปัญหาอยู่ที่ไหน?</h2>
+  <div id="q3">
+    <button class="choice" type="button">ยิงแอดน้อยเกินไป ควรเพิ่มงบแอด</button>
+    <button class="choice" data-ok="1" type="button">ฐานยังไม่พร้อม: สินค้าเหมือนคนอื่น ไม่มีจุดแตกต่าง ฉลาก/กล่อง/คอนเทนต์ดูไม่มีคุณภาพ — ความขยันอย่างเดียวแก้ไม่ได้</button>
+    <button class="choice" type="button">ไลฟ์ยังไม่ถี่พอ ควรไลฟ์วันละ 2 รอบ</button>
+  </div>
+  <p style="margin-top:14px"><b>คลิปบอกว่าสัดส่วนยอดจาก “เสิร์ช / ไลฟ์ / คลิปในฟีด” ใกล้กัน ถ้ากลุ่มเราทำแต่ไลฟ์ หมายความว่าอย่างไร?</b></p>
+  <div id="q3b">
+    <button class="choice" type="button">ไลฟ์คือช่องทางที่ดีที่สุด ทำต่อไปอย่างเดียว</button>
+    <button class="choice" data-ok="1" type="button">อาจมีลูกค้าอีก 2 กลุ่ม (คนเสิร์ช คนเลื่อนฟีด) ที่เรายังไม่ได้แตะเลย — ควรทดลองช่องทางอื่นแบบเล็ก ๆ แล้ววัดผล</button>
+    <button class="choice" type="button">ต้องหยุดไลฟ์แล้วไปทำคลิปแทน</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · แผน 1 สัปดาห์ที่กลุ่มทำได้จริง</h3>
+  <h2>ผู้พูดทำวันละ 3 คลิป + ไลฟ์วันเว้นวัน — กลุ่มนักศึกษาทำได้แค่ไหน?</h2>
+  <p class="muted">เลือกสิ่งที่จะทำแต่ละวัน ให้ “ทำได้จริงในเทอมนี้” ไม่ใช่เลียนแบบมืออาชีพ · ไม่เลือก = พัก ได้</p>
+  <div class="week" id="week"></div>
+  <p class="muted" id="wsum"></p>
+  <textarea id="ref" placeholder="ฮุก 15 วินาทีแรกของคลิปปักตะกร้าชิ้นแรก: ...&#10;ใครรับผิดชอบคลิป/ไลฟ์: ...&#10;ตัวเลขที่จะดูหลัง 1 สัปดาห์ (ไม่ใช่ไลก์): ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 7, no: 4, slug: 'ch07-clip', title: 'ถอดสูตรขายบน TikTok: ฐาน ตัวเร่ง และตัวเลขที่ใกล้เงิน', goal: 'แยกให้ออกว่าอะไรต้องมีก่อนยิงแอด อ่านตัวเลขโฆษณาโดยไม่หลงไลก์ และวางแผนคอนเทนต์ 1 สัปดาห์ที่กลุ่มทำได้จริง' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+const ITEMS=[['สินค้าดี มีคุณภาพ','B'],['จัดส่งเร็ว แพ็กดี','B'],['แอดมินตอบไว แพ็กไม่ผิด','B'],['ยิงแอด','A'],['ลงคลิปวันละ 3 ตัว','A'],['ไลฟ์วันเว้นวัน','A']];
+let sel=null;const placed={};
+function tray(){const t=$('#tray1');t.innerHTML='';ITEMS.forEach((it,i)=>{if(placed[i]!=null)return;const c=Lab.h('span',{class:'chip'+(sel===i?' on':'')},it[0]);c.onclick=()=>{sel=sel===i?null:i;tray()};t.append(c)})}
+$$('#bins1 .bin').forEach(b=>b.onclick=()=>{if(sel==null)return;placed[sel]=b.dataset.c;const i=sel;sel=null;const c=Lab.h('span',{class:'chip'},ITEMS[i][0]);c.onclick=()=>{delete placed[i];c.remove();tray()};b.append(c);tray()});
+tray();
+$('#chk1').onclick=()=>{const left=ITEMS.length-Object.keys(placed).length;if(left)return Lab.feedback($('#fb1'),null,'ยังวางไม่ครบ เหลืออีก '+left+' ข้อ');
+ let ok=0;$$('#bins1 .bin .chip').forEach(c=>{const i=ITEMS.findIndex(x=>x[0]===c.textContent);const r=placed[i]===ITEMS[i][1];c.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('base',ok,ITEMS.length);Lab.feedback($('#fb1'),ok===ITEMS.length,'ถูก '+ok+'/'+ITEMS.length+' — ฐาน = สิ่งที่ลูกค้าได้รับจริง (ของ การส่ง การดูแล) · ตัวเร่ง = ทำให้คนเห็นมากขึ้น (แอด คลิป ไลฟ์) · ตัวเร่งขยายทั้งข้อดีและข้อเสียของฐาน จึงต้องมีฐานก่อน');$('#chk1').classList.add('hide');show('#go1')};
+$('#go1').onclick=()=>Lab.next();
+// calc
+let c2=false,q2=false;const gate2=()=>{if(c2&&q2)show('#go2')};
+const calc=()=>{const rev=+$('#rev').value||0,ads=+$('#ads').value||0,gm=(+$('#gm').value||0)/100,fix=+$('#fix').value||0;const roas=ads?rev/ads:0,gp=rev*gm,np=gp-ads-fix;
+ $('#roas').textContent=roas?roas.toFixed(1)+'×':'—';$('#gp').textContent=Lab.fmt(Math.round(gp));$('#np').textContent=Lab.fmt(Math.round(np));$('#np').style.color=np<0?'var(--red)':'var(--amber)';
+ $('#note2').textContent=np<0?'ยอดขายล้านแต่ขาดทุน — ค่าแอดกินกำไรขั้นต้นหมด ตัวเลขที่ต้องดูคือ “กำไรหลังแอด” ไม่ใช่ยอดขาย':'ROAS '+roas.toFixed(1)+'× ฟังดูดี แต่ที่เหลือจริงคือ '+Lab.fmt(Math.round(np))+' บาท — ลองลดกำไรขั้นต้นเหลือ 25% แล้วดูว่าเกิดอะไรขึ้น';c2=true;gate2()};
+$$('#rev,#ads,#gm,#fix').forEach(i=>i.oninput=calc);calc();
+Lab.mcq($('#q2'),{key:'close-money',explain:'วิวและไลก์อยู่ไกลเงิน · อัตราคนดู→ซื้อ (B ≈ 0.5% vs A ≈ 0.002%) ใกล้เงินกว่า · แอดคือตัวเร่ง จึงเร่งคลิปที่ “ขายได้อยู่แล้ว” ส่วนคลิปวิวเยอะใช้เรียนรู้เรื่องฮุก',onDone:()=>{q2=true;gate2()}});
+$('#go2').onclick=()=>Lab.next();
+let a=false,b=false;const gate3=()=>{if(a&&b)show('#go3')};
+Lab.mcq($('#q3'),{key:'diagnose',explain:'ผู้พูดกดเข้าไปดูแล้วสรุปว่า “สินค้าทั่วไป ไม่มีจุดเด่น ฉลาก/กล่อง/คอนเทนต์ดูไม่มีคุณภาพ” — ความขยัน (ไลฟ์ทุกวัน) เป็นตัวเร่ง แต่ฐานยังไม่พร้อม',onDone:()=>{a=true;gate3()}});
+Lab.mcq($('#q3b'),{key:'channels',explain:'ผู้พูดบอกว่า “ถ้าขายได้ 500,000 จากไลฟ์ อาจมีอีก 500,000 ในคนเสิร์ช และอีก 500,000 ในคลิป” — ไม่ใช่ให้เลิกไลฟ์ แต่ให้ทดลองช่องทางอื่นเพิ่มแล้ววัด',onDone:()=>{b=true;gate3()}});
+$('#go3').onclick=()=>Lab.next();
+// week
+const DAYS=['จ','อ','พ','พฤ','ศ','ส','อา'],OPTS=['— พัก —','คลิปปักตะกร้า','คลิปไม่ปักตะกร้า','ไลฟ์สด','ตอบแชท/แพ็กของ'];
+const w=$('#week');DAYS.forEach(d=>{const el=Lab.h('div',{class:'d'},'<b>'+d+'</b>');const s=Lab.h('select',{},OPTS.map((o,i)=>'<option value="'+i+'">'+o+'</option>').join(''));s.onchange=wsum;el.append(s);w.append(el)});
+function wsum(){const v=$$('#week select').map(s=>+s.value);const n=[1,2,3,4].map(k=>v.filter(x=>x===k).length);const work=v.filter(x=>x>0).length;
+ $('#wsum').textContent='สัปดาห์นี้: คลิปปักตะกร้า '+n[0]+' · คลิปทั่วไป '+n[1]+' · ไลฟ์ '+n[2]+' · วันดูแลหลังบ้าน '+n[3]+(work===7?' — ทำทุกวันไม่มีวันพัก ลองเช็กว่าทำได้จริงกับตารางเรียน':work===0?' — ยังไม่เลือกอะไรเลย':n[3]===0&&work>0?' — ไม่มีวันดูแลหลังบ้าน (ตอบแชท แพ็กของ) ซึ่งคลิปบอกว่าเป็น “ฐาน”':' — สมดุลดี มีทั้งตัวเร่งและฐาน')}
+wsum();
+$('#fin').onclick=()=>{const v=$$('#week select').map(s=>OPTS[+s.value]);Lab.finish({takeaway:'ฐานก่อนตัวเร่ง: สินค้า การส่ง การดูแล มาก่อนแอดและคอนเทนต์ถี่ ๆ<br>ดูตัวเลขที่ใกล้เงิน (คนดู→ซื้อ, กำไรหลังแอด) ไม่ใช่วิว/ไลก์<br>แผนที่ดีคือแผนที่กลุ่มทำได้จริงทุกสัปดาห์ ไม่ใช่แผนของมืออาชีพเต็มเวลา',data:{week:v,plan:$('#ref').value.slice(0,600),np:$('#np').textContent}})};
+window.__autoplay=()=>false;
+})();
+</script>

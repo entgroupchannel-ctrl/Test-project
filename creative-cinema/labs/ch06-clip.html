@@ -1,0 +1,129 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts th{color:var(--muted);font:500 .85em var(--display)}
+.facts td.k{color:var(--amber);font-weight:600;white-space:nowrap}
+.prob{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+.prob p{margin:0 0 6px}
+.prob select{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel);color:var(--cream);font:1em var(--body)}
+.prob.ok{border-color:var(--green)} .prob.no{border-color:var(--red)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;max-width:420px;aspect-ratio:4/3;background:#2a2622;border-radius:10px;padding:4px;margin:10px 0}
+.grid .cell{background:var(--panel2);border-radius:6px;position:relative;cursor:pointer;border:1.5px solid transparent}
+.grid .cell:hover{border-color:var(--teal)}
+.grid .cell.pick{background:#3a2f1e;border-color:var(--amber)}
+.grid .cell .obj{position:absolute;inset:18% 22%;background:var(--amber);border-radius:50% 50% 45% 45%;opacity:.95}
+.grid .cell .bg{position:absolute;inset:0;border-radius:6px;background:repeating-linear-gradient(45deg,transparent 0 10px,rgba(255,255,255,.04) 10px 20px)}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin:10px 0}
+.shots label{display:flex;gap:8px;align-items:flex-start;background:var(--panel2);border:1.5px solid var(--line);border-radius:10px;padding:10px;cursor:pointer}
+.shots input{margin-top:4px}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (6 นาที)</h3>
+  <h2>7 เคล็ดลับถ่ายสินค้าด้วยมือถือ อยู่บ้านก็ถ่ายได้</h2>
+  <p class="muted">คลิปสั้น สาธิตถ่ายสร้อยข้อมือและเสื้อผ้าด้วยมือถือเครื่องเดียว · ดูแล้วลองสังเกตว่าแต่ละเคล็ดลับแก้ “ปัญหา” อะไรของภาพ</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=BepPesOi8VU" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=BepPesOi8VU</small>
+  </div>
+  <p style="margin-top:12px"><b>7 ข้อที่ได้ยินในคลิป</b> (จากบทบรรยายอัตโนมัติ)</p>
+  <table class="facts">
+    <tr><td class="k">1 แสง</td><td>ใช้แสงธรรมชาติ วางของใกล้หน้าต่าง · ถ้ามีไฟจัดแสงจะคุมได้ตามใจ</td></tr>
+    <tr><td class="k">2 ฉาก</td><td>เลือกฉากให้สินค้าเด่น เช่น สินค้าน่ารักมุ้งมิ้ง ใช้ฉากขาวเรียบ หรือเลือกโทนสีให้ไปทางเดียวกับสินค้า</td></tr>
+    <tr><td class="k">3 พร็อพ</td><td>ดูก่อนว่าสินค้าอยากสื่อเรื่องราวไหน แล้วหาพร็อพไปทางเดียวกัน · ห้ามให้พร็อพแย่งจุดเด่น</td></tr>
+    <tr><td class="k">4 การจัดวาง</td><td>สินค้าต้องเป็น “พระเอก” ของภาพ มีคอนทราสต์เด่นที่สุด</td></tr>
+    <tr><td class="k">5 กริด 9 ช่อง</td><td>เปิดเส้นตาราง วางจุดสนใจไว้ตามจุดตัด เหมาะกับมือใหม่</td></tr>
+    <tr><td class="k">6 โหมดมาโคร</td><td>ถ่ายรายละเอียดเล็ก ๆ · แต่บางรุ่นความละเอียดลดเหลือ 2 ล้านพิกเซล ให้ถ่ายปกติแล้วครอปทีหลังแทน</td></tr>
+    <tr><td class="k">7 ถ่ายเผื่อ</td><td>ขยับสินค้า/พร็อพนิดเดียวก็ถ่ายเก็บไว้ “ถ่ายเหลือดีกว่าขาด” เอามาตัดแต่งทีหลังได้</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · ภาพมีปัญหา ใช้ข้อไหนแก้</h3>
+  <h2>เลือกเคล็ดลับที่แก้ปัญหาแต่ละภาพได้ตรงที่สุด</h2>
+  <div id="probs"></div>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk1">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · กริด 9 ช่อง</h3>
+  <h2>แตะช่องที่จะวาง “พระเอก” ของภาพ</h2>
+  <p class="muted">สินค้าเป็นแก้วกาแฟ 1 ใบ ฉากเรียบ · กริดช่วยให้ภาพไม่ “ตาย” ตรงกลางเสมอ แต่ก็ไม่ใช่กฎตายตัว</p>
+  <div class="grid" id="grid"></div>
+  <div class="fb" id="fb2"></div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · ความซื่อตรงของภาพ</h3>
+  <h2>เพื่อนในกลุ่มบอกว่า “เอารูปสวย ๆ จากร้านอื่นใน Shopee มาลงก่อน ของเราถ่ายไม่สวย” ควรทำอย่างไร?</h2>
+  <div id="q3">
+    <button class="choice" type="button">ใช้ได้ ถ้าสินค้าเป็นรุ่นเดียวกัน ลูกค้าจะเห็นภาพเดียวกันอยู่ดี</button>
+    <button class="choice" data-ok="1" type="button">ไม่ใช้ — ภาพเป็นลิขสิทธิ์ของผู้ถ่าย และลูกค้าอาจได้ของจริงต่างจากภาพ ถ่ายเองด้วย 7 ข้อในคลิปแล้วค่อยปรับ</button>
+    <button class="choice" type="button">ใช้ได้ถ้าใส่เครดิตชื่อร้านนั้นไว้ที่มุมภาพ</button>
+  </div>
+  <p style="margin-top:14px"><b>ถ่ายรายละเอียดลายผ้า แต่มือถือเปิดมาโครแล้วภาพแตก ควรทำอย่างไร?</b></p>
+  <div id="q3b">
+    <button class="choice" type="button">ซูมดิจิทัล 5 เท่าแทน</button>
+    <button class="choice" data-ok="1" type="button">ถ่ายโหมดปกติในระยะใกล้ที่สุดที่โฟกัสได้ แล้วครอปทีหลัง (ตามที่คลิปแนะนำ)</button>
+    <button class="choice" type="button">ใส่ฟิลเตอร์ให้ภาพเบลอดูนุ่มแทน</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · Shot list ของกลุ่ม</h3>
+  <h2>เลือกภาพ 5 แบบที่ธุรกิจกลุ่มต้องถ่าย แล้วบอกว่าจะใช้แสงและฉากอะไร</h2>
+  <div class="shots" id="shots">
+    <label><input type="checkbox" value="ภาพรวมสินค้าบนฉากเรียบ"><span><b>ภาพรวม</b><br><small>สินค้าเต็มชิ้น ฉากเรียบ</small></span></label>
+    <label><input type="checkbox" value="ภาพรายละเอียด/วัสดุ"><span><b>รายละเอียด</b><br><small>ลาย ตะเข็บ วัสดุ ระยะใกล้</small></span></label>
+    <label><input type="checkbox" value="ภาพเทียบขนาด"><span><b>เทียบขนาด</b><br><small>วางคู่มือ เหรียญ หรือของที่คนรู้ขนาด</small></span></label>
+    <label><input type="checkbox" value="ภาพใช้งานจริง"><span><b>ใช้งานจริง</b><br><small>คนใช้/สวม/ชิม ให้เห็นบริบท</small></span></label>
+    <label><input type="checkbox" value="ภาพแพ็กเกจ/ของที่จะได้รับ"><span><b>แพ็กเกจ</b><br><small>ลูกค้าจะได้อะไรในกล่อง</small></span></label>
+    <label><input type="checkbox" value="ภาพหลายสี/หลายตัวเลือก"><span><b>ตัวเลือก</b><br><small>สี ขนาด รส ที่มีให้เลือก</small></span></label>
+  </div>
+  <p class="muted" id="cnt">เลือกแล้ว 0/5</p>
+  <textarea id="ref" placeholder="แสงที่จะใช้: ... (เช่น ริมหน้าต่างช่วง 9–10 โมง)&#10;ฉาก/พร็อพ: ... (สื่อเรื่องราวอะไร)&#10;ใครถ่าย วันไหน: ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 6, no: 4, slug: 'ch06-clip', title: 'ถ่ายสินค้าด้วยมือถือ: 7 ข้อจากคลิป สู่ shot list ของกลุ่ม', goal: 'จับคู่ปัญหาภาพกับเคล็ดลับที่แก้ได้ ฝึกกริด 9 ช่อง และวางแผนถ่ายภาพชุด 5 ภาพอย่างซื่อตรง' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+const TIPS=['1 แสง','2 ฉาก','3 พร็อพ','4 การจัดวาง','5 กริด 9 ช่อง','6 โหมดมาโคร','7 ถ่ายเผื่อ'];
+const PROBS=[['ภาพสร้อยข้อมือมืด เห็นเงาเหลืองจากหลอดไฟในห้อง',0],['ถ่ายเสื้อสีพาสเทลบนผ้าปูลายดอกสีสด มองไม่เห็นว่าขายอะไร',1],['ใส่แก้วกาแฟ หนังสือ ต้นไม้ รอบสร้อย จนสร้อยกลายเป็นตัวประกอบ',2],['ถ่ายมา 3 รูป กลับบ้านพบว่าทุกรูปมีนิ้วบังมุมภาพ ต้องนัดถ่ายใหม่',6],['สินค้าอยู่กลางภาพพอดีทุกรูป ดูนิ่งและเหมือนกันหมด',4],['อยากให้เห็นลายปักเส้นเล็ก ๆ บนกระเป๋า แต่ถ่ายปกติแล้วเห็นไม่ชัด',5]];
+const box=$('#probs');PROBS.forEach((p,i)=>{const d=Lab.h('div',{class:'prob'},'<p>'+p[0]+'</p>');const s=Lab.h('select',{'data-i':i},'<option value="">— เลือกเคล็ดลับ —</option>'+TIPS.map((t,k)=>'<option value="'+k+'">'+t+'</option>').join(''));d.append(s);box.append(d)});
+$('#chk1').onclick=()=>{const sels=$$('#probs select');if(sels.some(s=>s.value===''))return Lab.feedback($('#fb1'),null,'ยังเลือกไม่ครบทุกข้อ');
+ let ok=0;sels.forEach((s,i)=>{const r=+s.value===PROBS[i][1];s.parentElement.classList.remove('ok','no');s.parentElement.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('match',ok,PROBS.length);Lab.feedback($('#fb1'),ok===PROBS.length,'ถูก '+ok+'/'+PROBS.length+' — ข้อที่ผิดดูกรอบแดง: มืด→แสง · ฉากแย่งตา→ฉาก · ของประกอบแย่งเด่น→พร็อพ · ถ่ายน้อยเกิน→ถ่ายเผื่อ · กลางภาพตลอด→กริด · รายละเอียดเล็ก→มาโคร (หรือถ่ายปกติแล้วครอป)');
+ if(ok===PROBS.length){$('#chk1').classList.add('hide');show('#go1')}};
+$('#go1').onclick=()=>Lab.next();
+// grid
+const g=$('#grid');for(let i=0;i<9;i++){const c=Lab.h('div',{class:'cell','data-i':i},'<div class="bg"></div>');c.onclick=()=>pick(i);g.append(c)}
+function pick(i){$$('#grid .cell').forEach(c=>{c.classList.remove('pick');const o=c.querySelector('.obj');if(o)o.remove()});const c=$$('#grid .cell')[i];c.classList.add('pick');c.append(Lab.h('div',{class:'obj'}));
+ const good=[0,2,6,8,3,5];const mid=i===4;Lab.score('grid',mid?0:1,1);
+ Lab.feedback($('#fb2'),!mid,mid?'วางตรงกลางก็ไม่ผิด แต่คลิปแนะนำให้ลองวางที่จุดตัดของเส้น (มุมของช่องกลาง) ภาพจะมีที่ว่างให้สายตาพักและดูมีชีวิตขึ้น ลองแตะช่องอื่น':(good.includes(i)?'ดี — สินค้าอยู่ใกล้จุดตัด มีพื้นที่ว่างอีกด้านไว้วางข้อความหรือพร็อพเบา ๆ ได้':'ใช้ได้ — ลองเทียบกับการวางใกล้จุดตัด (ช่องมุม/ช่องข้าง) ว่าแบบไหนทำให้สินค้าเด่นกว่า'));
+ show('#go2')}
+$('#go2').onclick=()=>Lab.next();
+let a=false,b=false;const gate=()=>{if(a&&b)show('#go3')};
+Lab.mcq($('#q3'),{key:'honest',explain:'ภาพของคนอื่นเป็นลิขสิทธิ์ของเขา และภาพที่ไม่ตรงกับของจริงทำให้ลูกค้าผิดหวังและรีวิวแย่ ภาพที่ถ่ายเองแม้ไม่สมบูรณ์ แต่ซื่อตรงและปรับได้เรื่อย ๆ',onDone:()=>{a=true;gate()}});
+Lab.mcq($('#q3b'),{key:'macro',explain:'คลิปบอกว่าบางรุ่นเปิดมาโครแล้วความละเอียดลดเหลือ 2 ล้านพิกเซล ซูมดิจิทัลก็ทำให้ภาพแตกเช่นกัน วิธีที่ปลอดภัยคือถ่ายปกติที่ความละเอียดเต็มแล้วครอป',onDone:()=>{b=true;gate()}});
+$('#go3').onclick=()=>Lab.next();
+const cnt=()=>{const n=$$('#shots input:checked').length;$('#cnt').textContent='เลือกแล้ว '+n+'/5'+(n>5?' — เกิน 5 แล้ว เลือกที่จำเป็นที่สุด':'')};
+$$('#shots input').forEach(i=>i.onchange=cnt);
+$('#fin').onclick=()=>{const picks=$$('#shots input:checked').map(i=>i.value);Lab.finish({takeaway:'ภาพสินค้าทำหน้าที่แทนหน้าร้านและพนักงานขาย · 7 ข้อในคลิปแก้ปัญหาคนละอย่าง (แสง ฉาก พร็อพ จัดวาง กริด มาโคร ถ่ายเผื่อ)<br>สินค้าต้องเป็นพระเอกเสมอ · ภาพของคนอื่นไม่ใช่ของเรา และภาพต้องตรงกับของจริง<br>Shot list ของกลุ่ม: '+(picks.length?picks.join(' · '):'ยังไม่เลือก'),data:{shots:picks,plan:$('#ref').value.slice(0,600)}})};
+window.__autoplay=()=>false;
+})();
+</script>
