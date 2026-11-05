@@ -1,0 +1,121 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts th{color:var(--muted);font:500 .85em var(--display)}
+.facts td.n{text-align:right;white-space:nowrap;color:var(--amber);font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:10px 0}
+.pick{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px;text-align:left;color:var(--cream);font:500 .95em/1.4 var(--body);cursor:pointer}
+.pick b{display:block;font:600 1.05em var(--display);color:var(--amber)}
+.pick.on{border-color:var(--teal);background:#15302e}
+.pick.right{border-color:var(--green)} .pick.wrong{border-color:var(--red);opacity:.7}
+.bmc{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:10px 0}
+.bmc div{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px}
+.bmc h4{margin:0 0 6px;font:600 1em var(--display);color:var(--amber)}
+.bmc textarea{min-height:70px}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (4.5 นาที)</h3>
+  <h2>ขนมหวานตลาดพลู: ร้าน 100 ปี ที่ยังขายเด็กรุ่นใหม่ได้</h2>
+  <p class="muted">ช่อง SME ชี้ช่องรวย · ลูกสาวรุ่นที่ 3 ของร้านขนมไทยตลาดพลูเล่าว่า ร้านที่เริ่มจากหาบขนมของคุณยายเมื่อ 131 ปีก่อน ปรับตัวอย่างไรให้คนรุ่นใหม่ยังซื้อ</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=7tSJVjO_JFk" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=7tSJVjO_JFk</small>
+  </div>
+  <p style="margin-top:12px"><b>สิ่งที่ได้ยินในคลิป</b> (จากบทบรรยายอัตโนมัติ)</p>
+  <table class="facts">
+    <tr><th>เรื่อง</th><th>รายละเอียด</th></tr>
+    <tr><td>ของเดิม</td><td>ขนมไทยกว่า 20 ชนิด ทองหยิบ ทองหยอด ขนมชั้น ตะโก้ ข้าวเหนียวหน้าต่าง ๆ ขายมา 3 รุ่น</td></tr>
+    <tr><td>สิ่งที่ปรับ</td><td>ลดความหวานลง เพราะคนรุ่นใหม่กลัวเบาหวาน แต่ยังใช้กะทิแท้คั้นเอง มะพร้าวทับสะแก ประจวบฯ</td></tr>
+    <tr><td>ราคาที่ต้องแลก</td><td class="n">หวานน้อย → เก็บได้ 1 วัน (เดิมหวานจัด เก็บได้ 2–3 วัน)</td></tr>
+    <tr><td>สูตรขนมชั้น</td><td>คุณยายไปชิมของร้านที่ขายดี แล้วลองผสมแป้งเท้ายายม่อม + แป้งข้าวเจ้าจนได้ที่เหนียวร่อน</td></tr>
+    <tr><td>ราคา</td><td class="n">ชิ้นละ 10 บาท · กระจาด 5 อย่าง 500 บาท (ทำบุญ/ไหว้/ให้ผู้ใหญ่)</td></tr>
+    <tr><td>เวลาเปิด</td><td>9:30–20:00 หยุดเดือนละ 4 วัน</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · ไอเดีย หรือ นวัตกรรม</h3>
+  <h2>“ลดหวานแต่กะทิแท้” นับเป็นอะไร?</h2>
+  <p class="muted">ทบทวน: ความคิดสร้างสรรค์ = ไอเดียใหม่ · นวัตกรรม = ไอเดียที่ทำออกมาใช้จริงและลูกค้ายอมจ่าย</p>
+  <div id="q1">
+    <button class="choice" type="button">เป็นแค่ไอเดีย เพราะไม่ได้ทำขนมชนิดใหม่</button>
+    <button class="choice" data-ok="1" type="button">เป็นนวัตกรรม (แบบค่อยเป็นค่อยไป) เพราะเปลี่ยนสินค้าจริง ลูกค้ารุ่นใหม่ซื้อจริง และต้องแลกด้วยอายุขนมที่สั้นลง</button>
+    <button class="choice" type="button">ไม่ใช่ทั้งสองอย่าง เพราะขนมไทยมีมานานแล้ว</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · จับคู่ SCAMPER</h3>
+  <h2>แต่ละการปรับตัวในคลิป ใช้ตัวไหนของ SCAMPER?</h2>
+  <p class="muted">แตะการ์ดคำตอบที่ตรงกับ “ผสมแป้งเท้ายายม่อมกับแป้งข้าวเจ้า จนได้ขนมชั้นที่เหนียวร่อน”</p>
+  <div class="cards" id="sc1">
+    <button class="pick" type="button" data-k="S"><b>S · Substitute</b>แทนวัตถุดิบ</button>
+    <button class="pick" type="button" data-k="C" data-ok="1"><b>C · Combine</b>รวมสองอย่างเข้าด้วยกัน</button>
+    <button class="pick" type="button" data-k="E"><b>E · Eliminate</b>ตัดบางอย่างออก</button>
+    <button class="pick" type="button" data-k="R"><b>R · Reverse</b>กลับด้าน</button>
+  </div>
+  <div class="fb" id="fb1"></div>
+  <p style="margin-top:10px"><b>แล้ว “ลดน้ำตาลลง แต่คงกะทิแท้” ใช้ตัวไหน?</b></p>
+  <div class="cards" id="sc2">
+    <button class="pick" type="button" data-k="P"><b>P · Put to other use</b>ใช้ในแบบอื่น</button>
+    <button class="pick" type="button" data-k="M" data-ok="1"><b>M · Modify</b>ปรับ/ลด/ขยายคุณสมบัติ</button>
+    <button class="pick" type="button" data-k="A"><b>A · Adapt</b>ดัดแปลงจากที่อื่น</button>
+  </div>
+  <div class="fb" id="fb2"></div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · กระจาด 500 บาท คือคุณค่าอะไร</h3>
+  <h2>ทำไมคนยอมจ่าย 500 ทั้งที่ชิ้นละ 10 บาท?</h2>
+  <p class="muted">กระจาด = ขนม 5 อย่าง จัดชุดสำหรับทำบุญ ไหว้ ให้ผู้ใหญ่ เลือกชุดที่เก็บได้โดยไม่ต้องแช่เย็น</p>
+  <div id="q3">
+    <button class="choice" type="button">เพราะขนมในกระจาดแพงกว่าปกติ</button>
+    <button class="choice" data-ok="1" type="button">เพราะขาย “ความสะดวกและความหมาย” — ลูกค้าไม่ต้องเลือกเอง ได้ชุดที่เหมาะกับโอกาสและเก็บได้ = คุณค่าที่นำเสนอใหม่ใน BMC</button>
+    <button class="choice" type="button">เพราะกระจาดเป็นของแถม</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · เติม BMC 3 ช่องของร้านนี้</h3>
+  <h2>จากคลิป ร้านขนมหวานตลาดพลูมี…</h2>
+  <div class="bmc">
+    <div><h4>กลุ่มลูกค้า</h4><textarea id="b1" placeholder="เช่น ลูกค้าประจำสูงวัย + คนรุ่นใหม่ที่กลัวหวาน + คนซื้อไปทำบุญ"></textarea></div>
+    <div><h4>คุณค่าที่นำเสนอ</h4><textarea id="b2" placeholder="เช่น ขนมไทยสูตรเก่า รสกลมกล่อม กะทิแท้ หวานน้อย"></textarea></div>
+    <div><h4>ทรัพยากรหลัก</h4><textarea id="b3" placeholder="เช่น สูตร 3 รุ่น มะพร้าวทับสะแก ฝีมือคุณแม่"></textarea></div>
+  </div>
+  <p class="muted">ไม่มีถูกผิด ใช้คุยกันในห้อง · ถ้าเป็นธุรกิจของกลุ่มคุณ จะลอง SCAMPER ตัวไหนกับสินค้าเดิม?</p>
+  <textarea id="ref" placeholder="เช่น ธุรกิจกลุ่มเราคือ... จะลอง Combine กับ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 3, no: 4, slug: 'ch03-clip', title: 'ไอเดียนี้ขายได้เพราะอะไร: ร้านขนมไทย 100 ปีที่ปรับตัว', goal: 'ดูร้านจริงที่ปรับสินค้าเดิมให้คนรุ่นใหม่ซื้อ แล้วจับให้ได้ว่าใช้ SCAMPER ตัวไหน และคุณค่าที่นำเสนอคืออะไร' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+Lab.mcq($('#q1'),{key:'innov',explain:'นวัตกรรมไม่จำเป็นต้องเป็นของใหม่ทั้งหมด การปรับสินค้าเดิมให้ตรงความต้องการใหม่ (หวานน้อย) จนขายได้จริง ก็เป็นนวัตกรรมแบบค่อยเป็นค่อยไป และทุกนวัตกรรมมีราคาที่ต้องแลก เช่น อายุขนมสั้นลง',onDone:()=>show('#go1')});
+$('#go1').onclick=()=>Lab.next();
+let d1=false,d2=false;const both=()=>{if(d1&&d2)show('#go2')};
+function pickGroup(sel,fb,key,explain,done){$$(sel+' .pick').forEach(b=>b.onclick=()=>{if($(sel).dataset.locked)return;$(sel).dataset.locked=1;const ok=b.dataset.ok==='1';$$(sel+' .pick').forEach(c=>{if(c.dataset.ok==='1')c.classList.add('right')});if(!ok)b.classList.add('wrong');Lab.score(key,ok?1:0);Lab.feedback($(fb),ok,(ok?'<b>ถูกต้อง</b> — ':'<b>ยังไม่ใช่</b> — ')+explain);done()})}
+pickGroup('#sc1','#fb1','scamper-c','เอาแป้ง 2 ชนิดมารวมกัน = Combine คุณยายเริ่มจาก “ดูร้านที่ขายดี แล้วลองทำให้ดีกว่า” ซึ่งก็คือการสังเกตก่อนสร้างสรรค์',()=>{d1=true;both()});
+pickGroup('#sc2','#fb2','scamper-m','ลดความหวาน = Modify (ปรับคุณสมบัติให้น้อยลง) โดยไม่แตะคุณภาพกะทิ นี่คือการเลือกว่า “จะเปลี่ยนอะไร และจะไม่เปลี่ยนอะไร”',()=>{d2=true;both()});
+$('#go2').onclick=()=>Lab.next();
+Lab.mcq($('#q3'),{key:'vp',explain:'สินค้าเดิมราคาเดิม แต่จัดเป็น “ชุดพร้อมใช้ตามโอกาส” ลูกค้าได้ความสะดวกและความเหมาะสม นี่คือการสร้างคุณค่าที่นำเสนอใหม่ให้ลูกค้าอีกกลุ่ม (คนทำบุญ/ซื้อฝาก) โดยไม่ต้องคิดขนมใหม่',onDone:()=>show('#go3')});
+$('#go3').onclick=()=>Lab.next();
+$('#fin').onclick=()=>Lab.finish({takeaway:'นวัตกรรม = ไอเดียที่ทำจริงและลูกค้ายอมจ่าย แม้เป็นการปรับเล็ก ๆ<br>SCAMPER ใช้กับสินค้าเดิมได้: Combine สูตร · Modify ความหวาน · จัดชุดใหม่ให้ลูกค้าอีกกลุ่ม<br>ทุกการปรับมีราคาที่ต้องแลก ต้องเลือกว่าอะไรเปลี่ยน อะไรคงไว้',data:{bmc:[$('#b1').value,$('#b2').value,$('#b3').value].map(v=>v.slice(0,300)),reflection:$('#ref').value.slice(0,500)}});
+window.__autoplay=()=>false;
+})();
+</script>
