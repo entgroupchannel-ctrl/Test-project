@@ -1,0 +1,135 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts td.k{color:var(--amber);font-weight:600;white-space:nowrap}
+.chip{display:inline-block;background:var(--panel);border:1.5px solid var(--line);border-radius:999px;padding:7px 12px;margin:4px 4px 0 0;cursor:pointer;font-size:.9em}
+.chip.on{border-color:var(--teal);background:#15302e}
+.chip.ok{border-color:var(--green)} .chip.no{border-color:var(--red)}
+.tray{min-height:48px;margin:8px 0}
+.bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:10px 0}
+.bin{background:var(--panel2);border:1.5px dashed var(--line);border-radius:12px;padding:10px;min-height:110px}
+.bin h4{margin:0 0 6px;font:600 1em var(--display);color:var(--amber)}
+.case{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+.case p{margin:0 0 6px}
+.case select{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel);color:var(--cream);font:1em var(--body)}
+.case.ok{border-color:var(--green)} .case.no{border-color:var(--red)}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:10px 0}
+.team div{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px}
+.team input,.team select{width:100%;padding:7px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel);color:var(--cream);font:1em var(--body);margin-top:6px}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (~25 นาที · ดูถึงจบ 9 สไตล์ก็พอ)</h3>
+  <h2>เงินดี งานเด่น ทำไมลาออก? รู้จัก 9 สไตล์พนักงาน</h2>
+  <p class="muted">Mission To The Moon EP.2323 · ประเด็นหลัก: แรงจูงใจไม่ใช่เงินอย่างเดียว และ “ความยุติธรรม” สำคัญกว่าจำนวนเงิน</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=zaB95dsAkms" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=zaB95dsAkms</small>
+  </div>
+  <p style="margin-top:12px"><b>สิ่งที่ได้ยินในคลิป</b> (จากบทบรรยายอัตโนมัติ)</p>
+  <table class="facts">
+    <tr><td class="k">ทำไมคนลาออก</td><td>ภาระงานไม่สมดุล (มากไป → หมดไฟ, น้อยไป → เบื่อ) · เลื่อนตำแหน่งที่ “ค้านสายตา” · หัวหน้า (จับผิด micromanage หรือใจดีเกินจนไม่ให้ฟีดแบ็ก) · การเมืองในที่ทำงาน · รางวัลไม่ยุติธรรมเมื่อเทียบกับเพื่อน · สวัสดิการ · “เต็มแล้ว” อยากลองสิ่งใหม่</td></tr>
+    <tr><td class="k">ยุติธรรม ≠ เท่ากัน</td><td>“เงินเดือนเท่าไหร่ก็สำคัญ แต่เทียบกับเพื่อนสำคัญมาก” — รู้ว่าเพื่อนที่ทำน้อยกว่าได้มากกว่า ความพอใจหายทันที</td></tr>
+    <tr><td class="k">แรงจูงใจภายใน</td><td>อยากเก่งขึ้น (ความสามารถ/การเรียนรู้) · อยากทำให้คนอื่นดีขึ้น (ทัศนคติ) · อยากสร้างสิ่งใหม่ (สร้างสรรค์)</td></tr>
+    <tr><td class="k">แรงจูงใจภายนอก</td><td>เงิน คำชม เวลา ความยืดหยุ่น การลงโทษ · ความสำเร็จ/การยอมรับ · ความสัมพันธ์ในทีม · ผลตอบแทนตรงไปตรงมา</td></tr>
+    <tr><td class="k">9 สไตล์</td><td>1 ชอบความมั่นคง · 2 ชอบสร้างความสัมพันธ์ · 3 ดาวเด่น (ชอบแข่ง/รางวัล/การยอมรับ) · 4 ผู้นำ · 5 มองหาผลตอบแทน · 6 ผู้เชี่ยวชาญ · 7 นักสร้างสรรค์ · 8 รักอิสระ · 9 นักสร้างความบันเทิง</td></tr>
+    <tr><td class="k">ข้อสรุป</td><td>องค์กรที่มอง incentive เป็นเงินอย่างเดียว “รักษาคนเก่งไม่ได้” · ต้องเข้าใจว่าแต่ละคนต้องการอะไร</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · ภายใน หรือ ภายนอก</h3>
+  <h2>จัดแรงจูงใจแต่ละข้อลงกลุ่ม</h2>
+  <div class="tray" id="tray1"></div>
+  <div class="bins" id="bins1">
+    <div class="bin" data-c="I"><h4>แรงจูงใจภายใน (มาจากตัวงานเอง)</h4></div>
+    <div class="bin" data-c="E"><h4>แรงจูงใจภายนอก (รางวัล/คนอื่นให้)</h4></div>
+  </div>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk1">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · อ่านคน แล้วเลือกวิธี</h3>
+  <h2>พนักงานร้านเล็กของเรา 5 คน แต่ละคนเป็นสไตล์ไหน และควรจูงใจอย่างไร</h2>
+  <p class="muted">เลือกวิธีที่ตรงกับสไตล์ตามคลิป · ไม่มีวิธีไหน “ดีที่สุด” สำหรับทุกคน</p>
+  <div id="cases"></div>
+  <div class="fb" id="fb2"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk2">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · ยุติธรรม เป้าหมาย และฟีดแบ็ก</h3>
+  <h2>ร้านมีพนักงาน 2 คน ค่าแรงเท่ากัน คนหนึ่งทำงานหนักกว่ามากและเริ่มบ่น ควรทำอย่างไร?</h2>
+  <div id="q3">
+    <button class="choice" type="button">ให้เท่ากันต่อไป เพราะเท่ากัน = ยุติธรรม</button>
+    <button class="choice" data-ok="1" type="button">ทำให้ “ค่าตอบแทนสัมพันธ์กับงาน” ที่เห็นได้ เช่น ปรับภาระงานให้สมดุล หรือมีส่วนเพิ่มตามหน้าที่/ผลงานที่ชัดเจน และบอกเกณฑ์ให้ทั้งคู่รู้</button>
+    <button class="choice" type="button">ขึ้นเงินให้คนที่บ่นแบบเงียบ ๆ อย่าให้อีกคนรู้</button>
+  </div>
+  <p style="margin-top:14px"><b>เป้าหมายข้อไหนเป็น SMART?</b></p>
+  <div id="q3b">
+    <button class="choice" type="button">“พยายามขายให้ดีขึ้น”</button>
+    <button class="choice" data-ok="1" type="button">“ภายในสิ้นเดือนหน้า ลดของเสีย (ชงผิด/ทิ้ง) จาก 8 แก้ว/วัน เหลือไม่เกิน 3 แก้ว/วัน โดยใช้การ์ดสูตรใหม่”</button>
+    <button class="choice" type="button">“ลูกค้าต้องประทับใจทุกคน 100% ตั้งแต่พรุ่งนี้”</button>
+  </div>
+  <p style="margin-top:14px"><b>คลิปบอกว่าหัวหน้าใจดีเกินไปจนไม่ให้ฟีดแบ็กก็เป็นปัญหา — ฟีดแบ็กแบบไหนดีที่สุด?</b></p>
+  <div id="q3c">
+    <button class="choice" type="button">“เธอนี่ไม่ใส่ใจเลยนะ”</button>
+    <button class="choice" data-ok="1" type="button">“เมื่อวานตอน 18:00 ลูกค้า 3 คิวได้ออเดอร์ผิด เพราะไม่ได้ทวนออเดอร์ — ครั้งหน้าทวนก่อนรับเงินทุกครั้งนะ”</button>
+    <button class="choice" type="button">ไม่พูดอะไร เดี๋ยวเขาก็เรียนรู้เอง</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · ทีมของกลุ่มเรา</h3>
+  <h2>สมาชิกกลุ่มแต่ละคนเป็นสไตล์ไหน และอะไรทำให้เขาอยากทำงานกลุ่มต่อ</h2>
+  <p class="muted">ถามเพื่อนจริง ๆ ไม่ต้องเดา · ใส่ชื่อเล่นพอ · ถ้ากลุ่มมีน้อยกว่า 4 คนเว้นว่างได้</p>
+  <div class="team" id="team"></div>
+  <textarea id="ref" placeholder="ข้อตกลงของทีม 2–3 ข้อ ที่ทำให้ “ยุติธรรมในสายตาทุกคน” (เช่น แบ่งงานอย่างไร ใครตัดสิน ให้ฟีดแบ็กกันเมื่อไหร่)"></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 10, no: 4, slug: 'ch10-clip', title: 'ทำไมคนเก่งลาออก: แรงจูงใจ 9 สไตล์ และความยุติธรรมที่มองเห็นได้', goal: 'แยกแรงจูงใจภายใน/ภายนอก อ่านสไตล์คนแล้วเลือกวิธีจูงใจ ตั้งเป้า SMART และให้ฟีดแบ็กเชิงพฤติกรรม' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+const ITEMS=[['อยากชงเครื่องดื่มให้เก่งขึ้นทุกวัน','I'],['โบนัสเมื่อยอดถึงเป้า','E'],['สนุกที่ได้คิดเมนูใหม่','I'],['เจ้าของชมหน้าร้านต่อหน้าลูกค้า','E'],['ดีใจที่สอนน้องใหม่จนทำได้','I'],['เลิกงานเร็วขึ้นในวันที่ยอดดี','E']];
+let sel=null;const placed={};
+function tray(){const t=$('#tray1');t.innerHTML='';ITEMS.forEach((it,i)=>{if(placed[i]!=null)return;const c=Lab.h('span',{class:'chip'+(sel===i?' on':'')},it[0]);c.onclick=()=>{sel=sel===i?null:i;tray()};t.append(c)})}
+$$('#bins1 .bin').forEach(b=>b.onclick=()=>{if(sel==null)return;placed[sel]=b.dataset.c;const i=sel;sel=null;const c=Lab.h('span',{class:'chip'},ITEMS[i][0]);c.onclick=()=>{delete placed[i];c.remove();tray()};b.append(c);tray()});
+tray();
+$('#chk1').onclick=()=>{const left=ITEMS.length-Object.keys(placed).length;if(left)return Lab.feedback($('#fb1'),null,'ยังวางไม่ครบ เหลืออีก '+left+' ข้อ');
+ let ok=0;$$('#bins1 .bin .chip').forEach(c=>{const i=ITEMS.findIndex(x=>x[0]===c.textContent);const r=placed[i]===ITEMS[i][1];c.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('motive',ok,ITEMS.length);Lab.feedback($('#fb1'),ok===ITEMS.length,'ถูก '+ok+'/'+ITEMS.length+' — ภายใน: เก่งขึ้น ช่วยคนอื่น สร้างสิ่งใหม่ · ภายนอก: เงิน คำชม เวลา · ร้านเล็กมีเงินน้อย แต่ให้แรงจูงใจภายในได้ไม่แพ้ร้านใหญ่');$('#chk1').classList.add('hide');show('#go1')};
+$('#go1').onclick=()=>Lab.next();
+const WAYS=['บอกแผนร้านชัด ๆ สื่อสารสม่ำเสมอ ให้รู้ว่าเป็นส่วนหนึ่ง','มีกิจกรรมทีม ให้โอกาสช่วยคนอื่น','ให้การยอมรับ มีรางวัล/ชื่นชมผลงานต่อหน้าคนอื่น','มอบงานใหม่ที่ท้าทาย ไม่ให้ทำซ้ำเดิมนาน ให้พื้นที่ลอง','บอกผลลัพธ์ที่ต้องการแล้วไม่จ้ำจี้ นัดดูความคืบหน้าเป็นช่วง','ส่งไปเรียน/ฝึกเพิ่ม ให้เจอคนที่เก่งกว่า'];
+const CASES=[['“ตูน” ถามเสมอว่าร้านจะอยู่ไหม ตารางกะเปลี่ยนบ่อยแล้วเครียด (สไตล์ชอบความมั่นคง)',0],['“บีม” อยู่ร้านคนเดียวทำงานดีมาก แต่พอมีคนคอยเช็กทุก 10 นาทีจะหงุดหงิด (รักอิสระ)',4],['“ฟ้า” เสนอเมนูใหม่ทุกสัปดาห์ เบื่อถ้าให้ชงแต่สูตรเดิม (นักสร้างสรรค์)',3],['“เก่ง” ยอดขายสูงสุดทุกเดือน แต่ไม่มีใครพูดถึง เริ่มเฉื่อย (ดาวเด่น)',2],['“แนน” อยากรู้เรื่องกาแฟลึก ๆ ถามเรื่องเมล็ด การคั่ว ตลอด (ผู้เชี่ยวชาญ)',5]];
+const box=$('#cases');CASES.forEach((c,i)=>{const d=Lab.h('div',{class:'case'},'<p>'+c[0]+'</p>');const s=Lab.h('select',{},'<option value="">— เลือกวิธีจูงใจ —</option>'+WAYS.map((w,k)=>'<option value="'+k+'">'+w+'</option>').join(''));d.append(s);box.append(d)});
+$('#chk2').onclick=()=>{const sels=$$('#cases select');if(sels.some(s=>s.value===''))return Lab.feedback($('#fb2'),null,'ยังเลือกไม่ครบทุกคน');
+ let ok=0;sels.forEach((s,i)=>{const r=+s.value===CASES[i][1];s.parentElement.classList.remove('ok','no');s.parentElement.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('style',ok,CASES.length);Lab.feedback($('#fb2'),ok===CASES.length,'ถูก '+ok+'/'+CASES.length+' — จุดสำคัญคือ “วิธีเดียวใช้กับทุกคนไม่ได้”: คนรักอิสระจะหมดกำลังใจถ้าถูกจี้ ส่วนคนชอบความมั่นคงกลับต้องการการสื่อสารบ่อย ๆ');
+ if(ok===CASES.length){$('#chk2').classList.add('hide');show('#go2')}};
+$('#go2').onclick=()=>Lab.next();
+let n3=0;const gate=()=>{if(n3>=3)show('#go3')};
+Lab.mcq($('#q3'),{key:'fair',explain:'คลิปย้ำว่ายุติธรรม ≠ เท่ากัน แต่ต้อง “ไม่ค้านสายตา” — เกณฑ์ที่ชัดและบอกให้รู้ ทำให้ความต่างยอมรับได้ ส่วนการขึ้นเงินแบบลับ ๆ จะกลายเป็นระเบิดเวลาเมื่ออีกคนรู้',onDone:()=>{n3++;gate()}});
+Lab.mcq($('#q3b'),{key:'smart',explain:'SMART = เฉพาะเจาะจง วัดได้ ทำได้จริง เกี่ยวข้อง มีกำหนดเวลา · “ขายให้ดีขึ้น” วัดไม่ได้ · “100% ตั้งแต่พรุ่งนี้” ทำไม่ได้จริงและทำให้คนท้อ',onDone:()=>{n3++;gate()}});
+Lab.mcq($('#q3c'),{key:'feedback',explain:'ฟีดแบ็กที่ดีพูดถึง “พฤติกรรม + ผลที่เกิด + สิ่งที่ต้องทำครั้งหน้า” ไม่ตัดสินนิสัย · การไม่พูดเลยคือปัญหาที่คลิปเรียกว่า “หัวหน้าใจดีเกินไป”',onDone:()=>{n3++;gate()}});
+$('#go3').onclick=()=>Lab.next();
+const STY=['ชอบความมั่นคง','ชอบสร้างความสัมพันธ์','ดาวเด่น','ผู้นำ','มองหาผลตอบแทน','ผู้เชี่ยวชาญ','นักสร้างสรรค์','รักอิสระ','นักสร้างความบันเทิง'];
+const tm=$('#team');for(let i=0;i<4;i++){tm.append(Lab.h('div',{},'<input placeholder="ชื่อเล่นสมาชิก '+(i+1)+'" data-n="'+i+'"><select data-s="'+i+'"><option value="">— สไตล์ —</option>'+STY.map(s=>'<option>'+s+'</option>').join('')+'</select><input placeholder="สิ่งที่ทำให้เขาอยากทำต่อ" data-w="'+i+'">'))}
+$('#fin').onclick=()=>{const team=[0,1,2,3].map(i=>({name:$('[data-n="'+i+'"]').value,style:$('[data-s="'+i+'"]').value,want:$('[data-w="'+i+'"]').value})).filter(t=>t.name);
+ Lab.finish({takeaway:'คนไม่ได้ลาออกเพราะเงินอย่างเดียว — ภาระงาน ความยุติธรรม หัวหน้า และฟีดแบ็ก สำคัญพอกัน<br>แรงจูงใจมี 2 แบบ และคนมีหลายสไตล์ ร้านเล็กให้แรงจูงใจภายในได้แม้เงินน้อย<br>เป้าหมายต้อง SMART ฟีดแบ็กต้องพูดถึงพฤติกรรม ไม่ใช่นิสัย',data:{team,agreement:$('#ref').value.slice(0,600)}})};
+window.__autoplay=()=>false;
+})();
+</script>

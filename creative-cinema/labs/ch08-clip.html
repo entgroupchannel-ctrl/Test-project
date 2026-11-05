@@ -1,0 +1,140 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts th{color:var(--muted);font:500 .85em var(--display)}
+.facts td.n{text-align:right;white-space:nowrap;color:var(--amber);font-weight:600}
+.pl{width:100%;border-collapse:collapse;font-size:.95em;margin:10px 0}
+.pl td{padding:7px 8px;border-bottom:1px solid var(--line)}
+.pl td.n{text-align:right;white-space:nowrap;font-weight:600}
+.pl tr.lv td{background:var(--panel2);color:var(--amber);font-weight:700}
+.pl input[type=range]{width:100%}
+.pl .lab{display:flex;justify-content:space-between;font-size:.85em;color:var(--muted)}
+.neg{color:var(--red)!important}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:10px 0}
+.charts figure{margin:0;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px}
+.charts figcaption{font-size:.85em;color:var(--muted);margin-top:4px}
+svg text{fill:var(--cream);font:11px var(--body)}
+.opt{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:10px 0}
+.opt button{text-align:left;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px;color:var(--cream);cursor:pointer;font:1em var(--body)}
+.opt button.on{border-color:var(--teal);background:#15302e}
+.opt b{display:block;color:var(--amber);font:700 1.3em var(--display);margin-top:6px}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (5 นาที)</h3>
+  <h2>P&amp;L เรื่องนี้ต้องรู้ ถ้าคนทำร้านอาหารไม่รู้ มี “เจ๊ง”</h2>
+  <p class="muted">พอดแคสต์ “เพื่อนแท้ร้านอาหาร” EP.4 สั้นแค่ 5 นาที · คำถามของคลิป: <b>“เราจะแน่ใจได้อย่างไรว่าตัวเลขที่เราเห็นจะเหลือกำไร”</b> — เตรียมกระดาษ 1 แผ่นตามที่คลิปชวน</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=rVmB6DB6xbg" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=rVmB6DB6xbg</small>
+  </div>
+  <p style="margin-top:12px"><b>ตัวอย่างในคลิป</b> (จากบทบรรยายอัตโนมัติ · ยอดขายตั้งไว้ 100 บาท = 100%)</p>
+  <table class="facts">
+    <tr><th>รายการ</th><th>บาท</th><th>%</th></tr>
+    <tr><td>ยอดขาย</td><td class="n">100</td><td class="n">100%</td></tr>
+    <tr><td>ต้นทุนอาหาร</td><td class="n">40</td><td class="n">40%</td></tr>
+    <tr><td>ต้นทุนค่าแรง</td><td class="n">20</td><td class="n">20%</td></tr>
+    <tr><td>ค่าใช้จ่ายดำเนินงาน (ค่าเช่า น้ำ ไฟ โทรศัพท์ น้ำมัน)</td><td class="n">30</td><td class="n">30%</td></tr>
+    <tr><td>ค่าเสื่อม</td><td class="n">10</td><td class="n">10%</td></tr>
+    <tr><td><b>กำไร 3 ระดับ</b></td><td colspan="2">กำไรขั้นต้น 60% → กำไรจากการดำเนินงาน 10% → กำไรสุทธิ <b>0%</b></td></tr>
+  </table>
+  <p class="muted">คลิปสรุปว่า “ยอดขายบางครั้งเป็นภาพลวงตา” กำไรขั้นต้น 60% ฟังดูดี แต่สุดท้ายไม่เหลือ ต้องเพิ่มยอดขายหรือลดค่าใช้จ่าย</p>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · สร้าง P&amp;L ของร้านในคลิป</h3>
+  <h2>เลื่อนตัวเลขแล้วดูว่ากำไร 3 ระดับเปลี่ยนอย่างไร</h2>
+  <p class="muted">เริ่มที่ตัวเลขของคลิป · ลองหาว่าต้องทำอะไร ให้กำไรสุทธิเป็นบวกอย่างน้อย 5%</p>
+  <table class="pl">
+    <tr><td>ยอดขาย</td><td class="n">100</td></tr>
+    <tr><td>ต้นทุนอาหาร<div class="lab"><span>20</span><span id="v1">40</span><span>60</span></div><input id="r1" type="range" min="20" max="60" value="40"></td><td class="n" id="n1">-40</td></tr>
+    <tr class="lv"><td>กำไรขั้นต้น (ยอดขาย − ต้นทุนอาหาร)</td><td class="n" id="gp">60</td></tr>
+    <tr><td>ค่าแรง<div class="lab"><span>5</span><span id="v2">20</span><span>35</span></div><input id="r2" type="range" min="5" max="35" value="20"></td><td class="n" id="n2">-20</td></tr>
+    <tr><td>ค่าใช้จ่ายดำเนินงาน<div class="lab"><span>10</span><span id="v3">30</span><span>45</span></div><input id="r3" type="range" min="10" max="45" value="30"></td><td class="n" id="n3">-30</td></tr>
+    <tr class="lv"><td>กำไรจากการดำเนินงาน</td><td class="n" id="op">10</td></tr>
+    <tr><td>ค่าเสื่อม<div class="lab"><span>0</span><span id="v4">10</span><span>20</span></div><input id="r4" type="range" min="0" max="20" value="10"></td><td class="n" id="n4">-10</td></tr>
+    <tr class="lv"><td>กำไรสุทธิ</td><td class="n" id="np">0</td></tr>
+  </table>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · กราฟหลอกตา</h3>
+  <h2>เจ้าของร้านดูกราฟซ้ายแล้วดีใจ — กราฟไหนบอกความจริง?</h2>
+  <p class="muted"><b>ตัวเลขสมมติ</b> ร้านเดียวกัน 6 เดือน (หน่วย: พันบาท)</p>
+  <div class="charts">
+    <figure><svg id="c1" viewBox="0 0 300 170" width="100%"></svg><figcaption>ก. ยอดขายรายเดือน (แกน Y เริ่มที่ 90)</figcaption></figure>
+    <figure><svg id="c2" viewBox="0 0 300 170" width="100%"></svg><figcaption>ข. ยอดขาย กับ กำไรสุทธิ (แกน Y เริ่มที่ 0)</figcaption></figure>
+  </div>
+  <div id="q2">
+    <button class="choice" type="button">กราฟ ก. — ยอดขายพุ่งชัดเจน ร้านกำลังไปได้ดี</button>
+    <button class="choice" data-ok="1" type="button">กราฟ ข. — แกน Y เริ่มที่ 0 ทำให้เห็นว่ายอดขายโตน้อยมาก และกำไรสุทธิแทบไม่ขยับ</button>
+    <button class="choice" type="button">ทั้งสองกราฟใช้ข้อมูลต่างกัน จึงเทียบไม่ได้</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · ตัดสินใจด้วยตัวเลข</h3>
+  <h2>ร้านในคลิปกำไรสุทธิ 0 — ทางเลือกไหนทำให้เหลือกำไรมากกว่า?</h2>
+  <p class="muted">สมมติระยะสั้น: ค่าแรง ค่าดำเนินงาน ค่าเสื่อม <b>คงที่</b> (รวม 60) ส่วนต้นทุนอาหาร<b>แปรผัน</b>ตามยอดขาย · แตะเพื่อดูผลลัพธ์ แล้วตอบคำถาม</p>
+  <div class="opt" id="opts">
+    <button type="button" data-k="a">เพิ่มยอดขาย 10% (ต้นทุนอาหารยังเป็น 40% ของยอดขาย)<b>?</b></button>
+    <button type="button" data-k="b">ลดต้นทุนอาหารจาก 40% เหลือ 35% (ยอดขายเท่าเดิม)<b>?</b></button>
+    <button type="button" data-k="c">ทำทั้งสองอย่าง<b>?</b></button>
+  </div>
+  <div id="q3">
+    <button class="choice" type="button">เพิ่มยอดขายดีกว่าเสมอ เพราะกำไรขั้นต้น 60% สูง</button>
+    <button class="choice" data-ok="1" type="button">ต้องคำนวณ — ที่นี่เพิ่มยอดขาย 10% ได้ +6 ส่วนลดต้นทุน 5 จุดได้ +5 ใกล้กันมาก แต่ลดต้นทุนมักทำได้ทันทีและไม่ต้องหาลูกค้าเพิ่ม</button>
+    <button class="choice" type="button">ลดค่าเสื่อมเป็น 0 ง่ายที่สุด เพราะไม่ใช่เงินสด</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · KPI 1 ตัวของกลุ่ม</h3>
+  <h2>ถ้าธุรกิจกลุ่มเราดูตัวเลขได้แค่ 1 ตัวต่อสัปดาห์ จะดูอะไร และเท่าไหร่ถึง “ต้องทำอะไรสักอย่าง”</h2>
+  <p class="muted">ตัวอย่าง: “ต้นทุนวัตถุดิบต่อยอดขาย ต้องไม่เกิน 35% — ถ้าเกิน 2 สัปดาห์ติด ทบทวนสูตร/ซัพพลายเออร์” · ระวังเลือก “ยอดขาย” เฉย ๆ เพราะคลิปบอกว่าเป็นภาพลวงตาได้</p>
+  <textarea id="ref" placeholder="KPI: ...&#10;เป้า/เส้นเตือน: ...&#10;ถ้าเกินเส้น จะทำ: ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 8, no: 4, slug: 'ch08-clip', title: 'ตัวเลขในร้านรู้ความจริง: P&L 3 ระดับจากคลิป', goal: 'อ่านกำไร 3 ระดับ จับกราฟหลอกตา และตัดสินใจด้วยการคำนวณ ไม่ใช่ความรู้สึก' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+let hit=false;
+const pl=()=>{const f=+$('#r1').value,l=+$('#r2').value,o=+$('#r3').value,d=+$('#r4').value;[['1',f],['2',l],['3',o],['4',d]].forEach(([k,v])=>{$('#v'+k).textContent=v;$('#n'+k).textContent='-'+v});
+ const gp=100-f,op=gp-l-o,np=op-d;$('#gp').textContent=gp;$('#op').textContent=op;$('#np').textContent=np;$('#op').classList.toggle('neg',op<0);$('#np').classList.toggle('neg',np<0);
+ if(np>=5&&!hit){hit=true;Lab.score('pl',1,1);Lab.feedback($('#fb1'),true,'ได้กำไรสุทธิ '+np+'% — สังเกตว่าเปลี่ยนตัวเลขเดียวไม่กี่จุดก็พลิกจาก 0 เป็นบวกได้ นี่คือเหตุผลที่ต้องรู้ตัวเลขทุกแถว ไม่ใช่แค่ยอดขาย');show('#go1')}
+ else if(!hit)Lab.feedback($('#fb1'),null,np<0?'ตอนนี้ขาดทุน '+Math.abs(np)+'% — ยอดขายเท่าเดิม แต่เงินไหลออกมากกว่าเข้า':'กำไรสุทธิ '+np+'% ยังไม่ถึง 5% ลองลดบางแถว')};
+$$('#r1,#r2,#r3,#r4').forEach(r=>r.oninput=pl);pl();
+$('#go1').onclick=()=>Lab.next();
+// charts
+const S=[100,101,103,104,106,108],N=[0,0,1,0,1,1],M=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.'];
+function bars(svg,series,ymin,ymax,colors){const W=300,H=170,L=34,B=24,T=10,R=6;const pw=W-L-R,ph=H-B-T;const sy=v=>T+ph-(v-ymin)/(ymax-ymin)*ph;let s='';
+ [0,.5,1].forEach(t=>{const v=ymin+(ymax-ymin)*t,y=sy(v);s+='<line x1="'+L+'" y1="'+y+'" x2="'+(W-R)+'" y2="'+y+'" stroke="rgba(255,255,255,.12)"/><text x="'+(L-4)+'" y="'+(y+4)+'" text-anchor="end">'+Math.round(v)+'</text>'});
+ const n=6,gw=pw/n,bw=gw/(series.length+1);series.forEach((ser,si)=>ser.forEach((v,i)=>{const x=L+i*gw+bw*(si+.5),y=sy(Math.max(v,ymin));s+='<rect x="'+x+'" y="'+y+'" width="'+(bw*.9)+'" height="'+(T+ph-y)+'" fill="'+colors[si]+'" rx="2"/>'}));
+ M.forEach((m,i)=>s+='<text x="'+(L+i*gw+gw/2)+'" y="'+(H-8)+'" text-anchor="middle">'+m+'</text>');svg.innerHTML=s}
+bars($('#c1'),[S],90,110,['var(--amber)']);bars($('#c2'),[S,N],0,110,['var(--amber)','var(--teal)']);
+Lab.mcq($('#q2'),{key:'chart',explain:'ข้อมูลชุดเดียวกัน แต่กราฟ ก. ตัดแกน Y ให้เริ่มที่ 90 การโต 8% จึงดูเหมือนพุ่งทะลุ · กราฟ ข. วางกำไรสุทธิไว้ข้าง ๆ ให้เห็นว่ายอดขายขึ้นแต่กำไรไม่ขึ้นตาม — คำถามของคลิปอยู่ตรงนี้',onDone:()=>show('#go2')});
+$('#go2').onclick=()=>Lab.next();
+const R={a:'ยอดขาย 110 · อาหาร 44 · กำไรขั้นต้น 66 · หักคงที่ 60 → กำไรสุทธิ <b>+6</b>',b:'ยอดขาย 100 · อาหาร 35 · กำไรขั้นต้น 65 · หักคงที่ 60 → กำไรสุทธิ <b>+5</b>',c:'ยอดขาย 110 · อาหาร 38.5 · กำไรขั้นต้น 71.5 · หักคงที่ 60 → กำไรสุทธิ <b>+11.5</b>'};
+let seen={};$$('#opts button').forEach(b=>b.onclick=()=>{b.classList.add('on');b.querySelector('b').innerHTML=R[b.dataset.k];seen[b.dataset.k]=1});
+Lab.mcq($('#q3'),{key:'decide',explain:'สองทางให้ผลใกล้กัน (+6 กับ +5) แต่ต้นทุนในการ “ทำให้เกิด” ต่างกัน: เพิ่มยอดขายต้องหาลูกค้าใหม่/ทำการตลาด ลดต้นทุนทำได้ในครัววันนี้ · ค่าเสื่อมไม่ใช่เงินสดจริง แต่สะท้อนว่าเครื่องครัวเก่าลงและต้องซื้อใหม่ ตัดทิ้งไม่ได้',onDone:()=>show('#go3')});
+$('#go3').onclick=()=>Lab.next();
+$('#fin').onclick=()=>Lab.finish({takeaway:'กำไรมี 3 ระดับ (ขั้นต้น → ดำเนินงาน → สุทธิ) ยอดขายสูง ≠ เหลือกำไร<br>กราฟที่ตัดแกน Y หรือไม่วางกำไรไว้ข้างยอดขาย หลอกตาได้<br>ตัดสินใจด้วยการคำนวณทางเลือก และตั้ง KPI ที่มี “เส้นเตือน” ชัด',data:{np:$('#np').textContent,options_seen:Object.keys(seen),kpi:$('#ref').value.slice(0,600)}});
+window.__autoplay=()=>false;
+})();
+</script>

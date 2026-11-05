@@ -1,0 +1,130 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts td.k{color:var(--amber);font-weight:600;white-space:nowrap}
+.chip{display:inline-block;background:var(--panel);border:1.5px solid var(--line);border-radius:999px;padding:7px 12px;margin:4px 4px 0 0;cursor:pointer;font-size:.9em}
+.chip.on{border-color:var(--teal);background:#15302e}
+.chip.ok{border-color:var(--green)} .chip.no{border-color:var(--red)}
+.tray{min-height:48px;margin:8px 0}
+.bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:10px 0}
+.bin{background:var(--panel2);border:1.5px dashed var(--line);border-radius:12px;padding:10px;min-height:110px}
+.bin h4{margin:0 0 6px;font:600 1em var(--display);color:var(--amber)}
+.cl label{display:flex;gap:10px;align-items:flex-start;background:var(--panel2);border:1.5px solid var(--line);border-radius:10px;padding:10px;margin:6px 0;cursor:pointer}
+.cl label.ok{border-color:var(--green)} .cl label.no{border-color:var(--red)}
+.cl input{margin-top:3px}
+.plan{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:10px 0}
+.plan div{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px}
+.plan h4{margin:0 0 6px;font:600 1em var(--display);color:var(--amber)}
+.plan textarea{min-height:80px}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (15 นาที)</h3>
+  <h2>เปิดความลับการสอนพนักงานแบบ McDonald's</h2>
+  <p class="muted">Penguin Talk EP.33 สัมภาษณ์ “พี่ปาน” อดีตพนักงาน McDonald's 17 ปี จากผู้จัดการฝึกหัดจนเป็นเทรนเนอร์ทุกสาขา · ประเด็น: ทำไมเชนระดับโลกไม่เจอปัญหา “พนักงานดีแต่อยู่ไม่นาน”</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=3rPBH2QwfQs" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=3rPBH2QwfQs</small>
+  </div>
+  <p style="margin-top:12px"><b>สิ่งที่ได้ยินในคลิป</b> (จากบทบรรยายอัตโนมัติ · เป็นคำบอกเล่าของผู้ให้สัมภาษณ์)</p>
+  <table class="facts">
+    <tr><td class="k">People Business</td><td>แบรนด์เหล่านี้มองว่าตัวเองอยู่ใน “ธุรกิจคน” ที่สินค้าเป็นอาหาร · ลงทุนกับคน ไม่ใช่แค่ตกแต่งร้าน · McDonald's มี Hamburger University สอนผู้จัดการร้าน</td></tr>
+    <tr><td class="k">วันแรก</td><td>ทีมผู้จัดการมาต้อนรับทุกคน · ปฐมนิเทศบอกเลยว่าสัปดาห์ 1, สัปดาห์ 2, เดือน 1, เดือน 3 ต้องเรียนอะไร ผ่านด่านอะไรจึงเลื่อนตำแหน่ง — “บอกเส้นชัยก่อนสตาร์ท”</td></tr>
+    <tr><td class="k">เรียนทีละสเตชัน</td><td>จากง่ายไปยาก ไม่ต้องไปพร้อมกัน ไม่ผ่านย้อนกลับได้ · ผู้จัดการฝึกหัดต้องทอดไก่ ล้างของ ทิ้งขยะ ทำทุกอย่าง “ถ้าเราทำไม่เป็น เราจะมีหน้าสอนใคร”</td></tr>
+    <tr><td class="k">ประเมิน</td><td>Observation checklist เกณฑ์ผ่าน 90% รวมคะแนนแล้วฟีดแบ็กว่าตกข้อไหน ต้องแก้จุดไหนจึงก้าวหน้า · วินัย ทีมเวิร์ก การแก้ปัญหา เป็นคะแนนสะสมปลายปี</td></tr>
+    <tr><td class="k">QSC + V</td><td>Quality (เฟรนช์ฟรายส์ทอดแล้วอยู่ได้ 7 นาที เกินทิ้ง) · Service (ขั้นตอนทักทาย แนะนำ ทวน เก็บเงิน; โปรแกรมจับเวลา 60 วินาที) · Cleanliness (ตั้งแต่ยูนิฟอร์มถึงลิ้นชักเงิน) → Value ในใจลูกค้า</td></tr>
+    <tr><td class="k">ผลของการเทรน</td><td>ร้านมีระบบ พนักงานอยู่นานขึ้นเพราะเห็นอนาคต · “ร้านทุกร้านต้องมีเทรนนิ่ง ไม่งั้นแตกสาขาไม่ได้” · เจ้าของร้านเล็กเป็นเทรนเนอร์เองได้ถ้ารู้หลัก</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · มาตรฐานงาน = ส่วนหนึ่งของ JD</h3>
+  <h2>จัดพฤติกรรมในคลิปลงหมวด Q · S · C</h2>
+  <p class="muted">JD ที่ดีบอกว่า “ทำอะไร ดีแค่ไหน” — ลองแยกมาตรฐานของร้านในคลิปก่อน</p>
+  <div class="tray" id="tray1"></div>
+  <div class="bins" id="bins1">
+    <div class="bin" data-c="Q"><h4>Q คุณภาพ</h4></div>
+    <div class="bin" data-c="S"><h4>S บริการ</h4></div>
+    <div class="bin" data-c="C"><h4>C ความสะอาด</h4></div>
+  </div>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk1">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · Observation checklist</h3>
+  <h2>เลือก 5 ข้อที่ “สังเกตได้จริง” สำหรับเช็กลิสต์พนักงานหน้าร้านชานม</h2>
+  <p class="muted">คลิปใช้เช็กลิสต์ที่ให้คะแนนได้ · ข้อที่ดีต้องมองเห็น/วัดได้ ไม่ใช่ความรู้สึก · เลือก 5 ข้อแล้วตรวจ</p>
+  <div class="cl" id="cl"></div>
+  <div class="fb" id="fb2"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk2">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · สัมภาษณ์อย่างเป็นธรรม และตอบแบบ STAR</h3>
+  <h2>คำถามสัมภาษณ์ข้อไหน “ถามได้” สำหรับตำแหน่งพนักงานหน้าร้าน?</h2>
+  <div id="q3">
+    <button class="choice" type="button">“มีแฟนหรือยัง แต่งงานแล้วจะลาออกไหม”</button>
+    <button class="choice" data-ok="1" type="button">“เล่าครั้งที่ลูกค้าไม่พอใจ ตอนนั้นทำอย่างไร แล้วผลเป็นอย่างไร”</button>
+    <button class="choice" type="button">“นับถือศาสนาอะไร จะมีปัญหากับการทำงานวันพระไหม”</button>
+  </div>
+  <p style="margin-top:14px"><b>ผู้สมัครคนไหนตอบแบบ STAR (สถานการณ์–หน้าที่–สิ่งที่ทำ–ผล) ได้ครบ?</b></p>
+  <div id="q3b">
+    <button class="choice" type="button">“หนูเป็นคนใจเย็น รับมือลูกค้าได้ทุกแบบค่ะ ใคร ๆ ก็บอก”</button>
+    <button class="choice" data-ok="1" type="button">“ตอนขายของตลาดนัด (S) หนูดูหน้าร้านคนเดียว (T) ลูกค้าได้ของผิด หนูขอโทษ เปลี่ยนให้ทันที และแถมขนมชิ้นเล็ก (A) เขากลับมาซื้ออีกสัปดาห์ถัดมา (R)”</button>
+    <button class="choice" type="button">“เคยมีลูกค้าโวยค่ะ หนูก็แก้ปัญหาไป สุดท้ายก็โอเค”</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · บอกเส้นชัยก่อนสตาร์ท</h3>
+  <h2>ถ้าธุรกิจกลุ่มรับผู้ช่วย 1 คน (เพื่อนหรือรุ่นน้อง) เขาต้องเรียนอะไรใน 3 ช่วงนี้</h2>
+  <p class="muted">แบบเดียวกับที่คลิปบอกเส้นทางตั้งแต่วันแรก · เขียนสั้น ๆ ช่องละ 1–2 ข้อ · ใครเป็นคนสอน?</p>
+  <div class="plan">
+    <div><h4>วันแรก–สัปดาห์ 1</h4><textarea id="p1" placeholder="เช่น รู้จักสินค้าทุกตัว ชงตามสูตรได้ภายใต้การดู"></textarea></div>
+    <div><h4>สัปดาห์ 2–4</h4><textarea id="p2" placeholder="เช่น รับออเดอร์+เก็บเงินเอง ผ่านเช็กลิสต์ 90%"></textarea></div>
+    <div><h4>เดือน 2–3</h4><textarea id="p3" placeholder="เช่น ดูร้านคนเดียว 1 กะ สอนคนใหม่ได้"></textarea></div>
+  </div>
+  <textarea id="ref" placeholder="คนสอนคือ: ... · ถ้าเขาทำได้ตามนี้ เขาจะได้อะไร (ค่าแรง/บทบาท/ความก้าวหน้า): ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 9, no: 4, slug: 'ch09-clip', title: 'People Business: สอนคนแบบเชนระดับโลก ย่อส่วนให้ร้านเล็ก', goal: 'เปลี่ยนวิธีของ McDonald\'s ในคลิป (มาตรฐาน เช็กลิสต์ เส้นทางก้าวหน้า) ให้เป็นเครื่องมือรับคนและสอนคนของกลุ่ม' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+const ITEMS=[['เฟรนช์ฟรายส์เกิน 7 นาที ต้องทิ้ง','Q'],['ทักทาย แนะนำเมนู ทวนออเดอร์ ทอนเงิน','S'],['ยูนิฟอร์ม ผม รองเท้า เรียบร้อยก่อนเข้ากะ','C'],['ตักฟรายส์ 1 ครั้งต้องได้ 1 กล่อง','Q'],['นักท่องเที่ยวถามทาง ก็ช่วยบอก','S'],['ลิ้นชักเก็บเงินและโคมไฟต้องสะอาด','C']];
+let sel=null;const placed={};
+function tray(){const t=$('#tray1');t.innerHTML='';ITEMS.forEach((it,i)=>{if(placed[i]!=null)return;const c=Lab.h('span',{class:'chip'+(sel===i?' on':'')},it[0]);c.onclick=()=>{sel=sel===i?null:i;tray()};t.append(c)})}
+$$('#bins1 .bin').forEach(b=>b.onclick=()=>{if(sel==null)return;placed[sel]=b.dataset.c;const i=sel;sel=null;const c=Lab.h('span',{class:'chip'},ITEMS[i][0]);c.onclick=()=>{delete placed[i];c.remove();tray()};b.append(c);tray()});
+tray();
+$('#chk1').onclick=()=>{const left=ITEMS.length-Object.keys(placed).length;if(left)return Lab.feedback($('#fb1'),null,'ยังวางไม่ครบ เหลืออีก '+left+' ข้อ');
+ let ok=0;$$('#bins1 .bin .chip').forEach(c=>{const i=ITEMS.findIndex(x=>x[0]===c.textContent);const r=placed[i]===ITEMS[i][1];c.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('qsc',ok,ITEMS.length);Lab.feedback($('#fb1'),ok===ITEMS.length,'ถูก '+ok+'/'+ITEMS.length+' — สังเกตว่าทุกข้อเป็น “พฤติกรรมที่เห็นได้” มีตัวเลขหรือขั้นตอนชัด นี่คือสิ่งที่ JD และเช็กลิสต์ของร้านเล็กก็ทำได้');$('#chk1').classList.add('hide');show('#go1')};
+$('#go1').onclick=()=>Lab.next();
+const CL=[['ทักทายลูกค้าภายใน 5 วินาทีที่เดินมาถึงเคาน์เตอร์',1],['มีใจรักงานบริการ',0],['ทวนออเดอร์ก่อนรับเงินทุกครั้ง',1],['ชงตามสูตร: ชา 150 มล. น้ำเชื่อม 2 ปั๊ม ตรงตามการ์ดสูตร',1],['เป็นคนขยัน',0],['เช็ดเคาน์เตอร์และถาดทุกครั้งหลังลูกค้าออก',1],['ดูน่าเชื่อถือ',0],['ปิดกะ: นับเงินตรงกับยอดในเครื่อง ส่วนต่างไม่เกิน 20 บาท',1],['ทัศนคติดี',0]];
+const cl=$('#cl');CL.forEach((c,i)=>{const l=Lab.h('label',{},'<input type="checkbox" value="'+i+'"><span>'+c[0]+'</span>');cl.append(l)});
+$('#chk2').onclick=()=>{const picks=$$('#cl input:checked').map(i=>+i.value);if(picks.length!==5)return Lab.feedback($('#fb2'),null,'เลือกให้ครบ 5 ข้อพอดี (ตอนนี้ '+picks.length+')');
+ let ok=0;$$('#cl label').forEach((l,i)=>{l.classList.remove('ok','no');if(picks.includes(i)){const r=CL[i][1]===1;l.classList.add(r?'ok':'no');if(r)ok++}});
+ Lab.score('checklist',ok,5);Lab.feedback($('#fb2'),ok===5,'สังเกตได้จริง '+ok+'/5 — “ใจรักบริการ ขยัน ทัศนคติดี น่าเชื่อถือ” เป็นสิ่งที่เราอยากได้ แต่ให้คะแนนไม่ได้ ต้องแปลเป็นพฤติกรรม (ทักภายใน 5 วิ, ทวนออเดอร์, เช็ดทุกครั้ง) เหมือนที่คลิปใช้เกณฑ์ 90%');
+ if(ok===5){$('#chk2').classList.add('hide');show('#go2')}};
+$('#go2').onclick=()=>Lab.next();
+let a=false,b=false;const gate=()=>{if(a&&b)show('#go3')};
+Lab.mcq($('#q3'),{key:'fair',explain:'คำถามเรื่องสถานภาพ ครอบครัว ศาสนา อายุ ไม่เกี่ยวกับความสามารถในงาน และเป็นการเลือกปฏิบัติ · คำถามที่ดีถามถึง “พฤติกรรมในอดีต” ที่เกี่ยวกับงาน ซึ่งทำนายงานในอนาคตได้ดีกว่า',onDone:()=>{a=true;gate()}});
+Lab.mcq($('#q3b'),{key:'star',explain:'STAR ให้ผู้สัมภาษณ์เห็นภาพและตรวจสอบได้ · คำตอบแบบ “ใคร ๆ ก็บอก” หรือ “สุดท้ายก็โอเค” ไม่มีสถานการณ์และผลที่วัดได้ · ใช้โครงนี้ตอบสัมภาษณ์งานของตัวเองได้ด้วย',onDone:()=>{b=true;gate()}});
+$('#go3').onclick=()=>Lab.next();
+$('#fin').onclick=()=>Lab.finish({takeaway:'ร้านเล็กก็เป็น People Business: มาตรฐานงานต้องเขียนเป็นพฤติกรรมที่เห็นได้ ให้คะแนนได้<br>บอกเส้นทางก้าวหน้าตั้งแต่วันแรก คนจะอยู่นานขึ้น<br>สัมภาษณ์ด้วยคำถามพฤติกรรมในอดีต (STAR) ไม่ถามเรื่องส่วนตัวที่ไม่เกี่ยวกับงาน',data:{plan:[$('#p1').value,$('#p2').value,$('#p3').value].map(s=>s.slice(0,300)),who:$('#ref').value.slice(0,400)}});
+window.__autoplay=()=>false;
+})();
+</script>
