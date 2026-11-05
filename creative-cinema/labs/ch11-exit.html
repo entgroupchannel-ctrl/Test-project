@@ -1,0 +1,129 @@
+
+<div class="lab">
+<style>
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts td.k{color:var(--amber);font-weight:600;white-space:nowrap}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}
+.calc label{display:block;font-size:.85em;color:var(--muted)}
+.calc input{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel2);color:var(--cream);font:600 1.05em var(--body)}
+.big{font:700 1.4em var(--display);color:var(--amber)}
+.ladder{display:grid;gap:6px;margin:10px 0}
+.rung{display:flex;gap:10px;align-items:flex-start;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px}
+.rung b{display:grid;place-items:center;min-width:30px;height:30px;border-radius:50%;background:var(--amber);color:#1a1612;font:700 1em var(--display)}
+.rung small{display:block;color:var(--muted);margin-top:2px}
+.case{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+.case p{margin:0 0 6px}
+.case select{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel);color:var(--cream);font:1em var(--body)}
+.case.ok{border-color:var(--green)} .case.no{border-color:var(--red)}
+.help{background:#15302e;border:1.5px solid var(--teal);border-radius:12px;padding:12px 14px;margin:12px 0}
+.help b{color:var(--teal)}
+.help ul{margin:6px 0 0;padding-left:18px}
+.neg{color:var(--red)!important}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · อ่านก่อน (3 นาที)</h3>
+  <h2>ถ้าไปไม่รอด: บันไดทางออก 6 ขั้น</h2>
+  <p class="muted">ธุรกิจจำนวนมากไปไม่รอด — นั่นเป็นเรื่องปกติของการเป็นผู้ประกอบการ สิ่งที่ไม่ปกติคือการคิดว่า “ไม่มีทางออก” ห้องนี้จะพาดูว่าทางออกมีกี่ขั้น และกฎหมายไทยตั้งใจให้คนล้มแล้ว<b>เริ่มใหม่ได้</b></p>
+  <div class="ladder">
+    <div class="rung"><b>1</b><div>หยุดเลือด<small>ตารางเงินสด 13 สัปดาห์ · ตัดรายจ่ายที่ไม่สร้างรายได้ · ขายสต๊อก/ของที่ไม่ใช้ · เจรจายืดเวลากับซัพพลายเออร์และเจ้าของที่</small></div></div>
+    <div class="rung"><b>2</b><div>ปรับโครงสร้างหนี้<small>ขอยืดงวด ลดดอก พักต้นกับเจ้าหนี้โดยตรง · หนี้ธนาคาร/บัตร: คลินิกแก้หนี้ 1443, โครงการ “คุณสู้ เราช่วย” (ธปท. 1213)</small></div></div>
+    <div class="rung"><b>3</b><div>ไกล่เกลี่ยก่อนฟ้อง<small>ศูนย์ไกล่เกลี่ยข้อพิพาท (กรมคุ้มครองสิทธิฯ / ศาล) ฟรี ไม่ต้องมีทนาย ได้ข้อตกลงที่บังคับได้</small></div></div>
+    <div class="rung"><b>4</b><div>ขาย / ส่งต่อ / ควบรวม<small>ขายกิจการทั้งก้อน หรือขายเฉพาะสินทรัพย์ (ลูกค้า สูตร แบรนด์ อุปกรณ์) ให้คู่แข่งหรือพนักงาน ก่อนมูลค่าจะเป็นศูนย์</small></div></div>
+    <div class="rung"><b>5</b><div>ปิดกิจการอย่างเป็นระบบ<small>จดทะเบียนเลิก+ชำระบัญชี (DBD) · แจ้งเลิกกับสรรพากร ยื่นภาษีงวดสุดท้าย · จ่ายค่าชดเชยลูกจ้างตามกฎหมาย — จะได้ไม่มีหนี้ภาษีและคดีตามหลัง</small></div></div>
+    <div class="rung"><b>6</b><div>ฟื้นฟูหนี้ / ล้มละลาย<small>ฟื้นฟูกิจการ SME หรือฟื้นฟูหนี้สินบุคคลธรรมดาผ่านศาลล้มละลายกลาง: ศาลรับคำร้อง → หยุดฟ้อง/บังคับคดีชั่วคราว → ทำแผนชำระหนี้ · ถูกฟ้องล้มละลาย → ปลดจากล้มละลายได้เมื่อครบ 3 ปี หนี้ที่เหลือหลุด เริ่มใหม่</small></div></div>
+  </div>
+  <p style="margin-top:10px"><b>สถานะกฎหมาย ณ เดือน พ.ย. 2569</b> (จากข่าว — ตรวจอีกครั้งก่อนอ้างอิง)</p>
+  <table class="facts">
+    <tr><td class="k">กฎหมายเดิม</td><td>ฟื้นฟูกิจการได้เฉพาะบริษัท หนี้ ≥ 10 ล้าน · บุคคลธรรมดาเข้าสู่ล้มละลายได้ต่อเมื่อเจ้าหนี้ฟ้อง (หนี้ ≥ 1 ล้าน) · ปลดจากล้มละลายอัตโนมัติเมื่อครบ 3 ปี</td></tr>
+    <tr><td class="k">ร่างใหม่</td><td>สภาผู้แทนฯ เห็นชอบ 23 ก.ย. 2569 · วุฒิสภาเห็นชอบ 1 ต.ค. 2569 (137:2) · <b>รอประกาศในราชกิจจานุเบกษา</b> — สาระ: บุคคลธรรมดาที่มีหนี้ตั้งแต่ 100,000 บาทและมีรายได้ ยื่นขอฟื้นฟูหนี้เองได้ก่อนถูกฟ้อง · SME ขอฟื้นฟูกิจการได้ตั้งแต่หนี้ 2–3 ล้าน · ศาลรับคำร้องแล้วหยุดบังคับคดีชั่วคราว · เจ้าหนี้ 50% ของมูลหนี้ก็อนุมัติแผนได้ · แผนไม่เกิน 3 ปี (SME) / 5 ปี (บุคคล) · ทำสำเร็จ หนี้ก่อนหน้านั้นหลุด (ยกเว้นค่าเลี้ยงดู ละเมิดโดยเจตนา ฉ้อโกง) · ข้าราชการที่ล้มละลายโดยสุจริตไม่ต้องออกจากราชการ</td></tr>
+    <tr><td class="k">ติดคุกไหม</td><td>หนี้จากธุรกิจเป็นคดีแพ่ง ไม่มีโทษจำคุก — ยกเว้นออกเช็คโดยไม่มีเงิน ฉ้อโกง หรือยักยอก</td></tr>
+  </table>
+  <div class="help"><b>ถ้าตอนนี้ใครกำลังเครียดเรื่องเงินอยู่จริง ๆ</b> — คุยกับคนได้ทันที ไม่ต้องรอให้ถึงขั้นไหนก่อน<ul><li>สายด่วนสุขภาพจิต <b>1323</b> (24 ชั่วโมง ฟรี)</li><li>คลินิกแก้หนี้ <b>1443</b> · ธนาคารแห่งประเทศไทย <b>1213</b></li><li>ศูนย์ให้คำปรึกษา SME (สสว.) <b>1301</b></li><li>อาจารย์ผู้สอนวิชานี้ — ทักมาได้เสมอ</li></ul></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">อ่านแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · เหลือเวลากี่เดือน</h3>
+  <h2>Runway: เงินสดที่มีอยู่จะพอไปได้อีกกี่เดือน</h2>
+  <p class="muted"><b>ตัวเลขสมมติ</b> ร้านชานมหลังเปิด 8 เดือน · ลองใส่ตัวเลขธุรกิจกลุ่มเราดูด้วย</p>
+  <div class="calc">
+    <div><label>เงินสดคงเหลือ</label><input id="r1" type="number" value="45000"></div>
+    <div><label>รายรับ/เดือน</label><input id="r2" type="number" value="80000"></div>
+    <div><label>รายจ่าย/เดือน (รวมค่างวดหนี้)</label><input id="r3" type="number" value="98000"></div>
+    <div><label>หนี้คงค้างทั้งหมด</label><input id="r4" type="number" value="350000"></div>
+  </div>
+  <div class="calc">
+    <div><label>เงินหายต่อเดือน</label><div class="big" id="burn">—</div></div>
+    <div><label>Runway</label><div class="big" id="run">—</div></div>
+  </div>
+  <p class="muted" id="n1"></p>
+  <div id="q1">
+    <button class="choice" type="button">กู้เพิ่มมาเติมเงินสด แล้วทำแบบเดิมต่อ</button>
+    <button class="choice" data-ok="1" type="button">ขึ้นบันไดขั้น 1 ทันที: ตารางเงินสด 13 สัปดาห์ ตัดรายจ่ายให้ต่ำกว่ารายรับ แล้วคุยเจ้าหนี้ก่อนขาดส่ง (ขั้น 2) — เพราะเวลาเหลือไม่ถึง 3 เดือน</button>
+    <button class="choice" type="button">รอดูอีก 2 เดือน เผื่อยอดขายดีขึ้นเอง</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · ใครต้องจ่าย (กลับไปบทที่ 2)</h3>
+  <h2>ร้านเดียวกันปิดตัว เหลือหนี้ 350,000 — เจ้าของต้องเอาเงินส่วนตัวมาจ่ายไหม</h2>
+  <div id="cases2"></div>
+  <div class="fb" id="fb2"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk2">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · เลือกขั้นให้ถูกคน</h3>
+  <h2>4 สถานการณ์ — ควรเริ่มที่บันไดขั้นไหน</h2>
+  <p class="muted">ไม่มีคำตอบเดียวในชีวิตจริง แต่ลองเลือก “ขั้นแรกที่ควรทำ” ตามหลักเบาไปหนัก</p>
+  <div id="cases3"></div>
+  <div class="fb" id="fb3"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk3">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · ความเชื่อผิด ๆ และแผนของเรา</h3>
+  <h2>“ถ้าล้มละลาย ชีวิตจบ” จริงไหม?</h2>
+  <div id="q4">
+    <button class="choice" type="button">จริง — ล้มละลายแล้วทำงาน กู้ หรือเปิดธุรกิจใหม่ไม่ได้ตลอดชีวิต</button>
+    <button class="choice" data-ok="1" type="button">ไม่จริง — กฎหมายออกแบบให้ “ปลดจากล้มละลาย” ได้ (เดิม 3 ปีอัตโนมัติ และร่างใหม่ให้ฟื้นฟูหนี้ก่อนถูกฟ้องได้) หนี้ที่เหลือหลุด เริ่มใหม่ได้ ส่วนหนี้ธุรกิจทั่วไปไม่มีโทษจำคุก</button>
+    <button class="choice" type="button">จริง — เพราะเจ้าหนี้มีสิทธิ์ตามทวงไปตลอดชีวิต</button>
+  </div>
+  <p style="margin-top:14px"><b>เขียน Exit plan ของธุรกิจกลุ่ม 3 บรรทัด</b> (ทำตอนที่ยังไม่มีปัญหา — ง่ายที่สุด)</p>
+  <textarea id="ref" placeholder="1) สัญญาณเตือนที่จะทำให้เราหยุด (เช่น runway < 3 เดือน 2 เดือนติด): ...&#10;2) ถ้าหยุด จะทำอะไรกับของ/ลูกค้า/หนี้ (ขั้นไหนในบันได): ...&#10;3) คน 3 คนที่จะโทรหาเป็นคนแรก (ไม่ใช่เจ้าหนี้): ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 11, no: 5, slug: 'ch11-exit', title: 'ถ้าไปไม่รอด: บันไดทางออก 6 ขั้น', goal: 'รู้ว่าทางออกเมื่อธุรกิจไปไม่รอดมีหลายขั้น เริ่มจากเบาไปหนัก และกฎหมายตั้งใจให้คนล้มเริ่มใหม่ได้' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+const calc=()=>{const c=+$('#r1').value||0,i=+$('#r2').value||0,o=+$('#r3').value||0,d=+$('#r4').value||0;const burn=o-i;$('#burn').textContent=burn>0?Lab.fmt(burn)+' บาท':'ไม่ติดลบ';const run=burn>0?c/burn:Infinity;$('#run').textContent=burn>0?run.toFixed(1)+' เดือน':'ไปได้เรื่อย ๆ';$('#run').classList.toggle('neg',burn>0&&run<3);
+ $('#n1').textContent=burn>0?'ถ้าไม่เปลี่ยนอะไร เงินจะหมดในประมาณ '+run.toFixed(1)+' เดือน · หนี้ '+Lab.fmt(d)+' บาท = '+(i>0?(d/i).toFixed(1):'—')+' เท่าของรายรับต่อเดือน':'รายรับมากกว่ารายจ่าย — ปัญหาอาจอยู่ที่หนี้ก้อนใหญ่หรือเงินสดจม ไม่ใช่การขาดทุนรายเดือน'};
+$$('#r1,#r2,#r3,#r4').forEach(x=>x.oninput=calc);calc();
+Lab.mcq($('#q1'),{key:'runway',explain:'กู้เพิ่มโดยไม่แก้ “เงินหายต่อเดือน” คือซื้อเวลาด้วยหนี้ที่แพงขึ้น · การรอคือการใช้ runway ที่เหลือน้อยอยู่แล้ว · ขั้น 1–2 ทำได้ทันทีและไม่ต้องใช้เงิน',onDone:()=>show('#go1')});
+$('#go1').onclick=()=>Lab.next();
+const L=['เจ้าของต้องจ่ายด้วยทรัพย์สินส่วนตัวทั้งหมด (รับผิดไม่จำกัด)','ความรับผิดหยุดที่ทุนของบริษัท เจ้าหนี้ยึดของส่วนตัวไม่ได้','บริษัทรับผิดจำกัด แต่เจ้าของต้องจ่ายส่วนที่ตัวเองค้ำประกันไว้'];
+const C2=[['จดเป็น “เจ้าของคนเดียว” (ทะเบียนพาณิชย์) ทำสัญญาทุกอย่างในชื่อตัวเอง',0],['จดเป็นบริษัทจำกัด ทุน 100,000 ซัพพลายเออร์ให้เครดิตในนามบริษัท ไม่มีใครค้ำส่วนตัว',1],['จดเป็นบริษัทจำกัด แต่กู้ธนาคาร 300,000 โดยกรรมการเซ็นค้ำประกันส่วนตัว',2]];
+const b2=$('#cases2');C2.forEach(c=>{const d=Lab.h('div',{class:'case'},'<p>'+c[0]+'</p>');const s=Lab.h('select',{},'<option value="">— เลือก —</option>'+L.map((t,k)=>'<option value="'+k+'">'+t+'</option>').join(''));d.append(s);b2.append(d)});
+$('#chk2').onclick=()=>{const sels=$$('#cases2 select');if(sels.some(s=>s.value===''))return Lab.feedback($('#fb2'),null,'ยังเลือกไม่ครบ');let ok=0;sels.forEach((s,i)=>{const r=+s.value===C2[i][1];s.parentElement.classList.remove('ok','no');s.parentElement.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('liability',ok,3);Lab.feedback($('#fb2'),ok===3,'ถูก '+ok+'/3 — นี่คือเหตุผลที่บทที่ 2 ให้เลือกรูปแบบธุรกิจอย่างตั้งใจ: รูปแบบที่เลือกวันแรก กำหนดว่าถ้าล้ม ครอบครัวจะเสียอะไรบ้าง · และ “ค้ำประกันส่วนตัว” ทำให้ความคุ้มครองของบริษัทหายไปเท่าที่ค้ำ');if(ok===3){$('#chk2').classList.add('hide');show('#go2')}};
+$('#go2').onclick=()=>Lab.next();
+const R=['1 หยุดเลือด','2 ปรับโครงสร้างหนี้','3 ไกล่เกลี่ยก่อนฟ้อง','4 ขาย/ส่งต่อ','5 ปิดอย่างเป็นระบบ','6 ฟื้นฟูหนี้/ล้มละลาย'];
+const C3=[['ร้านยังมีลูกค้าประจำ แต่ค่างวดธนาคารเดือนละ 25,000 เริ่มจ่ายไม่ไหว ยังไม่เคยคุยกับธนาคาร',1],['ขาดทุนทุกเดือนมา 1 ปี เจ้าของหมดแรง แต่สูตรและฐานลูกค้า 2,000 คนยังมีค่า คู่แข่งเคยถามซื้อ',3],['ตัดสินใจเลิกแล้ว ยังไม่มีหนี้ค้าง มีลูกจ้าง 2 คน',4],['หนี้ 1.5 ล้าน เจ้าหนี้ 4 ราย เริ่มส่งทนายทวง คุยแยกรายไม่สำเร็จ รายได้ยังพอมี',5]];
+const b3=$('#cases3');C3.forEach(c=>{const d=Lab.h('div',{class:'case'},'<p>'+c[0]+'</p>');const s=Lab.h('select',{},'<option value="">— ขั้นแรกที่ควรทำ —</option>'+R.map((t,k)=>'<option value="'+k+'">'+t+'</option>').join(''));d.append(s);b3.append(d)});
+$('#chk3').onclick=()=>{const sels=$$('#cases3 select');if(sels.some(s=>s.value===''))return Lab.feedback($('#fb3'),null,'ยังเลือกไม่ครบ');let ok=0;sels.forEach((s,i)=>{const r=+s.value===C3[i][1];s.parentElement.classList.remove('ok','no');s.parentElement.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('ladder',ok,4);Lab.feedback($('#fb3'),ok===4,'ถูก '+ok+'/4 — ① ยังไม่เคยคุยธนาคาร = ขั้น 2 ก่อน (ธนาคารมักยอมยืด ถ้ามาก่อนขาดส่ง) ② ของยังมีค่า = ขั้น 4 ขายก่อนหมดค่า ③ ไม่มีหนี้ = ขั้น 5 ปิดให้เรียบร้อย ④ เจ้าหนี้หลายราย คุยแยกไม่ได้ ยังมีรายได้ = ขั้น 6 ฟื้นฟูหนี้ผ่านศาล เพื่อหยุดทวงและรวมเป็นแผนเดียว');if(ok===4){$('#chk3').classList.add('hide');show('#go3')}};
+$('#go3').onclick=()=>Lab.next();
+let q4=false;
+Lab.mcq($('#q4'),{key:'myth',explain:'กฎหมายล้มละลายไม่ใช่การลงโทษ แต่เป็นกลไกจัดการหนี้อย่างเป็นธรรมแล้วให้เริ่มใหม่ · คนที่เคยล้มแล้วกลับมาทำธุรกิจสำเร็จมีมากมาย · สิ่งที่ตามทวงได้ตลอดชีวิตคือความรู้สึกผิด — ซึ่งคุยกับคนช่วยได้ (1323)',onDone:()=>{q4=true}});
+$('#fin').onclick=()=>Lab.finish({takeaway:'ทางออกมี 6 ขั้น เริ่มจากเบาไปหนัก — ล้มละลายอยู่ขั้นสุดท้าย และยังเป็นการ “เริ่มใหม่” ไม่ใช่จุดจบ<br>รูปแบบธุรกิจและการค้ำประกันที่เลือกวันแรก กำหนดว่าถ้าล้มจะเสียอะไร<br>หนี้ธุรกิจเป็นคดีแพ่ง ไม่ติดคุก · ขอความช่วยเหลือได้ทันที: 1323 · 1443 · 1213 · 1301',data:{runway:$('#run').textContent,plan:$('#ref').value.slice(0,700)}});
+window.__autoplay=()=>false;
+})();
+</script>
