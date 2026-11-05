@@ -1,0 +1,135 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts td.k{color:var(--amber);font-weight:600;white-space:nowrap}
+.case{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+.case p{margin:0 0 6px}
+.case select{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel);color:var(--cream);font:1em var(--body)}
+.case.ok{border-color:var(--green)} .case.no{border-color:var(--red)}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}
+.calc label{display:block;font-size:.85em;color:var(--muted)}
+.calc input{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel2);color:var(--cream);font:600 1.05em var(--body)}
+.steps{width:100%;border-collapse:collapse;font-size:.95em;margin:10px 0}
+.steps td{padding:6px 8px;border-bottom:1px solid var(--line)}
+.steps td.n{text-align:right;white-space:nowrap;font-weight:600}
+.steps tr.tot td{background:var(--panel2);color:var(--amber);font-weight:700;font-size:1.1em}
+.ok2{color:var(--green)!important} .bad{color:var(--red)!important}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (17 นาที)</h3>
+  <h2>ฟรีแลนซ์ รับจ้างทั่วไป ยื่นภาษียังไง?</h2>
+  <p class="muted">พี่หนอม TaxBugnoms (นักบัญชี) · อธิบายว่ารายได้ฟรีแลนซ์คือ “เงินได้ประเภทที่ 2” ต่างจากมนุษย์เงินเดือน วิชาชีพอิสระ และรับเหมาอย่างไร พร้อมสาธิตยื่นแบบออนไลน์ด้วยตัวเลขตัวอย่าง</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=OBQmM49fe6U" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=OBQmM49fe6U</small>
+  </div>
+  <p style="margin-top:12px"><b>สิ่งที่ได้ยินในคลิป</b> (จากบทบรรยายอัตโนมัติ · คลิปพูดถึงปีภาษี 2566 — หลักการยังใช้ได้ แต่ตัวเลขค่าลดหย่อนให้ตรวจกับประกาศปีปัจจุบัน)</p>
+  <table class="facts">
+    <tr><td class="k">ฟรีแลนซ์ = 40(2)</td><td>รับจ้างทำงานให้โดยใช้ “ทักษะของตัวเอง” เป็นหลัก ต้นทุนอื่นไม่ชัด · จ่ายเมื่องานเสร็จ · ถ้ารายได้ทั้งปีเกิน 1.8 ล้าน ต้องดูเรื่อง VAT (มนุษย์เงินเดือนได้รับยกเว้น)</td></tr>
+    <tr><td class="k">ไม่ใช่ 40(6)</td><td>วิชาชีพอิสระมี 6 อาชีพตามกฎหมาย: แพทย์/โรคศิลปะ วิศวกรรม สถาปัตยกรรม บัญชี ทนายความ ประณีตศิลป์ — และต้องทำในรูปแบบธุรกิจ (เปิดสำนักงาน ลงทุน ลงแรง)</td></tr>
+    <tr><td class="k">ไม่ใช่ 40(7)</td><td>รับเหมา = ลงทุนมากกว่าแรงตัวเอง จ่ายค่าแรงคนอื่น หาวัสดุ เครื่องมือ มาทำงานให้เสร็จ</td></tr>
+    <tr><td class="k">เข้าใจผิดบ่อย</td><td>① ยื่นแค่ส่วนที่ถูกหัก ณ ที่จ่าย — ผิด ต้องรวมทุกบาท รวมเงินสด/ของ · ② ถูกหัก 3% แล้วจบ — ผิด ยังต้องยื่น และสรรพากรเห็นข้อมูลใน My Tax Account · ③ รายได้น้อยไม่ต้องยื่น — เสียโอกาสขอคืน</td></tr>
+    <tr><td class="k">ตัวอย่างในคลิป</td><td>รายได้ถูกหัก 3%: 300,000 (หัก 9,000) + เงินสด 60,000 = 360,000 · หักค่าใช้จ่าย 50% ไม่เกิน 100,000 → 260,000 · ลดหย่อนส่วนตัว 60,000 → เงินได้สุทธิ 200,000 · ภาษี: 150,000 แรกยกเว้น, 50,000 × 5% = 2,500 · ถูกหักไว้ 9,000 → <b>ขอคืน 6,500</b></td></tr>
+    <tr><td class="k">หลักฐาน</td><td>ใบ 50 ทวิ (หนังสือรับรองหัก ณ ที่จ่าย) จากผู้จ้างทุกราย · ยื่นออนไลน์ ภ.ง.ด.90/91 ช่วงต้นปีถัดไป</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · รายได้นี้เป็น 40(อะไร)</h3>
+  <h2>จัดประเภทเงินได้ 6 กรณี</h2>
+  <p class="muted">4 ประเภทแรกมาจากคลิป · 40(8) มาจากสไลด์บทนี้ (ร้านค้าออนไลน์/ขายของ)</p>
+  <div id="cases"></div>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk1">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · คำนวณตามคลิป แล้วลองเปลี่ยนตัวเลขของตัวเอง</h3>
+  <h2>ฟรีแลนซ์คนนี้ต้องจ่ายเพิ่ม หรือได้คืน?</h2>
+  <p class="muted">เริ่มจากตัวเลขในคลิป · ลองใส่รายได้ที่กลุ่มคาดว่าจะได้จากการรับงาน · ใช้ค่าลดหย่อนส่วนตัว 60,000 อย่างเดียว (ของจริงอาจมีมากกว่า)</p>
+  <div class="calc">
+    <div><label>รายได้ที่ถูกหัก ณ ที่จ่าย (บาท)</label><input id="a1" type="number" value="300000"></div>
+    <div><label>อัตราที่ถูกหัก (%)</label><input id="a2" type="number" value="3"></div>
+    <div><label>รายได้เงินสด/ไม่ถูกหัก (บาท)</label><input id="a3" type="number" value="60000"></div>
+  </div>
+  <table class="steps">
+    <tr><td>รายได้รวมทุกก้อน</td><td class="n" id="t1">—</td></tr>
+    <tr><td>หักค่าใช้จ่ายเหมา 50% (ไม่เกิน 100,000)</td><td class="n" id="t2">—</td></tr>
+    <tr><td>หักค่าลดหย่อนส่วนตัว</td><td class="n">−60,000</td></tr>
+    <tr><td>เงินได้สุทธิ</td><td class="n" id="t3">—</td></tr>
+    <tr><td>ภาษีตามขั้นบันได <span class="muted" id="brk"></span></td><td class="n" id="t4">—</td></tr>
+    <tr><td>ภาษีที่ถูกหักไว้แล้ว</td><td class="n" id="t5">—</td></tr>
+    <tr class="tot"><td id="t6l">ผลลัพธ์</td><td class="n" id="t6">—</td></tr>
+  </table>
+  <p class="muted" id="n2"></p>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · ความเข้าใจผิดที่คลิปเตือน</h3>
+  <h2>เพื่อนรับงานออกแบบโลโก้ได้ 40,000 บาท ลูกค้าโอนให้เต็มไม่หักภาษี เพื่อนบอก “ไม่ต้องยื่น เพราะไม่ได้ถูกหัก” — จริงไหม?</h2>
+  <div id="q3">
+    <button class="choice" type="button">จริง ถูกหักเมื่อไหร่ค่อยยื่น</button>
+    <button class="choice" data-ok="1" type="button">ไม่จริง — รายได้จากการทำงานทุกบาทไม่ว่ารับแบบไหน ถือเป็นเงินได้ที่ต้องนำมารวมยื่น</button>
+    <button class="choice" type="button">จริง ถ้าไม่เกิน 1.8 ล้านไม่ต้องยื่น</button>
+  </div>
+  <p style="margin-top:14px"><b>อีกคนรับงานแปลได้ 120,000 ทั้งปี ถูกหัก 3% ไว้ 3,600 บาท คิดแล้วไม่ถึงเกณฑ์เสียภาษี “งั้นไม่ยื่นให้เสียเวลา” — ควรทำอย่างไร?</b></p>
+  <div id="q3b">
+    <button class="choice" type="button">ไม่ยื่น เพราะไม่มีภาษีต้องจ่ายอยู่แล้ว</button>
+    <button class="choice" data-ok="1" type="button">ยื่น — เพราะมีสิทธิ์ขอคืน 3,600 บาทที่ถูกหักไว้ และเริ่มยื่นให้ถูกตั้งแต่ปีแรกจะง่ายในปีต่อ ๆ ไป</button>
+    <button class="choice" type="button">ยื่นเฉพาะปีที่มีภาษีต้องจ่าย</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · ปฏิทินภาษีของกลุ่ม</h3>
+  <h2>รายได้ของธุรกิจกลุ่มเราเป็น 40(อะไร) และต้องเก็บเอกสารอะไรตั้งแต่วันนี้</h2>
+  <p class="muted">ตอบสั้น ๆ: ประเภทเงินได้ · ใครเป็นคนรับเงิน (ชื่อใคร) · เอกสารที่ต้องขอจากผู้จ่าย · เดือนที่ต้องยื่น</p>
+  <textarea id="ref" placeholder="ประเภท: 40(...) เพราะ ...&#10;เงินเข้าชื่อ: ...&#10;เอกสารที่ต้องเก็บ: ...&#10;ยื่นเมื่อ: ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 12, no: 4, slug: 'ch12-clip', title: 'ฟรีแลนซ์ยื่นภาษีอย่างไร: ตามรอยตัวอย่างในคลิป', goal: 'จัดประเภทเงินได้ให้ถูก คำนวณภาษีตามตัวอย่างจริงในคลิป และเลิกเข้าใจผิดเรื่องหัก ณ ที่จ่าย' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+const TYPES=['40(1) เงินเดือนตามสัญญาจ้างแรงงาน','40(2) รับจ้างทำงานให้/ฟรีแลนซ์ ใช้ทักษะตัวเอง','40(6) วิชาชีพอิสระ 6 อาชีพ ทำเป็นธุรกิจ','40(7) รับเหมา ลงทุนทั้งค่าแรงคนอื่นและวัสดุ','40(8) ขายสินค้า/ร้านค้าออนไลน์ (จากสไลด์)'];
+const CASES=[['นักศึกษารับตัดต่อคลิปให้ร้านอาหาร ชิ้นละ 1,500 บาท ใช้คอมของตัวเอง',1],['ทำงานประจำบริษัท ได้เงินเดือน มีประกันสังคม',0],['เปิดสำนักงานบัญชี มีพนักงาน รับทำบัญชีให้ลูกค้าหลายราย',2],['รับเหมาทาสีบ้าน จ้างลูกน้อง 3 คน ซื้อสีและอุปกรณ์เอง',3],['ขายเสื้อผ้าออนไลน์ผ่าน Shopee สั่งของมาสต๊อกแล้วขาย',4],['เป็นวิทยากรรับเชิญบรรยายเรื่องภาษี ได้ค่าตอบแทนครั้งละ 5,000',1]];
+const box=$('#cases');CASES.forEach((c,i)=>{const d=Lab.h('div',{class:'case'},'<p>'+c[0]+'</p>');const s=Lab.h('select',{},'<option value="">— เลือกประเภท —</option>'+TYPES.map((t,k)=>'<option value="'+k+'">'+t+'</option>').join(''));d.append(s);box.append(d)});
+$('#chk1').onclick=()=>{const sels=$$('#cases select');if(sels.some(s=>s.value===''))return Lab.feedback($('#fb1'),null,'ยังเลือกไม่ครบทุกข้อ');
+ let ok=0;sels.forEach((s,i)=>{const r=+s.value===CASES[i][1];s.parentElement.classList.remove('ok','no');s.parentElement.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('type',ok,CASES.length);Lab.feedback($('#fb1'),ok===CASES.length,'ถูก '+ok+'/'+CASES.length+' — จุดตัดสิน: ใช้ “ทักษะตัวเอง” เป็นหลัก = 40(2) · วิทยากรก็ 40(2) แม้จะเป็นนักบัญชี เพราะไม่ได้ทำในรูปแบบสำนักงาน · รับเหมามีต้นทุนคนอื่น/วัสดุชัด = 40(7)');
+ if(ok===CASES.length){$('#chk1').classList.add('hide');show('#go1')}};
+$('#go1').onclick=()=>Lab.next();
+const BR=[[150000,0],[300000,.05],[500000,.10],[750000,.15],[1000000,.20],[2000000,.25],[5000000,.30],[Infinity,.35]];
+function tax(net){let t=0,lo=0;for(const[hi,r]of BR){if(net>lo){t+=(Math.min(net,hi)-lo)*r}lo=hi}return t}
+const f=n=>Lab.fmt(Math.round(n));
+let seen=false;
+const calc=()=>{const a=+$('#a1').value||0,r=(+$('#a2').value||0)/100,c=+$('#a3').value||0;const gross=a+c,exp=Math.min(gross*.5,100000),net=Math.max(0,gross-exp-60000),t=tax(net),wht=a*r,diff=wht-t;
+ $('#t1').textContent=f(gross);$('#t2').textContent='−'+f(exp);$('#t3').textContent=f(net);$('#t4').textContent=f(t);$('#t5').textContent=f(wht);
+ $('#brk').textContent=net<=150000?'(ไม่เกิน 150,000 ยกเว้นทั้งหมด)':net<=300000?'(150,000 แรกยกเว้น ส่วนเกิน 5%)':'(ขั้น 0% 5% 10% ...)';
+ const o=$('#t6');o.classList.remove('ok2','bad');if(diff>=0){$('#t6l').textContent='ขอคืนได้';o.textContent=f(diff)+' บาท';o.classList.add('ok2')}else{$('#t6l').textContent='ต้องจ่ายเพิ่ม';o.textContent=f(-diff)+' บาท';o.classList.add('bad')}
+ $('#n2').textContent=gross>1800000?'รายได้เกิน 1.8 ล้าน — คลิปเตือนว่าฟรีแลนซ์ต้องดูเรื่อง VAT ด้วย':(c>0&&diff>=0?'สังเกต: เงินสด '+f(c)+' ก็ต้องรวม — รวมแล้วก็ยังได้คืน เพราะถูกหักไว้มากกว่าภาษีจริง':'');
+ if(!seen){seen=true;Lab.score('calc',1,1);show('#go2')}};
+$$('#a1,#a2,#a3').forEach(i=>i.oninput=calc);calc();
+$('#go2').onclick=()=>Lab.next();
+let a=false,b=false;const gate=()=>{if(a&&b)show('#go3')};
+Lab.mcq($('#q3'),{key:'all-income',explain:'คลิปย้ำว่า “ทุกรูปแบบ เงินสด เงินโอน รับเป็นของ หักหรือไม่หัก” ล้วนเป็นเงินได้ · 1.8 ล้านเป็นเกณฑ์ VAT ไม่ใช่เกณฑ์ยื่นภาษีเงินได้',onDone:()=>{a=true;gate()}});
+Lab.mcq($('#q3b'),{key:'refund',explain:'ตัวอย่างในคลิป: ภาษีจริง 2,500 แต่ถูกหัก 9,000 → ได้คืน 6,500 · ฟรีแลนซ์มือใหม่รายได้ไม่มาก “มักจะได้คืน” ถ้ายื่น',onDone:()=>{b=true;gate()}});
+$('#go3').onclick=()=>Lab.next();
+$('#fin').onclick=()=>Lab.finish({takeaway:'รู้ก่อนว่าเราเป็นเงินได้ 40(อะไร) — ฟรีแลนซ์ที่ใช้ทักษะตัวเองคือ 40(2)<br>รายได้ทุกบาทต้องรวมยื่น ถูกหัก ณ ที่จ่ายไม่ใช่จบ และคนรายได้น้อยมักได้เงินคืนถ้ายื่น<br>เก็บใบ 50 ทวิ ทุกใบ แล้วยื่นออนไลน์ช่วงต้นปี',data:{result:$('#t6l').textContent+' '+$('#t6').textContent,plan:$('#ref').value.slice(0,600)}});
+window.__autoplay=()=>false;
+})();
+</script>

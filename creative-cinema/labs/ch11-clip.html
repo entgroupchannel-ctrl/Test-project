@@ -1,0 +1,136 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts th{color:var(--muted);font:500 .85em var(--display)}
+.facts td.n{text-align:right;white-space:nowrap;color:var(--amber);font-weight:600}
+.sl{margin:10px 0}
+.sl .lab{display:flex;justify-content:space-between;font-size:.9em}
+.sl .lab b{color:var(--amber)}
+.sl input{width:100%}
+.ccc{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.ccc b{font:700 1.8em var(--display);color:var(--amber)}
+.ccc b.neg{color:var(--green)}
+.bar{position:relative;height:28px;background:var(--panel2);border-radius:8px;margin:8px 0;overflow:hidden}
+.bar div{position:absolute;top:0;height:100%;border-radius:8px;font-size:.75em;line-height:28px;padding:0 6px;white-space:nowrap;color:#111}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}
+.calc label{display:block;font-size:.85em;color:var(--muted)}
+.calc input{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel2);color:var(--cream);font:600 1.05em var(--body)}
+.big{font:700 1.4em var(--display);color:var(--amber)}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (7 นาที)</h3>
+  <h2>รู้จัก “วงจรเงินสด” ตัววัดสภาพคล่องที่เจ้าของธุรกิจควรรู้</h2>
+  <p class="muted">ลงทุนแมน · ทำไม 7-Eleven ถึงมีวงจรเงินสด “ติดลบ” และทำไมคอนโดถึงใช้เวลา 4 ปี · เกี่ยวกับบทนี้ตรง ๆ: “หลายร้านปิดเพราะเงินสดหมดทั้งที่มีกำไร”</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=Udg-gwpo8d0" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=Udg-gwpo8d0</small>
+  </div>
+  <p style="margin-top:12px"><b>ตัวเลขที่คลิปอ้างถึง</b> (จากบทบรรยายอัตโนมัติ · ข้อมูลปี 2564 ตามที่คลิปกล่าว)</p>
+  <table class="facts">
+    <tr><th>สูตร</th><th colspan="3">วงจรเงินสด = ระยะเวลาขายสินค้า + ระยะเวลาเก็บหนี้ − ระยะเวลาจ่ายหนี้ (หน่วย: วัน)</th></tr>
+    <tr><th>บริษัท</th><th>ขายสินค้า</th><th>เก็บหนี้</th><th>จ่ายหนี้ → วงจร</th></tr>
+    <tr><td>CP ALL (7-Eleven)</td><td class="n">34 วัน</td><td class="n">4 วัน</td><td class="n">80 วัน → <b>−42 วัน</b></td></tr>
+    <tr><td>LPN (คอนโดลุมพินี)</td><td class="n">1,615 วัน</td><td class="n">36 วัน</td><td class="n">112 วัน → <b>1,539 วัน (~4 ปี)</b></td></tr>
+    <tr><td colspan="4">ติดลบ = รับเงินลูกค้าก่อน แล้วค่อยจ่ายซัพพลายเออร์ จึงมีเงินสดในมือเอาไปลงทุน/จ่ายปันผลได้ · ยาว = ต้องมีเงินทุนหมุนเวียน (หรือกู้) มารอ · เทียบได้เฉพาะในอุตสาหกรรมเดียวกัน หรือเทียบกับอดีตของตัวเอง</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · วงจรเงินสดของร้านเรา</h3>
+  <h2>เลื่อน 3 ตัว แล้วดูว่าเงินของเรา “จม” อยู่กี่วัน</h2>
+  <p class="muted">เริ่มจากร้านเล็กทั่วไป: สต๊อกของ 20 วัน ขายเงินสด จ่ายซัพพลายเออร์ทันที · ลองทำให้ติดลบเหมือน 7-Eleven ให้ได้</p>
+  <div class="sl"><div class="lab"><span>ของอยู่ในสต๊อกกี่วันกว่าจะขายได้</span><b id="v1">20</b></div><input id="r1" type="range" min="1" max="120" value="20"></div>
+  <div class="sl"><div class="lab"><span>ขายแล้วอีกกี่วันถึงได้เงิน (0 = เงินสด)</span><b id="v2">0</b></div><input id="r2" type="range" min="0" max="60" value="0"></div>
+  <div class="sl"><div class="lab"><span>รับของแล้วอีกกี่วันต้องจ่ายซัพพลายเออร์</span><b id="v3">0</b></div><input id="r3" type="range" min="0" max="90" value="0"></div>
+  <div class="bar" id="bar"></div>
+  <div class="ccc"><span>วงจรเงินสด</span><b id="ccc">20</b><span>วัน</span><span class="muted" id="cnote"></span></div>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · ทำไม 7-Eleven ทำได้</h3>
+  <h2>อะไรทำให้วงจรเงินสดของ CP ALL ติดลบ 42 วัน?</h2>
+  <div id="q2">
+    <button class="choice" type="button">ขายของได้เร็วมาก สต๊อกแค่ 4 วัน</button>
+    <button class="choice" data-ok="1" type="button">ลูกค้าจ่ายเงินสดเกือบทันที (4 วัน) ขณะที่บริษัทใหญ่มีอำนาจต่อรองให้จ่ายซัพพลายเออร์ช้าถึง 80 วัน</button>
+    <button class="choice" type="button">เพราะมีกำไรสูง กำไรสูง = เงินสดเยอะเสมอ</button>
+  </div>
+  <p style="margin-top:14px"><b>ร้านเล็กของเราขอเครดิตซัพพลายเออร์ 80 วันแบบ 7-Eleven ได้ไหม?</b></p>
+  <div id="q2b">
+    <button class="choice" type="button">ได้ ถ้าขอดี ๆ ทุกร้านทำได้</button>
+    <button class="choice" data-ok="1" type="button">ยาก เพราะอำนาจต่อรองน้อย — แต่ย่นวงจรด้วยวิธีที่เราคุมได้: สต๊อกน้อยลง ขายเงินสด/เก็บมัดจำ ไม่ให้เครดิตลูกค้านาน</button>
+    <button class="choice" type="button">ไม่จำเป็น ร้านเล็กไม่มีปัญหาเงินสด</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · วงจรยาว ต้องมีเงินรอเท่าไหร่</h3>
+  <h2>กลุ่มรับทำของชำร่วยให้บริษัท ลูกค้าจ่าย 30 วันหลังส่ง — ต้องมีเงินหมุนเท่าไหร่?</h2>
+  <p class="muted"><b>ตัวเลขสมมติ</b> ลองแก้ได้ · เงินทุนหมุนเวียนที่ต้องมี ≈ ต้นทุนที่จ่ายต่อวัน × จำนวนวันของวงจร</p>
+  <div class="calc">
+    <div><label>ต้นทุนวัตถุดิบ+ค่าแรงต่อวัน (บาท)</label><input id="c1" type="number" value="1500"></div>
+    <div><label>ผลิต+รอส่ง (วัน)</label><input id="c2" type="number" value="10"></div>
+    <div><label>ลูกค้าจ่ายหลังส่ง (วัน)</label><input id="c3" type="number" value="30"></div>
+    <div><label>เราจ่ายซัพพลายเออร์หลังรับของ (วัน)</label><input id="c4" type="number" value="0"></div>
+  </div>
+  <div class="calc">
+    <div><label>วงจรเงินสด</label><div class="big" id="o1">—</div></div>
+    <div><label>เงินหมุนเวียนที่ต้องมีรอ</label><div class="big" id="o2">—</div></div>
+  </div>
+  <p class="muted" id="n3"></p>
+  <p style="margin-top:10px"><b>ถ้ากลุ่มมีเงินแค่ 20,000 บาท ควรทำอย่างไรกับงานนี้?</b></p>
+  <div id="q3">
+    <button class="choice" type="button">รับงานไปก่อน กำไรดี เดี๋ยวเงินก็มา</button>
+    <button class="choice" data-ok="1" type="button">ต่อรองเก็บมัดจำ 50% ก่อนเริ่ม และ/หรือขอเครดิตวัตถุดิบ เพื่อย่นวงจรให้เงินที่มีพอหมุน — ถ้าทำไม่ได้ ควรรับงานเล็กลง</button>
+    <button class="choice" type="button">กู้เงินนอกระบบมาหมุนก่อน เพราะงานนี้กำไรแน่</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · ย่นวงจรของกลุ่มเรา</h3>
+  <h2>ธุรกิจกลุ่มเราขั้นตอนไหนที่เงิน “จม” นานที่สุด และจะย่นอย่างไร 2 วิธี</h2>
+  <p class="muted">ตัวอย่าง: “สต๊อกวัตถุดิบ 30 วันเพราะซื้อยกลัง → เปลี่ยนเป็นซื้อทุกสัปดาห์” · “รับออเดอร์กลุ่มแล้วเก็บมัดจำครึ่งหนึ่ง”</p>
+  <textarea id="ref" placeholder="เงินจมที่ขั้น: ...&#10;วิธีย่น 1: ...&#10;วิธีย่น 2: ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 11, no: 4, slug: 'ch11-clip', title: 'วงจรเงินสด: ทำไมมีกำไรแต่เงินหมด', goal: 'คำนวณวงจรเงินสด เข้าใจว่าทำไม 7-Eleven ติดลบ และหาวิธีย่นวงจรของธุรกิจกลุ่มโดยไม่ต้องกู้' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+let negHit=false;
+const upd=()=>{const a=+$('#r1').value,b=+$('#r2').value,c=+$('#r3').value;$('#v1').textContent=a;$('#v2').textContent=b;$('#v3').textContent=c;const ccc=a+b-c;const el=$('#ccc');el.textContent=ccc;el.classList.toggle('neg',ccc<0);
+ const tot=Math.max(a+b,c,1);const bar=$('#bar');bar.innerHTML='<div style="left:0;width:'+(a/tot*100)+'%;background:var(--amber)">สต๊อก '+a+'</div><div style="left:'+(a/tot*100)+'%;width:'+(b/tot*100)+'%;background:var(--teal)">รอเงิน '+b+'</div><div style="left:0;top:14px;height:14px;width:'+(c/tot*100)+'%;background:rgba(255,255,255,.35);line-height:14px">จ่ายซัพพลายเออร์วันที่ '+c+'</div>';
+ $('#cnote').textContent=ccc<0?'ติดลบ — ได้เงินลูกค้าก่อนจ่ายซัพพลายเออร์ '+(-ccc)+' วัน':ccc===0?'พอดี':'เงินของเราจมอยู่ '+ccc+' วันก่อนกลับมา';
+ if(ccc<0&&!negHit){negHit=true;Lab.score('ccc',1,1);Lab.feedback($('#fb1'),true,'ทำได้ — วิธีเดียวที่จะติดลบคือ “จ่ายซัพพลายเออร์ช้ากว่าที่ขายของและเก็บเงินได้” สังเกตว่าสต๊อกน้อยกับขายเงินสดช่วยมาก');show('#go1')}
+ else if(!negHit&&ccc<=5){Lab.feedback($('#fb1'),null,'ใกล้แล้ว เหลือ '+ccc+' วัน — ลองเพิ่มวันจ่ายซัพพลายเออร์ หรือลดสต๊อก')}
+ else if(!negHit){Lab.feedback($('#fb1'),null,'ตอนนี้ '+ccc+' วัน · ลดสต๊อก ลดเครดิตลูกค้า หรือเพิ่มวันจ่ายซัพพลายเออร์')}};
+$$('#r1,#r2,#r3').forEach(r=>r.oninput=upd);upd();
+$('#go1').onclick=()=>Lab.next();
+let a=false,b=false;const g2=()=>{if(a&&b)show('#go2')};
+Lab.mcq($('#q2'),{key:'why',explain:'สต๊อกของ 7-Eleven คือ 34 วัน ไม่ใช่ 4 · ตัวทำให้ติดลบคือจ่ายซัพพลายเออร์ 80 วัน ซึ่งมาจากอำนาจต่อรองของบริษัทใหญ่ · กำไรกับเงินสดเป็นคนละเรื่อง (คอนโดก็กำไรแต่วงจร 4 ปี)',onDone:()=>{a=true;g2()}});
+Lab.mcq($('#q2b'),{key:'small',explain:'คลิปบอกให้เทียบในอุตสาหกรรมเดียวกันและกับอดีตของตัวเอง — ร้านเล็กไม่ต้องเลียนแบบตัวเลข 7-Eleven แต่ควบคุม 2 ตัวแรก (สต๊อก และการเก็บเงิน) ได้เอง',onDone:()=>{b=true;g2()}});
+$('#go2').onclick=()=>Lab.next();
+let c3=false,q3=false;const g3=()=>{if(c3&&q3)show('#go3')};
+const calc=()=>{const cost=+$('#c1').value||0,p=+$('#c2').value||0,col=+$('#c3').value||0,pay=+$('#c4').value||0;const ccc=p+col-pay;const need=Math.max(0,cost*ccc);$('#o1').textContent=ccc+' วัน';$('#o2').textContent=Lab.fmt(need)+' บาท';$('#n3').textContent=ccc>0?'ต้องจ่ายวัตถุดิบและค่าแรงล่วงหน้า '+ccc+' วัน × '+Lab.fmt(cost)+' บาท/วัน ก่อนเงินลูกค้าจะเข้า — ถ้ามีไม่ถึง งานกำไรดีก็ทำให้ร้านสะดุดได้':'วงจรไม่เป็นบวก เงินลูกค้าเข้าก่อนที่เราต้องจ่าย';c3=true;g3()};
+$$('#c1,#c2,#c3,#c4').forEach(i=>i.oninput=calc);calc();
+Lab.mcq($('#q3'),{key:'gap',explain:'คลิปปิดท้ายว่ากิจการที่โตและมีกำไรก็ “ติดขัด” ได้ถ้าหมุนเงินสดไม่ทัน · มัดจำและเครดิตวัตถุดิบคือการย่นวงจร · เงินกู้นอกระบบดอกเบี้ยสูงกินกำไรทั้งงานและเสี่ยงมาก',onDone:()=>{q3=true;g3()}});
+$('#go3').onclick=()=>Lab.next();
+$('#fin').onclick=()=>Lab.finish({takeaway:'วงจรเงินสด = วันที่เงินเราจมอยู่ในสต๊อกและลูกหนี้ ก่อนกลับมาเป็นเงินสด<br>กำไรกับเงินสดคนละเรื่อง — วงจรยาวต้องมีเงินหมุนรอ = ต้นทุนต่อวัน × จำนวนวัน<br>ร้านเล็กย่นวงจรด้วยสต๊อกน้อย ขายเงินสด/เก็บมัดจำ และต่อรองเครดิตเท่าที่ทำได้',data:{ccc:$('#ccc').textContent,need:$('#o2').textContent,plan:$('#ref').value.slice(0,600)}});
+window.__autoplay=()=>false;
+})();
+</script>

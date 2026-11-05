@@ -1,0 +1,147 @@
+
+<div class="lab">
+<style>
+.clip{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px}
+.clip .yt{display:inline-flex;align-items:center;gap:8px;background:#e0392b;color:#fff;border-radius:10px;padding:10px 16px;font:600 .95em var(--display);text-decoration:none;min-height:44px}
+.clip small{color:var(--muted)}
+.facts{width:100%;border-collapse:collapse;font-size:.92em;margin:10px 0}
+.facts td,.facts th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.facts td.k{color:var(--amber);font-weight:600;white-space:nowrap}
+.chip{display:inline-block;background:var(--panel);border:1.5px solid var(--line);border-radius:999px;padding:7px 12px;margin:4px 4px 0 0;cursor:pointer;font-size:.9em}
+.chip.on{border-color:var(--teal);background:#15302e}
+.chip.ok{border-color:var(--green)} .chip.no{border-color:var(--red)}
+.tray{min-height:48px;margin:8px 0}
+.bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:10px 0}
+.bin{background:var(--panel2);border:1.5px dashed var(--line);border-radius:12px;padding:10px;min-height:110px}
+.bin h4{margin:0 0 6px;font:600 1em var(--display);color:var(--amber)}
+.tx{background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0}
+.tx p{margin:0 0 6px}
+.tx .sel{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tx select{width:100%;padding:7px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel);color:var(--cream);font:.95em var(--body)}
+.tx.ok{border-color:var(--green)} .tx.no{border-color:var(--red)}
+.eq{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:6px;align-items:center;background:var(--panel2);border:1.5px solid var(--line);border-radius:12px;padding:12px;margin:10px 0;text-align:center}
+.eq b{display:block;font:700 1.4em var(--display);color:var(--amber)}
+.eq small{color:var(--muted)}
+.eq .op{font:700 1.4em var(--display)}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:10px 0}
+.calc label{display:block;font-size:.85em;color:var(--muted)}
+.calc input{width:100%;padding:8px;border-radius:8px;border:1.5px solid var(--line);background:var(--panel2);color:var(--cream);font:600 1.05em var(--body)}
+.big{font:700 1.4em var(--display);color:var(--amber)}
+</style>
+
+<section class="step card" id="s0">
+  <h3>ขั้นที่ 0 · ดูคลิปก่อน (8 นาที)</h3>
+  <h2>เป็นเจ้าของธุรกิจ อยากเริ่มทำบัญชีด้วยตัวเอง ทำยังไงดี?</h2>
+  <p class="muted">ZeroToProfit SS4 EP.12 (นักบัญชี 2 คนคุยกัน) · คลิปสั้น เน้นวิธีเริ่ม “แบบบ้าน ๆ” ก่อนเรียนเดบิต–เครดิต · เกี่ยวกับบทนี้ตรง ๆ: “เงินในลิ้นชักร้านไม่ใช่เงินในกระเป๋าเจ้าของ”</p>
+  <div class="clip">
+    <a class="yt" href="https://www.youtube.com/watch?v=C_ObSvDtpKg" target="_blank" rel="noopener">▶ เปิดคลิปใน YouTube</a>
+    <small>ถ้าคลิกแล้วไม่เปิด ให้คัดลอกลิงก์: youtube.com/watch?v=C_ObSvDtpKg</small>
+  </div>
+  <p style="margin-top:12px"><b>สิ่งที่ได้ยินในคลิป</b> (จากบทบรรยายอัตโนมัติ)</p>
+  <table class="facts">
+    <tr><td class="k">1 แยกบัญชี</td><td>เปิดบัญชีธนาคารแยกสำหรับธุรกิจ (คนละบัญชี แบงก์เดียวก็ได้) · เงินเข้า = รายได้ เงินออก = ค่าใช้จ่าย · ถ้าทุกรายการผ่านบัญชีเดียว ย้อนดู statement ได้หมด จำได้ดีกว่าเงินสด</td></tr>
+    <tr><td class="k">2 เงินสดย่อย</td><td>ถ้าต้องใช้เงินสด ให้ถอนเป็นก้อนเล็กที่กำหนดไว้ เช่น 2,000/สัปดาห์ แล้วจดว่าใช้อะไร เก็บบิล</td></tr>
+    <tr><td class="k">3 เก็บเอกสาร</td><td>บุคคลธรรมดากฎหมายไม่บังคับทำบัญชีเป๊ะ แต่ถ้ายื่นภาษี “หักค่าใช้จ่ายตามจริง” สรรพากรขอดูแน่ → เก็บไว้อย่างน้อย 1 ปีจนได้ภาษีคืน</td></tr>
+    <tr><td class="k">4 กำไรแบบง่าย</td><td>เริ่มปีมี 100,000 สิ้นปีมากกว่า 100,000 = กำไร (เกณฑ์เงินสด) · แต่ถ้ามีลูกหนี้หรือเราติดเงินใคร เงินที่เหลือ “อาจไม่ใช่กำไรทั้งก้อน” ต้องวางแผนจ่ายต่อ</td></tr>
+    <tr><td class="k">5 เบิกเงินเดือนตัวเอง</td><td>กำหนดว่าต้องการเงินจากธุรกิจต่อเดือนเท่าไหร่ แล้วโอนเข้าบัญชีส่วนตัวเป็นก้อน ไม่หยิบใช้ปะปน บัญชีจะเป็นระบบ</td></tr>
+  </table>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="go0">ดูคลิปแล้ว ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s1">
+  <h3>ขั้นที่ 1 · เงินร้าน หรือ เงินเจ้าของ</h3>
+  <h2>รายการไหนควรออกจาก “บัญชีธุรกิจ” และรายการไหนเป็น “เรื่องส่วนตัว”</h2>
+  <p class="muted">แตะชิปแล้วแตะช่อง · ร้านชานมของเจ้าของคนเดียว</p>
+  <div class="tray" id="tray1"></div>
+  <div class="bins" id="bins1">
+    <div class="bin" data-c="B"><h4>บัญชีธุรกิจ</h4></div>
+    <div class="bin" data-c="P"><h4>ส่วนตัว (ผ่าน “เงินเดือนเจ้าของ” ก่อน)</h4></div>
+  </div>
+  <div class="fb" id="fb1"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk1">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go1">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s2">
+  <h3>ขั้นที่ 2 · 5 หมวด และสมการที่ต้องสมดุล</h3>
+  <h2>บันทึก 5 รายการของร้านชานมวันแรก แล้วดูว่าสมการยังสมดุลไหม</h2>
+  <p class="muted"><b>สินทรัพย์ = หนี้สิน + ทุน</b> (ทุนรวมกำไรสะสม = รายได้ − ค่าใช้จ่าย) · เลือกหมวดที่ “เพิ่ม/ลด” ให้ถูก สมการจะอัปเดตเอง · ตัวเลขสมมติ</p>
+  <div class="eq"><div><small>สินทรัพย์</small><b id="eA">0</b></div><div class="op">=</div><div><small>หนี้สิน</small><b id="eL">0</b></div><div class="op">+</div><div><small>ทุน (รวมกำไร)</small><b id="eE">0</b></div></div>
+  <div id="txs"></div>
+  <div class="fb" id="fb2"></div>
+  <div class="row" style="margin-top:12px"><button class="btn" type="button" id="chk2">ตรวจคำตอบ</button><button class="btn hide" type="button" id="go2">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s3">
+  <h3>ขั้นที่ 3 · เงินที่เหลือ ใช่กำไรไหม</h3>
+  <h2>ต้นปีบัญชีร้านมี 100,000 สิ้นปีมี 130,000 — แต่ยังติดเงินซัพพลายเออร์ 20,000 และลูกค้าองค์กรติดเราอยู่ 15,000</h2>
+  <div class="calc">
+    <div><label>เงินต้นปี</label><input id="b1" type="number" value="100000"></div>
+    <div><label>เงินสิ้นปี</label><input id="b2" type="number" value="130000"></div>
+    <div><label>เราติดคนอื่น (หนี้สิน)</label><input id="b3" type="number" value="20000"></div>
+    <div><label>คนอื่นติดเรา (ลูกหนี้)</label><input id="b4" type="number" value="15000"></div>
+  </div>
+  <div class="calc">
+    <div><label>กำไรแบบดูเงินสดอย่างเดียว</label><div class="big" id="o1">—</div></div>
+    <div><label>กำไรเมื่อนับหนี้สิน/ลูกหนี้ด้วย</label><div class="big" id="o2">—</div></div>
+  </div>
+  <p class="muted" id="n3"></p>
+  <div id="q3">
+    <button class="choice" type="button">กำไร 30,000 เพราะเงินในบัญชีเพิ่มขึ้น 30,000</button>
+    <button class="choice" data-ok="1" type="button">กำไรจริงประมาณ 25,000 — เงินที่เพิ่ม 30,000 มีส่วนที่ต้องจ่ายต่อ 20,000 แต่ก็มี 15,000 ที่ยังไม่ได้รับ (คลิปเตือนว่า “เงินเหลืออาจไม่ใช่กำไรทั้งก้อน”)</button>
+    <button class="choice" type="button">กำไร 10,000 เพราะต้องหักหนี้ 20,000 ออกจาก 30,000 ส่วนลูกหนี้ไม่นับเพราะยังไม่ได้เงิน</button>
+  </div>
+  <div class="row" style="margin-top:12px"><button class="btn hide" type="button" id="go3">ไปต่อ</button></div>
+</section>
+
+<section class="step card" id="s4">
+  <h3>ขั้นที่ 4 · กฎบัญชี 3 ข้อของกลุ่ม</h3>
+  <h2>เขียนกฎที่กลุ่มจะใช้จริงตั้งแต่สัปดาห์หน้า</h2>
+  <p class="muted">แนวจากคลิป: บัญชี/กระเป๋าเงินแยก · เงินสดย่อยกี่บาทต่อสัปดาห์ ใครถือ · ใครจดและจดที่ไหน (Sheets?) · เก็บบิลอย่างไร · จ่ายค่าตอบแทนสมาชิกเมื่อไหร่</p>
+  <textarea id="ref" placeholder="กฎ 1: ...&#10;กฎ 2: ...&#10;กฎ 3: ..."></textarea>
+  <div class="row" style="margin-top:12px"><button class="btn teal" type="button" id="fin">ส่งและดูสรุป</button></div>
+</section>
+
+<section class="card hide" id="summary"></section>
+</div>
+<script>
+Lab.init({ chapter: 13, no: 4, slug: 'ch13-clip', title: 'เริ่มทำบัญชีเองแบบบ้าน ๆ: แยกบัญชี 5 หมวด และสมการที่ต้องสมดุล', goal: 'แยกเงินร้านจากเงินเจ้าของ จัดรายการเข้า 5 หมวดโดยสมการยังสมดุล และรู้ว่าเงินที่เหลือไม่ใช่กำไรเสมอ' });
+(function(){
+const $=Lab.$,$$=Lab.$$,show=id=>$(id).classList.remove('hide');
+$('#go0').onclick=()=>Lab.next();
+$$('a.yt').forEach(a=>a.addEventListener('click',()=>{try{parent.postMessage({type:'lab:open',url:a.href},'*')}catch(_){}}));
+const ITEMS=[['ซื้อชาและนม 3,200 บาท','B'],['ค่าเช่าพื้นที่ตลาด 2,500 บาท','B'],['ซื้อรองเท้าใหม่ให้ตัวเอง 1,200 บาท','P'],['เติมน้ำมันรถไปซื้อของเข้าร้าน 400 บาท','B'],['จ่ายค่าหอพักเดือนนี้ 4,000 บาท','P'],['เลี้ยงข้าวเพื่อนวันเกิด 800 บาท','P']];
+let sel=null;const placed={};
+function tray(){const t=$('#tray1');t.innerHTML='';ITEMS.forEach((it,i)=>{if(placed[i]!=null)return;const c=Lab.h('span',{class:'chip'+(sel===i?' on':'')},it[0]);c.onclick=()=>{sel=sel===i?null:i;tray()};t.append(c)})}
+$$('#bins1 .bin').forEach(b=>b.onclick=()=>{if(sel==null)return;placed[sel]=b.dataset.c;const i=sel;sel=null;const c=Lab.h('span',{class:'chip'},ITEMS[i][0]);c.onclick=()=>{delete placed[i];c.remove();tray()};b.append(c);tray()});
+tray();
+$('#chk1').onclick=()=>{const left=ITEMS.length-Object.keys(placed).length;if(left)return Lab.feedback($('#fb1'),null,'ยังวางไม่ครบ เหลืออีก '+left+' ข้อ');
+ let ok=0;$$('#bins1 .bin .chip').forEach(c=>{const i=ITEMS.findIndex(x=>x[0]===c.textContent);const r=placed[i]===ITEMS[i][1];c.classList.add(r?'ok':'no');if(r)ok++});
+ Lab.score('separate',ok,ITEMS.length);Lab.feedback($('#fb1'),ok===ITEMS.length,'ถูก '+ok+'/'+ITEMS.length+' — ของส่วนตัวจ่ายจาก “เงินเดือนเจ้าของ” ที่โอนออกเป็นก้อนทุกเดือน ไม่หยิบจากลิ้นชัก มิฉะนั้นสิ้นเดือนจะไม่รู้เลยว่าร้านกำไรหรือเราใช้เงินร้านไปเท่าไหร่');$('#chk1').classList.add('hide');show('#go1')};
+$('#go1').onclick=()=>Lab.next();
+// step2
+const CAT=['สินทรัพย์','หนี้สิน','ทุน/กำไร','รายได้','ค่าใช้จ่าย'];
+// each tx: text, amount, correct [inc cat, dec cat or null]; effect on A,L,E computed from choice
+const TX=[['เจ้าของนำเงินส่วนตัว 20,000 ฝากเข้าบัญชีร้าน',20000,[0,2]],['ซื้อเครื่องปั่น 6,000 จ่ายเงินสด (สินทรัพย์เพิ่ม สินทรัพย์ลด)',6000,[0,0]],['ซื้อวัตถุดิบ 3,000 ยังไม่จ่าย ซัพพลายเออร์ให้เครดิต (ค่าใช้จ่ายเพิ่ม หนี้สินเพิ่ม)',3000,[4,1]],['ขายชานมได้เงินสด 4,500 (สินทรัพย์เพิ่ม รายได้เพิ่ม)',4500,[0,3]],['จ่ายค่าเช่าที่ 1,500',1500,[4,0]]];
+const box=$('#txs');TX.forEach((t,i)=>{const d=Lab.h('div',{class:'tx'},'<p>'+t[0]+' <b style="color:var(--amber)">'+Lab.fmt(t[1])+'</b></p>');const g=Lab.h('div',{class:'sel'});const s1=Lab.h('select',{'data-i':i,'data-k':'inc'},'<option value="">— อะไรเพิ่ม —</option>'+CAT.map((c,k)=>'<option value="'+k+'">'+c+' เพิ่ม</option>').join(''));const s2=Lab.h('select',{'data-i':i,'data-k':'dec'},'<option value="">— อีกฝั่ง: อะไรลด หรือเพิ่ม —</option>'+[0,1,2].map(k=>'<option value="d'+k+'">'+CAT[k]+' ลด</option>').join('')+'<option value="i1">หนี้สิน เพิ่ม</option><option value="i2">ทุน เพิ่ม</option><option value="i3">รายได้ เพิ่ม</option>');s1.onchange=eq;s2.onchange=eq;g.append(s1,s2);d.append(g);box.append(d)});
+function eq(){let A=0,L=0,E=0;TX.forEach((t,i)=>{const a=$('select[data-i="'+i+'"][data-k="inc"]').value,b=$('select[data-i="'+i+'"][data-k="dec"]').value,v=t[1];
+ if(a!==''){const k=+a;if(k===0)A+=v;else if(k===1)L+=v;else if(k===2)E+=v;else if(k===3)E+=v;else if(k===4)E-=v}
+ if(b!==''){const k=+b.slice(1);if(b[0]==='d'){if(k===0)A-=v;else if(k===1)L-=v;else E-=v}else{if(k===1)L+=v;else E+=v}}});
+ $('#eA').textContent=Lab.fmt(A);$('#eL').textContent=Lab.fmt(L);$('#eE').textContent=Lab.fmt(E);const bal=A===L+E;$('#eA').style.color=bal?'var(--green)':'var(--red)'}
+// expected second select per tx
+const EXP2=['d2x','d0','i1','i3x','d0'];
+$('#chk2').onclick=()=>{let ok=0;TX.forEach((t,i)=>{const a=$('select[data-i="'+i+'"][data-k="inc"]').value,b=$('select[data-i="'+i+'"][data-k="dec"]').value;const el=$$('.tx')[i];el.classList.remove('ok','no');
+ let r=false;
+ if(i===0)r=(a==='0'&&b==='i2');if(i===1)r=(a==='0'&&b==='d0');if(i===2)r=(a==='4'&&b==='i1');if(i===3)r=(a==='0'&&b==='i3');if(i===4)r=(a==='4'&&b==='d0');
+ el.classList.add(r?'ok':'no');if(r)ok++});
+ const A=$('#eA').textContent,L=$('#eL').textContent,E=$('#eE').textContent;const bal=A===Lab.fmt(parseInt(L.replace(/,/g,''))+parseInt(E.replace(/,/g,'')));
+ Lab.score('equation',ok,TX.length);Lab.feedback($('#fb2'),ok===TX.length&&bal,'ถูก '+ok+'/'+TX.length+(bal?' · สมการสมดุล':' · สมการยังไม่สมดุล — ทุกรายการต้องกระทบ 2 ฝั่งเสมอ')+' — เฉลยย่อ: ① สินทรัพย์เพิ่ม/ทุนเพิ่ม ② สินทรัพย์เพิ่ม/สินทรัพย์ลด ③ ค่าใช้จ่ายเพิ่ม/หนี้สินเพิ่ม ④ สินทรัพย์เพิ่ม/รายได้เพิ่ม (รายได้ไปอยู่ในทุน) ⑤ ค่าใช้จ่ายเพิ่ม/สินทรัพย์ลด');
+ if(ok===TX.length){$('#chk2').classList.add('hide');show('#go2')}};
+$('#go2').onclick=()=>Lab.next();
+const calc=()=>{const b1=+$('#b1').value||0,b2=+$('#b2').value||0,b3=+$('#b3').value||0,b4=+$('#b4').value||0;const p1=b2-b1,p2=p1-b3+b4;$('#o1').textContent=Lab.fmt(p1);$('#o2').textContent=Lab.fmt(p2);$('#n3').textContent='เงินเพิ่ม '+Lab.fmt(p1)+' − ที่ต้องจ่ายต่อ '+Lab.fmt(b3)+' + ที่จะได้รับ '+Lab.fmt(b4)+' = '+Lab.fmt(p2)+' · และถ้าลูกหนี้ไม่จ่าย กำไรจะเหลือแค่ '+Lab.fmt(p1-b3)};
+$$('#b1,#b2,#b3,#b4').forEach(i=>i.oninput=calc);calc();
+Lab.mcq($('#q3'),{key:'cash-vs-profit',explain:'คลิปบอกให้เริ่มจากเกณฑ์เงินสด (ง่าย) แต่ถ้ามีลูกหนี้/เจ้าหนี้ต้องคิดต่อ · 30,000 − 20,000 + 15,000 = 25,000 · ลูกหนี้นับเป็นรายได้แล้ว แต่ต้องตามเก็บให้ได้จริง',onDone:()=>show('#go3')});
+$('#go3').onclick=()=>Lab.next();
+$('#fin').onclick=()=>Lab.finish({takeaway:'แยกบัญชีธุรกิจออกจากส่วนตัว แล้วจ่าย “เงินเดือนเจ้าของ” เป็นก้อน<br>ทุกรายการกระทบ 2 ฝั่งเสมอ สินทรัพย์ = หนี้สิน + ทุน จึงสมดุลตลอด<br>เงินที่เหลือในบัญชีไม่ใช่กำไรทั้งก้อน ถ้ายังมีหนี้ต้องจ่ายหรือลูกหนี้ต้องเก็บ',data:{profit_cash:$('#o1').textContent,profit_adj:$('#o2').textContent,rules:$('#ref').value.slice(0,600)}});
+window.__autoplay=()=>false;
+})();
+</script>
